@@ -65,13 +65,13 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
 
     //State Controller
     $routes->group('State', function ($routes) {
-        $routes->get('', 'State::index', ['as' => 'state']);
-        $routes->post('Add', 'State::create');
-        $routes->post('Create', 'State::store');
-        $routes->post('Show', 'State::show');
-        $routes->post('Update', 'State::update');
-        $routes->post('Delete', 'State::delete');
-    });
+        $routes->get('', 'State::index', ['as' => 'state', 'filter' => 'roleFilter:1,list']); // List permission
+        $routes->post('Add', 'State::create', ['filter' => 'roleFilter:1,create']);           // Create permission
+        $routes->post('Create', 'State::store', ['filter' => 'roleFilter:1,create']);         // Create permission
+        $routes->post('Show', 'State::show', ['filter' => 'roleFilter:1,list']);              // List permission
+        $routes->post('Update', 'State::update', ['filter' => 'roleFilter:1,update']);        // Update permission
+        $routes->post('Delete', 'State::delete', ['filter' => 'roleFilter:1,delete']);        // Delete permission
+    }); 
 
 
     //Buyer Controller
