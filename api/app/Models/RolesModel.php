@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 use CodeIgniter\Database\Query;
 use CodeIgniter\Database\ConnectionInterface;
 
-class RolesModel extends BaseModel
+class RolesModel extends Model
 {
     protected $table = 'user_roles';
     protected $primaryKey = 'id';
