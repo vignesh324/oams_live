@@ -1,0 +1,196 @@
+CRITICAL - 2024-06-12 10:38:00 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 10:38:05 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 10:38:45 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 10:43:41 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 10:50:52 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:01:09 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:01:13 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:01:26 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/SoldStock.php on line 51.
+ 1 FCPATH/applications/USER/Controllers/SoldStock.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/SoldStock.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\SoldStock->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\SoldStock))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:04:10 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:05:21 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:05:27 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:05:30 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/SoldStock.php on line 51.
+ 1 FCPATH/applications/USER/Controllers/SoldStock.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/SoldStock.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\SoldStock->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\SoldStock))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:53:09 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:53:15 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/SoldStock.php on line 51.
+ 1 FCPATH/applications/USER/Controllers/SoldStock.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/SoldStock.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\SoldStock->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\SoldStock))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 11:53:35 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 14:30:58 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 16:50:53 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 18:41:26 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 18:41:33 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 18:46:28 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 18:48:51 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 482.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 482)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 19:14:08 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 130.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 130)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->detail('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 19:14:13 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 173.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 173)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->completedDetail('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 19:14:33 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 415.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 415)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->view('2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 20:04:48 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 484.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 484)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 20:07:42 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 484.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 484)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 20:09:55 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 484.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 484)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 20:10:12 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Garden.php on line 484.
+ 1 FCPATH/applications/USER/Controllers/Garden.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Garden.php', 484)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->AssignCategoryGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

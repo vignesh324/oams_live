@@ -1,0 +1,234 @@
+ERROR - 2024-04-05 04:09:43 --> mysqli_sql_exception: Unknown column 'inward_items.weight_nett' in 'field list' in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `inward_...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\Auction.php(221): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\Auction->show('1')
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-04-05 04:09:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'inward_items.weight_nett' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auction.php(221): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->show('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 04:09:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'inward_items.weight_nett' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auction.php(221): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->show('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 04:09:43 --> [Caused by] mysqli_sql_exception: Unknown column 'inward_items.weight_nett' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.*, `grade`.`name` AS `grade_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`, `inward_items`.`weight_nett`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auction.php(221): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 10:42:48 --> ErrorException: Undefined array key 3
+in APPPATH\Controllers\Auction.php on line 191.
+ 1 APPPATH\Controllers\Auction.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 10:54:05 --> ErrorException: Undefined array key 3
+in APPPATH\Controllers\Auction.php on line 191.
+ 1 APPPATH\Controllers\Auction.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 11:47:17 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\Auction.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:07:51 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\Auction.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:11:37 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\Auction.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:23:21 --> ErrorException: Attempt to read property "center_id" on null
+in APPPATH\Controllers\Auction.php on line 53.
+ 1 APPPATH\Controllers\Auction.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "center_id" on null', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:44:30 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\Auction.php on line 141.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:45:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Auction.php on line 145.
+ 1 APPPATH\Controllers\Auction.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:16:05 --> ErrorException: Undefined variable $auctionId
+in APPPATH\Controllers\Auction.php on line 171.
+ 1 APPPATH\Controllers\Auction.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auctionId', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:16:59 --> ErrorException: Attempt to read property "step_garden_ids" on array
+in APPPATH\Controllers\Auction.php on line 185.
+ 1 APPPATH\Controllers\Auction.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "step_garden_ids" on array', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:19:19 --> ErrorException: Attempt to read property "step_garden_ids" on array
+in APPPATH\Controllers\Auction.php on line 185.
+ 1 APPPATH\Controllers\Auction.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "step_garden_ids" on array', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:19:40 --> ErrorException: Attempt to read property "step_garden_ids" on array
+in APPPATH\Controllers\Auction.php on line 185.
+ 1 APPPATH\Controllers\Auction.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "step_garden_ids" on array', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:22:01 --> ErrorException: Attempt to read property "step_garden_ids" on array
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "step_garden_ids" on array', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:23:33 --> ErrorException: Undefined array key "step_garden_ids"
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "step_garden_ids"', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:24:21 --> ErrorException: Undefined array key "step_garden_ids"
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "step_garden_ids"', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:26:44 --> ErrorException: Undefined variable $auctionId
+in APPPATH\Controllers\Auction.php on line 171.
+ 1 APPPATH\Controllers\Auction.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auctionId', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:41:17 --> ErrorException: Undefined property: stdClass::$step_garden_ids
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$step_garden_ids', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:46:20 --> ErrorException: Undefined property: stdClass::$step_garden_ids
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$step_garden_ids', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:47:30 --> ErrorException: Undefined property: stdClass::$step_garden_ids
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$step_garden_ids', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

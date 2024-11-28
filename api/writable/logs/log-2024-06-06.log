@@ -1,0 +1,121 @@
+CRITICAL - 2024-06-06 11:28:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:30:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:31:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:31:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:31:48 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:37:55 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:38:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 17:44:56 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 18:09:02 --> mysqli_sql_exception: Unknown column 'auction.date' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php(1670): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Auction->auctionSellerInvoice()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-06 18:09:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.date' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`', [], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Auction.php(1670): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->auctionSellerInvoice()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 18:09:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`', [], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Auction.php(1670): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->auctionSellerInvoice()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 18:09:02 --> [Caused by] mysqli_sql_exception: Unknown column 'auction.date' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_seller_invoice`.*, `auction`.`date` AS `auction_date`, `seller`.`name` AS `seller_name`, `seller`.`address`, (SELECT delivery_time FROM settings WHERE status = 1 ORDER BY id DESC LIMIT 1) AS settings_delivery_time
+FROM `auction_seller_invoice`
+LEFT JOIN `seller` ON `seller`.`id` = `auction_seller_invoice`.`seller_id`', [], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Auction.php(1670): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->auctionSellerInvoice()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,101 @@
+ERROR - 2024-08-03 11:32:19 --> current items data:[{"id":"54","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"11","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 18:45:08","updated_at":"2024-08-01 18:45:21","created_by":"5","updated_by":"5"},{"id":"55","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"11","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 18:45:08","updated_at":"2024-08-01 18:45:21","created_by":"5","updated_by":"5"}], 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L001. auctionItemId:54, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> bid calculation initiated auctionItemId:54, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code 006. HBP:103.00,HABP: 101.00, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> bid calculation Ended auctionItemId:54, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L002. auctionItemId:54, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L003. auctionItemId:54, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L001. auctionItemId:55, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> bid calculation initiated auctionItemId:55, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code 007. HBP:101.00,HABP: 101.00, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> bid calculation Ended auctionItemId:55, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L002. auctionItemId:55, 2024-08-03 11:32:19
+ERROR - 2024-08-03 11:32:19 --> Error code L003. auctionItemId:55, 2024-08-03 11:32:19
+CRITICAL - 2024-08-03 13:03:28 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 13:03:47 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 13:04:04 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 13:04:27 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 13:04:29 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-03 22:37:33 --> mysqli_sql_exception: Unknown column 's_name' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `in...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/eazyhosting.in/public_html/api/system/Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php(1241): CodeIgniter\Model->insert(Array)
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Auction->closeAuction()
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#10 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-08-03 22:37:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's_name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (:date:, :invoice_no:, :buyer_id:, :seller_id:, :auction_id:, :hsn_code:, :prompt_days:, :buyer_charges:, :seller_charges:, :s_name:, :b_name:, :b_state:, :b_state_id:, :b_city_id:, :s_state:, :s_state_id:, :s_city_id:, :b_city:, :s_city:, :b_area:, :s_area:, :b_gst:, :s_gst:, :b_fssai:, :s_fssai:, :b_tea:, :s_tea:, :b_address:, :s_address:)', [...], false)
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Auction.php(1241): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->closeAuction()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 22:37:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's_name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (\'2024-08-03\', \'1W/022/24/66699\', 3, 7, \'22\', \'2354567\', \'10\', \'2\', \'3\', \'Waterfall Tea Estate\', \'Ashiq\', \'Tamil Nadu\', \'18\', \'403\', \'Kerala\', \'31\', \'789\', \'Coimbatore\', \'Idukki\', \'Areadfds\', \'Hudikeri\', \'GST10117\', \'GST-A123\', \'FSS10117\', \'FSS-A123\', \'TB10117\', \'TB-A123\', \'Valparai, Tamil Nadu\', \'Hudikeri Idukki\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (\'2024-08-03\', \'1W/022/24/66699\', 3, 7, \'22\', \'2354567\', \'10\', \'2\', \'3\', \'Waterfall Tea Estate\', \'Ashiq\', \'Tamil Nadu\', \'18\', \'403\', \'Kerala\', \'31\', \'789\', \'Coimbatore\', \'Idukki\', \'Areadfds\', \'Hudikeri\', \'GST10117\', \'GST-A123\', \'FSS10117\', \'FSS-A123\', \'TB10117\', \'TB-A123\', \'Valparai, Tamil Nadu\', \'Hudikeri Idukki\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (:date:, :invoice_no:, :buyer_id:, :seller_id:, :auction_id:, :hsn_code:, :prompt_days:, :buyer_charges:, :seller_charges:, :s_name:, :b_name:, :b_state:, :b_state_id:, :b_city_id:, :s_state:, :s_state_id:, :s_city_id:, :b_city:, :s_city:, :b_area:, :s_area:, :b_gst:, :s_gst:, :b_fssai:, :s_fssai:, :b_tea:, :s_tea:, :b_address:, :s_address:)', [...], false)
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Auction.php(1241): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->closeAuction()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 22:37:33 --> [Caused by] mysqli_sql_exception: Unknown column 's_name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (\'2024-08-03\', \'1W/022/24/66699\', 3, 7, \'22\', \'2354567\', \'10\', \'2\', \'3\', \'Waterfall Tea Estate\', \'Ashiq\', \'Tamil Nadu\', \'18\', \'403\', \'Kerala\', \'31\', \'789\', \'Coimbatore\', \'Idukki\', \'Areadfds\', \'Hudikeri\', \'GST10117\', \'GST-A123\', \'FSS10117\', \'FSS-A123\', \'TB10117\', \'TB-A123\', \'Valparai, Tamil Nadu\', \'Hudikeri Idukki\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (\'2024-08-03\', \'1W/022/24/66699\', 3, 7, \'22\', \'2354567\', \'10\', \'2\', \'3\', \'Waterfall Tea Estate\', \'Ashiq\', \'Tamil Nadu\', \'18\', \'403\', \'Kerala\', \'31\', \'789\', \'Coimbatore\', \'Idukki\', \'Areadfds\', \'Hudikeri\', \'GST10117\', \'GST-A123\', \'FSS10117\', \'FSS-A123\', \'TB10117\', \'TB-A123\', \'Valparai, Tamil Nadu\', \'Hudikeri Idukki\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (\'2024-08-03\', \'1W/022/24/66699\', 3, 7, \'22\', \'2354567\', \'10\', \'2\', \'3\', \'Waterfall Tea Estate\', \'Ashiq\', \'Tamil Nadu\', \'18\', \'403\', \'Kerala\', \'31\', \'789\', \'Coimbatore\', \'Idukki\', \'Areadfds\', \'Hudikeri\', \'GST10117\', \'GST-A123\', \'FSS10117\', \'FSS-A123\', \'TB10117\', \'TB-A123\', \'Valparai, Tamil Nadu\', \'Hudikeri Idukki\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `invoice` (`date`, `invoice_no`, `buyer_id`, `seller_id`, `auction_id`, `hsn_code`, `prompt_days`, `buyer_charges`, `seller_charges`, `s_name`, `b_name`, `b_state`, `b_state_id`, `b_city_id`, `s_state`, `s_state_id`, `s_city_id`, `b_city`, `s_city`, `b_area`, `s_area`, `b_gst`, `s_gst`, `b_fssai`, `s_fssai`, `b_tea`, `s_tea`, `b_address`, `s_address`) VALUES (:date:, :invoice_no:, :buyer_id:, :seller_id:, :auction_id:, :hsn_code:, :prompt_days:, :buyer_charges:, :seller_charges:, :s_name:, :b_name:, :b_state:, :b_state_id:, :b_city_id:, :s_state:, :s_state_id:, :s_city_id:, :b_city:, :s_city:, :b_area:, :s_area:, :b_gst:, :s_gst:, :b_fssai:, :s_fssai:, :b_tea:, :s_tea:, :b_address:, :s_address:)', [...], false)
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Auction.php(1241): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->closeAuction()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

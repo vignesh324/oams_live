@@ -1,0 +1,14 @@
+CRITICAL - 2024-07-13 13:07:13 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-13 13:07:24 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

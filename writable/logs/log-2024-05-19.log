@@ -1,0 +1,11 @@
+CRITICAL - 2024-05-19 10:15:45 --> TypeError: array_column_recursive(): Argument #1 ($array) must be of type array, null given, called in F:\xampp\htdocs\oams_staging\frontend\applications\USER\Views\sidebar.php on line 23
+in APPPATH\Helpers\curl_helper.php on line 67.
+ 1 FCPATH\applications\USER\Views\sidebar.php(23): array_column_recursive(null, 'module_id')
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\sidebar', [], true)
+ 5 FCPATH\applications\USER\Controllers\Dashboard.php(26): view('Applications\\USER\\Views\\sidebar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

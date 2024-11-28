@@ -1,0 +1,186 @@
+ERROR - 2024-07-31 13:30:19 --> auction floor entry auctionItemId:118, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:19 --> E007 HBP:0, HABP:0, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:19 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:19 --> auction floor entry auctionItemId:119, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:19 --> E007 HBP:0, HABP:0, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:19 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:30:19
+ERROR - 2024-07-31 13:30:20 --> auction floor entry auctionItemId:118, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:30:20 --> E007 HBP:0, HABP:0, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:30:20 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:30:20 --> auction floor entry auctionItemId:119, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:30:20 --> E007 HBP:0, HABP:0, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:30:20 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:30:20
+ERROR - 2024-07-31 13:32:21 --> auction floor entry auctionItemId:118, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> E007 HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor entry auctionItemId:119, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> E007 HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor entry auctionItemId:118, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> E007 HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor entry auctionItemId:119, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> E007 HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:32:21 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:32:21
+ERROR - 2024-07-31 13:33:20 --> bid calculation initiated auctionItemId:118, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 001. HBP:0,HABP: 110.00, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 002. HBP:0,RP: 102, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation Ended auctionItemId:118, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation initiated auctionItemId:119, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 001. HBP:0,HABP: 110.00, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 002. HBP:0,RP: 102, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation Ended auctionItemId:119, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation initiated auctionItemId:118, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation Ended auctionItemId:118, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation initiated auctionItemId:119, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:20 --> bid calculation Ended auctionItemId:119, 2024-07-31 01:33:20
+ERROR - 2024-07-31 13:33:50 --> bid calculation initiated auctionItemId:118, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> bid calculation Ended auctionItemId:118, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> bid calculation initiated auctionItemId:119, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:50 --> bid calculation Ended auctionItemId:119, 2024-07-31 01:33:50
+ERROR - 2024-07-31 13:33:52 --> auction floor entry auctionItemId:120, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:52 --> E007 HBP:0, HABP:0, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:52 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:52 --> auction floor entry auctionItemId:120, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:52 --> E007 HBP:0, HABP:0, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:52 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:33:52
+ERROR - 2024-07-31 13:33:53 --> auction floor entry auctionItemId:120, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:33:53 --> E007 HBP:0, HABP:0, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:33:53 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:33:53 --> auction floor entry auctionItemId:120, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:33:53 --> E007 HBP:0, HABP:0, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:33:53 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:33:53
+ERROR - 2024-07-31 13:34:40 --> auction floor entry auctionItemId:120, 2024-07-31 01:34:40
+ERROR - 2024-07-31 13:34:41 --> auction floor entry auctionItemId:120, 2024-07-31 01:34:41
+ERROR - 2024-07-31 13:34:44 --> auction floor entry auctionItemId:120, 2024-07-31 01:34:44
+ERROR - 2024-07-31 13:35:26 --> auction floor entry auctionItemId:120, 2024-07-31 01:35:26
+ERROR - 2024-07-31 13:35:29 --> auction floor entry auctionItemId:120, 2024-07-31 01:35:29
+ERROR - 2024-07-31 13:37:05 --> bid calculation initiated auctionItemId:120, 2024-07-31 01:37:05
+ERROR - 2024-07-31 13:37:05 --> bid calculation Ended auctionItemId:120, 2024-07-31 01:37:05
+CRITICAL - 2024-07-31 13:43:01 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:43:20 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:43:22 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-31 13:45:24 --> auction floor entry auctionItemId:121, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> E007 HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> auction floor entry auctionItemId:122, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> E007 HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:24 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:45:24
+ERROR - 2024-07-31 13:45:33 --> auction floor entry auctionItemId:121, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> E007 HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> auction floor entry auctionItemId:122, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> E007 HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:45:33 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:45:33
+ERROR - 2024-07-31 13:47:27 --> auction floor entry auctionItemId:121, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor entry auctionItemId:121, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> E007 HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor entry auctionItemId:122, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> E007 HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor entry auctionItemId:122, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> E007 HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> initial bidding value HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> E007 HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:47:27 --> auction floor ended HBP:0, HABP:0, 2024-07-31 01:47:27
+ERROR - 2024-07-31 13:48:26 --> bid calculation initiated auctionItemId:121, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 001. HBP:0,HABP: 110.00, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 002. HBP:0,RP: 102, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation Ended auctionItemId:121, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation initiated auctionItemId:122, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 001. HBP:0,HABP: 110.00, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 002. HBP:0,RP: 102, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation Ended auctionItemId:122, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation initiated auctionItemId:121, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation Ended auctionItemId:121, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation initiated auctionItemId:122, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:26 --> bid calculation Ended auctionItemId:122, 2024-07-31 01:48:26
+ERROR - 2024-07-31 13:48:56 --> bid calculation initiated auctionItemId:121, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> bid calculation Ended auctionItemId:121, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> bid calculation initiated auctionItemId:122, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> Error code 002. HBP:102.00,RP: 102, 2024-07-31 01:48:56
+ERROR - 2024-07-31 13:48:56 --> bid calculation Ended auctionItemId:122, 2024-07-31 01:48:56
+CRITICAL - 2024-07-31 13:50:34 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:50:48 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:50:49 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:50:52 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:50:55 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 13:50:56 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

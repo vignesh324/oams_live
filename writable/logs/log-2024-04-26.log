@@ -1,0 +1,22 @@
+CRITICAL - 2024-04-26 15:06:13 --> ErrorException: Array to string conversion
+in FCPATH\applications\USER\Views\BiddingSession\cart_items.php on line 72.
+ 1 FCPATH\applications\USER\Views\BiddingSession\cart_items.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\cart_items.php', 72)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\cart_items.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\BiddingSession\\cart_items', [], true)
+ 5 FCPATH\applications\USER\Controllers\BiddingSession.php(1317): view('Applications\\USER\\Views\\BiddingSession\\cart_items', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->cartItems('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 20:52:50 --> ErrorException: foreach() argument must be of type array|object, null given
+in FCPATH\applications\USER\Views\BiddingSession\center_gardens.php on line 13.
+ 1 FCPATH\applications\USER\Views\BiddingSession\center_gardens.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\center_gardens.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\center_gardens.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\BiddingSession\\center_gardens', [], true)
+ 5 FCPATH\applications\USER\Controllers\BiddingSession.php(1236): view('Applications\\USER\\Views\\BiddingSession\\center_gardens', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->reOrderGarden('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

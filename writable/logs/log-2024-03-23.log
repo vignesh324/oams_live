@@ -1,0 +1,33 @@
+CRITICAL - 2024-03-23 04:42:05 --> ErrorException: Undefined variable $centergarden_response
+in FCPATH\applications\USER\Views\BiddingSession\add.php on line 332.
+ 1 FCPATH\applications\USER\Views\BiddingSession\add.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centergarden_response', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\add.php', 332)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\add.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\BiddingSession\\add', [], true)
+ 5 FCPATH\applications\USER\Controllers\BiddingSession.php(224): view('Applications\\USER\\Views\\BiddingSession\\add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 04:44:07 --> ErrorException: Undefined array key "seque"
+in FCPATH\applications\USER\Views\BiddingSession\add.php on line 336.
+ 1 FCPATH\applications\USER\Views\BiddingSession\add.php(336): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seque"', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\add.php', 336)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\BiddingSession\\add.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\BiddingSession\\add', [], true)
+ 5 FCPATH\applications\USER\Controllers\BiddingSession.php(224): view('Applications\\USER\\Views\\BiddingSession\\add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 09:45:18 --> ErrorException: Undefined variable $value
+in FCPATH\applications\USER\Views\AuctionStock\index.php on line 93.
+ 1 FCPATH\applications\USER\Views\AuctionStock\index.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\AuctionStock\\index.php', 93)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\AuctionStock\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\AuctionStock\\index', [], true)
+ 5 FCPATH\applications\USER\Controllers\AuctionStock.php(44): view('Applications\\USER\\Views\\AuctionStock\\index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\AuctionStock->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\AuctionStock))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

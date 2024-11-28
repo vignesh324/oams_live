@@ -1,0 +1,11 @@
+CRITICAL - 2024-07-08 13:41:19 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Views/ActivityLog/index.php on line 90.
+ 1 FCPATH/applications/USER/Views/ActivityLog/index.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ActivityLog/index.php', 90)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ActivityLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ActivityLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(138): view('Applications\\USER\\Views\\ActivityLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->activityLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

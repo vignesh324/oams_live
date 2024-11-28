@@ -1,0 +1,92 @@
+CRITICAL - 2024-07-18 10:47:45 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 940.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('auction.id', null, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(872): CodeIgniter\Database\BaseBuilder->whereIn('auction.id', null)
+ 3 APPPATH/Controllers/Reports.php(279): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->stateCityReportSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 10:48:06 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 940.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('auction.id', null, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(872): CodeIgniter\Database\BaseBuilder->whereIn('auction.id', null)
+ 3 APPPATH/Controllers/Reports.php(279): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->stateCityReportSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:00:37 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:01:13 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:02:00 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:02:05 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:02:10 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:34:55 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:35:07 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 11:35:08 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 12:41:23 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 940.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('auction.id', null, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(872): CodeIgniter\Database\BaseBuilder->whereIn('auction.id', null)
+ 3 APPPATH/Controllers/Reports.php(125): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->salenoWiseSeller()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-18 17:06:02 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH/Database/BaseBuilder.php on line 940.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('auction.id', null, false, 'AND ', null)
+ 2 SYSTEMPATH/Model.php(872): CodeIgniter\Database\BaseBuilder->whereIn('auction.id', null)
+ 3 APPPATH/Controllers/Reports.php(126): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->salenoWiseSeller()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

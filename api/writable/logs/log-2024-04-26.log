@@ -1,0 +1,133 @@
+CRITICAL - 2024-04-26 21:53:24 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 334.
+ 1 APPPATH\Controllers\Cart.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 21:53:30 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 334.
+ 1 APPPATH\Controllers\Cart.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 21:53:35 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 334.
+ 1 APPPATH\Controllers\Cart.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 21:55:12 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 334.
+ 1 APPPATH\Controllers\Cart.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 21:57:22 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 334.
+ 1 APPPATH\Controllers\Cart.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:06:12 --> TypeError: usort(): Argument #2 ($callback) must be a valid callback, function "customSort" not found or invalid function name
+in APPPATH\Controllers\Cart.php on line 287.
+ 1 APPPATH\Controllers\Cart.php(287): usort([...], 'customSort')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->movetoAuction()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:22:14 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 347.
+ 1 APPPATH\Controllers\Cart.php(347): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 347)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:42:40 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:42:43 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:43:06 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 346.
+ 1 APPPATH\Controllers\Cart.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 346)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:43:18 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:44:07 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:44:10 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:44:16 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:44:22 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:44:33 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 346.
+ 1 APPPATH\Controllers\Cart.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 346)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:55:22 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:55:25 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 366.
+ 1 APPPATH\Controllers\Cart.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 366)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 22:56:42 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 346.
+ 1 APPPATH\Controllers\Cart.php(346): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 346)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

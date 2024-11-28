@@ -1,0 +1,21 @@
+CRITICAL - 2024-04-06 07:31:53 --> ErrorException: Undefined property: stdClass::$step_garden_ids
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$step_garden_ids', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 07:34:43 --> ErrorException: Undefined property: stdClass::$step_garden_ids
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$step_garden_ids', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 07:35:28 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Auction.php on line 186.
+ 1 APPPATH\Controllers\Auction.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 186)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,125 @@
+.top-user-info{
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 15px 20px;
+    background: rgb(72,158,113);
+    background: linear-gradient(180deg, rgba(72,158,113,0.9906163148853291) 35%, rgba(18,123,64,1) 100%);
+}
+.title-name{
+    color: #fff;
+    font-size:20px;
+    margin: 0;
+}
+.top-user-info span{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.top-user-info span i{
+    margin-right: 3px;
+}
+.top-user-info span lable{
+    color: #d8f426;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.top-user-info .row{
+    align-items: center;
+}
+
+.our-session-info{
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 15px 20px;
+    background:#e4f8ed;
+}
+.data-itmes-list h3{
+    color:#1a1a1a;
+    font-size:16px;
+    margin: 0;
+
+}
+.data-itmes-list span{
+    font-size: 16px;
+    color:#1a1a1a;
+    font-weight: bold;
+    margin:0 5px;
+}
+.our-session-info-data{
+    padding:0px 0;
+}
+.our-session-info-data .table td, .our-session-info-data .table th{
+    padding: .53rem;
+    vertical-align: middle;
+}
+.our-session-info-data .table td .form-control{
+    max-width: 70px;
+  height: 30px;
+  border: 0px;
+  border-radius: 3px;
+  padding: 6px 5px;
+  font-size: 13px;
+}
+.our-session-info-data .table td{
+    font-size: 13px;
+    font-family: 'Source Sans Pro';
+}
+.our-session-info-data div.dataTables_paginate{
+    margin: 20px 0!important;
+}
+
+.book_link{
+    font-size: 15px;
+    text-align: right;
+    color: #fff;
+}
+.book_link i{
+    margin-right: 3px;
+}
+.book_link:hover{
+    color: #d8f426;
+}
+.user-data-info-view .card-body{
+    padding: 0;
+}
+
+/* Style for plus and minus buttons */
+.plus-btn, .minus-btn {
+    padding: 1px 2px;
+    cursor: pointer;
+    color: #1a1a1a;
+    border: none;
+    float: left;
+    clear: both;
+    
+}
+
+/* Style for form control */
+.input-groups{
+    position: relative;
+    width: 70px;
+}
+.form-control {
+    width:70px;
+    position: relative;
+    
+}
+.input-groups-append{
+    position: absolute;
+    top: 0px;
+    left: 52px;
+
+}
+.input-groups .form-control {
+     
+     -moz-appearance: textfield;
+  }
+  
+  .input-groups .form-control::-webkit-outer-spin-button,
+  .input-groups .form-control::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+  }

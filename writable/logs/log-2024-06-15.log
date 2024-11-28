@@ -1,0 +1,14 @@
+CRITICAL - 2024-06-15 15:21:18 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 377.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(377): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 377)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->movetoclosed()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-15 19:40:53 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 1868.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(1868): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 1868)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->cartToAuction()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,953 @@
+ERROR - 2024-07-24 11:12:35 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:12:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:35 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-24 11:12:37 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:12:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'2\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'2\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:37 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'2\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'2\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'2\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-24 11:12:40 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:12:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:12:40 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:13:13 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:19:01 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:20:51 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:21:13 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:21:18 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-24 11:53:20 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:53:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:20 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-24 11:53:24 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:53:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:24 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-24 11:53:37 --> mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-24 11:53:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-24 11:53:37 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.is_sold' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'1\')
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(477): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

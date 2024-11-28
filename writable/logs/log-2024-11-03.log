@@ -1,0 +1,21 @@
+CRITICAL - 2024-11-03 20:05:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-03 20:06:11 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-03 20:06:14 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

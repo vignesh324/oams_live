@@ -1,0 +1,251 @@
+CRITICAL - 2024-03-25 09:12:51 --> BadMethodCallException: Call to undefined method App\Models\AuctionItemModel::where_in
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\BuyerDashboard.php(39): CodeIgniter\Model->__call('where_in', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:13:50 --> InvalidArgumentException: whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(826): CodeIgniter\Database\BaseBuilder->_whereIn('auction_id', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->whereIn('auction_id', '1')
+ 3 APPPATH\Controllers\BuyerDashboard.php(39): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-25 09:15:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\BuyerDashboard.php(44): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-25 09:15:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BuyerDashboard.php(44): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:15:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BuyerDashboard.php(44): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:15:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BuyerDashboard.php(44): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-25 09:17:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\BuyerDashboard.php(43): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-25 09:17:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BuyerDashboard.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:17:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BuyerDashboard.php(43): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:17:01 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auction_items`
+WHERE `auction_id` IN :auction_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BuyerDashboard.php(43): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-25 09:22:41 --> mysqli_sql_exception: Unknown column 'auction_items.auction_qty' in 'field list' in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(auct...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(auct...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(auct...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(auct...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\BuyerDashboard.php(50): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-25 09:22:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.auction_qty' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN :auction_id:
+GROUP BY `garden`.`category_id`', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BuyerDashboard.php(50): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:22:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction_items.auction_qty' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN (\'1\')
+GROUP BY `garden`.`category_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN (\'1\')
+GROUP BY `garden`.`category_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN :auction_id:
+GROUP BY `garden`.`category_id`', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BuyerDashboard.php(50): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-25 09:22:42 --> [Caused by] mysqli_sql_exception: Unknown column 'auction_items.auction_qty' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN (\'1\')
+GROUP BY `garden`.`category_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN (\'1\')
+GROUP BY `garden`.`category_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN (\'1\')
+GROUP BY `garden`.`category_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(auction_items.auction_qty) as total_auction_qty, `auction_items`.*
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_id` IN :auction_id:
+GROUP BY `garden`.`category_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BuyerDashboard.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

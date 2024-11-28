@@ -1,0 +1,143 @@
+CRITICAL - 2024-05-20 11:15:11 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl, mbstring.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl, mbstring')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(68): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-05-20 11:18:50 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(68): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-05-20 16:56:53 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 16:57:06 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 16:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 16:58:38 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 17:01:14 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 17:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 17:03:40 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 17:06:28 --> Error: Call to undefined function curl_init()
+in APPPATH/Helpers/curl_helper.php on line 8.
+ 1 FCPATH/applications/USER/Controllers/USER.php(41): make_curl_request('http://eazyhosting.in/api/api/login', [...], 'POST', '{"email":"vv@gmail.com","password":"1234","role_id":2}')
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 17:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 17:08:03 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/USER.php on line 74.
+ 1 FCPATH/applications/USER/Controllers/USER.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/USER/Controllers/USER.php', 74)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 17:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 17:09:43 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/USER.php on line 74.
+ 1 FCPATH/applications/USER/Controllers/USER.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/USER/Controllers/USER.php', 74)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-20 17:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 17:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 17:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-20 21:15:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 252.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/BUYER/Controllers/Auctions.php', 252)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('5')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:16:08 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 252.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/BUYER/Controllers/Auctions.php', 252)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('5')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:47 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 252.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/BUYER/Controllers/Auctions.php', 252)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('5')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:59 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 252.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/BUYER/Controllers/Auctions.php', 252)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('5')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:06:04 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 168.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/applications/BUYER/Controllers/Auctions.php', 168)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->completedDetail('3')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:11:52 --> ErrorException: Undefined array key 0
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 43.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/applications/BUYER/Controllers/BiddingCenter.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('18')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:20:47 --> ErrorException: Undefined array key "vacumm_bag"
+in FCPATH/applications/USER/Views/Garden/edit.php on line 18.
+ 1 FCPATH/applications/USER/Views/Garden/edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "vacumm_bag"', '/var/www/html/applications/USER/Views/Garden/edit.php', 18)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/applications/USER/Views/Garden/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Garden\\edit', [], true)
+ 5 FCPATH/applications/USER/Controllers/Garden.php(161): view('Applications\\USER\\Views\\Garden\\edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->show()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:22:51 --> ErrorException: Undefined array key "vacumm_bag"
+in FCPATH/applications/USER/Views/Garden/edit.php on line 18.
+ 1 FCPATH/applications/USER/Views/Garden/edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "vacumm_bag"', '/var/www/html/applications/USER/Views/Garden/edit.php', 18)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/applications/USER/Views/Garden/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Garden\\edit', [], true)
+ 5 FCPATH/applications/USER/Controllers/Garden.php(161): view('Applications\\USER\\Views\\Garden\\edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Garden->show()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Garden))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

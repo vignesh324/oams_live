@@ -1,0 +1,48 @@
+CRITICAL - 2024-07-26 10:48:34 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 517.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:12:22 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 517.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:41:48 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:42:24 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:46:01 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:46:50 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:47:38 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 12:49:01 --> Error: Undefined constant "App\Controllers\UP_SALE_FROM_DATE"
+in APPPATH/Controllers/Reports.php on line 460.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

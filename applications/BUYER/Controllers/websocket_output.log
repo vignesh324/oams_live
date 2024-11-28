@@ -1,0 +1,9 @@
+PHP Fatal error:  Uncaught Error: Class "App\Libraries\WebSocket\BiddingServer" not found in F:\xampp\htdocs\OAMS_Repo\frontend\websocket_init.php:16
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\OAMS_Repo\frontend\websocket_init.php on line 16
+
+Fatal error: Uncaught Error: Class "App\Libraries\WebSocket\BiddingServer" not found in F:\xampp\htdocs\OAMS_Repo\frontend\websocket_init.php:16
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\OAMS_Repo\frontend\websocket_init.php on line 16

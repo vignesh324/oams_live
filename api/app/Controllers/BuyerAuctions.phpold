@@ -1,0 +1,90 @@
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\HTTP\Request;
+use App\Models\AuctionModel;
+use App\Models\AuctionItemModel;
+use App\Models\AuctionGardenOrderModel;
+use App\Models\AuctionStockModel;
+use App\Models\CartModel;
+use App\Models\CenterModel;
+use App\Models\SellerModel;
+use App\Models\GardenModel;
+use App\Models\WarehouseModel;
+use App\Models\GradeModel;
+use App\Models\InwardItemModel;
+use App\Models\InwardModel;
+use App\Models\CenterGardenModel;
+use App\Models\StockModel;
+use CodeIgniter\API\ResponseTrait;
+use \Firebase\JWT\JWT;
+use Config\Services;
+
+
+class BuyerAuctions extends ResourceController
+{
+    use ResponseTrait;
+    protected $session; // Define session as a class property
+
+    public function __construct()
+    {
+        $this->session = Services::session(); // Initialize session in the constructor
+    }
+    public function upcomingAuctions()
+    {
+        //echo '<pre>';print_r("hhh");exit;
+        $model = new AuctionModel();
+        $current_date = date('Y-m-d');
+        $current_time = date("H:i:s");
+        $auctions = $model->select('auction.*, center.name AS center_name')
+    ->join('center', 'center.id = auction.center_id', 'left')
+    ->where('auction.status', 1)
+    ->where('auction.is_publish', 1)
+    ->where('auction.date >', $current_date)
+    ->orWhere([
+        'auction.date' => $current_date,
+        'auction.start_time >' => $current_time
+    ])
+    ->orderBy('auction.id', 'ASC')
+    ->findAll();
+        $data['auction'] = $auctions;
+        return $this->respond($data);
+    }
+
+    public function completedAuctions()
+    {
+        //echo '<pre>';print_r("hhh");exit;
+        $model = new AuctionModel();
+        $current_date = date('Y-m-d');
+        $current_time = date("H:i:s");
+        $auctions = $model->select('auction.*, center.name AS center_name')
+            ->join('center', 'center.id = auction.center_id', 'left')
+            ->where('auction.status', 1)
+            ->where('date <=', $current_date)
+            ->where('end_time <=', $current_time)
+            ->where('is_publish', 1)
+            ->orderBy('auction.id', 'DESC')
+            ->findAll();
+        $data['auction'] = $auctions;
+        return $this->respond($data);
+    }
+
+
+    public function getAuctionItems($id = null)
+    {
+
+        $model = new AuctionItemModel();
+
+            $auction = $model->select('auction_items.*,inward_items.weight_net,inward_items.total_net,grade.name AS gradename,garden.name AS gardenname,inward_items.bag_type')
+                ->join('inward_items', 'inward_items.id = auction_items.inward_item_id', 'left')
+                ->join('inward', 'inward_items.inward_id = inward.id', 'left')
+                ->join('garden', 'inward.garden_id = garden.id', 'left')
+                ->join('grade', 'grade.id = inward_items.grade_id', 'left')
+                ->where('auction_id', $id)->findAll();
+        $data['auction'] = $auction;
+        return $this->respond($data);
+    }
+    
+}

@@ -1,0 +1,31 @@
+CRITICAL - 2024-03-27 04:26:20 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH\applications\USER\Controllers\AuctionManagement.php on line 88.
+ 1 FCPATH\applications\USER\Controllers\AuctionManagement.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Controllers\\AuctionManagement.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\AuctionManagement->show()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\AuctionManagement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 04:26:38 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH\applications\USER\Controllers\AuctionManagement.php on line 88.
+ 1 FCPATH\applications\USER\Controllers\AuctionManagement.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Controllers\\AuctionManagement.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\AuctionManagement->show()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\AuctionManagement))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:38:16 --> Error: Call to undefined function array_column_recursive()
+in FCPATH\applications\USER\Views\sidebar.php on line 23.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\sidebar', [], true)
+ 4 FCPATH\applications\USER\Controllers\SoldStock.php(23): view('Applications\\USER\\Views\\sidebar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\SoldStock->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\SoldStock))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:57:57 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH\applications\BUYER\Controllers\BiddingCenter.php on line 54.
+ 1 FCPATH\applications\BUYER\Controllers\BiddingCenter.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\BUYER\\Controllers\\BiddingCenter.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

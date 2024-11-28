@@ -1,0 +1,39 @@
+CRITICAL - 2024-03-06 18:52:00 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Buyer.php on line 195.
+ 1 FCPATH/applications/USER/Controllers/Buyer.php(195): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Buyer->store()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-06 19:26:21 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/SampleReceipt.php on line 107.
+ 1 FCPATH/applications/USER/Controllers/SampleReceipt.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\SampleReceipt->create()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-06 19:26:30 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/SampleReceipt.php on line 107.
+ 1 FCPATH/applications/USER/Controllers/SampleReceipt.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\SampleReceipt->create()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-06 19:36:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Applications\USER\Views\Center\assignGarden.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 FCPATH/applications/USER/Controllers/Center.php(302): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Center->AssignGarden()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-06 19:36:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Applications\USER\Views\Center\assignGarden.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 FCPATH/applications/USER/Controllers/Center.php(302): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Center->AssignGarden()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,42 @@
+CRITICAL - 2024-05-17 00:11:44 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-17 00:11:48 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-17 11:31:20 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-17 11:31:23 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-17 17:17:38 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-17 17:17:42 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,467 @@
+CRITICAL - 2024-07-27 11:04:17 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:04:54 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:04:59 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:05:16 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:05:24 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:05:36 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 11:05:39 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 426.
+ 1 APPPATH/Controllers/Cart.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 426)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-27 17:48:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-27 17:48:24 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 17:48:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 17:48:24 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-27 17:48:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`....', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`....')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`....')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`....', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-27 17:48:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 17:48:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 17:48:28 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quant' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= \'2024-07-01\'
+AND DATE(auction.date) <= \'2024-07-31\'
+AND `auction`.`id` IN (\'4\')
+AND `invoice`.`buyer_id` = \'3\'
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `grade`.`type`, `garden`.`id` AS `garden_id`, `grade`.`id` AS `grade_id`, `garden`.`name` AS `garden_name`, `grade`.`name` AS `grade_name`, `auction`.`sale_no`, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS sold_quantity, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) AS unsold_quantity, SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) AS sold_quantity1, SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) AS unsold_quantity1, AVG(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) AS avg_sold_price, `buyer`.`id` AS `buyer_id`, `buyer`.`name` AS `buyer_name`, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity * inward_items.weight_net ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_sold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 0 THEN auction_items.auction_quantity ELSE 0 END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_unsold_quantity1, (SELECT SUM(CASE WHEN auction_items.is_sold = 1 THEN invoice_item.bid_price ELSE NULL END) 
+            where DATE(auction.date) >= "2024-01-01" AND DATE(auction.date) <= "2024-12-31") AS upsale_avg_sold_price
+FROM `auction_items`
+LEFT JOIN `auction` ON `auction`.`id` = `auction_items`.`auction_id`
+LEFT JOIN `invoice_item` ON `invoice_item`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `invoice` ON `invoice`.`id` = `invoice_item`.`invoice_id`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `buyer` ON `buyer`.`id` = `invoice`.`buyer_id`
+WHERE DATE(auction.date) >= :DATE(auction.date):
+AND DATE(auction.date) <= :DATE(auction.date).1:
+AND `auction`.`id` IN :auction.id:
+AND `invoice`.`buyer_id` = :invoice.buyer_id:
+GROUP BY `garden`.`id`, `grade`.`id`, `buyer`.`id`, `auction`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reports.php(498): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

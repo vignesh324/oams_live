@@ -1,0 +1,162 @@
+CRITICAL - 2024-06-25 17:58:19 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 166.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 166)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->Store()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:01:16 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 166.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 166)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->Store()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:03:47 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 166.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 166)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->Store()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:05:07 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:08:10 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:11:23 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:13:19 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:22:51 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:22:54 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:30:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:32:30 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:34:33 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:37:05 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:54:12 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:59:17 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/InwardReturn.php on line 235.
+ 1 FCPATH/applications/USER/Controllers/InwardReturn.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/InwardReturn.php', 235)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:01:05 --> ErrorException: Undefined array key "invoice_id"
+in FCPATH/applications/USER/Views/InwardReturn/view.php on line 14.
+ 1 FCPATH/applications/USER/Views/InwardReturn/view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_id"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/InwardReturn/view.php', 14)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/InwardReturn/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\InwardReturn\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/InwardReturn.php(80): view('Applications\\USER\\Views\\InwardReturn\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\InwardReturn->show()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\InwardReturn))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:12:18 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:45:19 --> ErrorException: Undefined array key "invoice_no"
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 85.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "invoice_no"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 85)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(70): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

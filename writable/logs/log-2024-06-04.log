@@ -1,0 +1,49 @@
+CRITICAL - 2024-06-04 18:45:48 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Seller.php on line 284.
+ 1 FCPATH/applications/USER/Controllers/Seller.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Seller.php', 284)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Seller->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Seller))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 18:45:52 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Seller.php on line 284.
+ 1 FCPATH/applications/USER/Controllers/Seller.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Seller.php', 284)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Seller->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Seller))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 18:49:00 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Seller.php on line 284.
+ 1 FCPATH/applications/USER/Controllers/Seller.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Seller.php', 284)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Seller->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Seller))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 19:05:39 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 341.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->GetGardenGrades()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 19:06:12 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 341.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->GetGardenGrades()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 19:07:03 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 341.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->GetGardenGrades()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 19:11:07 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 379.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 379)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->View('Š{è‰Ç©®)í†Ù¥')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,18 @@
+CRITICAL - 2024-08-03 22:42:26 --> ErrorException: Undefined array key "auction"
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 409.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction"', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 409)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->completedAuctions('22')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-03 22:45:13 --> ErrorException: Undefined array key "seller_name"
+in FCPATH/applications/USER/Views/Invoice/index.php on line 84.
+ 1 FCPATH/applications/USER/Views/Invoice/index.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seller_name"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/index.php', 84)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Invoice\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Invoice.php(53): view('Applications\\USER\\Views\\Invoice\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Invoice->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Invoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

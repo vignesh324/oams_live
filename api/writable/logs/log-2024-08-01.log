@@ -1,0 +1,423 @@
+ERROR - 2024-08-01 20:06:55 --> auction floor entry auctionItemId:72, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:06:55 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '72'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '72'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:06:55 --> initial bidding value HBP:0, HABP:120, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:06:55 --> E006 HBP:0, HABP:120, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:06:55 --> auction floor ended HBP:0, HABP:120, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:06:55 --> auction start value:{"auction_item_id":"72","buyer_id":"2","bid_price":"110","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:06:55
+ERROR - 2024-08-01 20:07:55 --> bid calculation initiated auctionItemId:72, 2024-08-01 08:07:55
+ERROR - 2024-08-01 20:07:55 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '72'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:07:55
+ERROR - 2024-08-01 20:07:55 --> Error code 001. HBP:110.00,HABP: 120.00, 2024-08-01 08:07:55
+ERROR - 2024-08-01 20:07:55 --> Error code 002. HBP:110.00,RP: 115, 2024-08-01 08:07:55
+ERROR - 2024-08-01 20:07:55 --> bid calculation Ended auctionItemId:72, 2024-08-01 08:07:55
+ERROR - 2024-08-01 20:08:25 --> current items data:[{"id":"72","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"14","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"110","reverse_price":"115","high_price":"0","valuation_price":"117","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:02:54","updated_at":"2024-08-01 20:03:22","created_by":"3","updated_by":"3"}], 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> Error code L001. auctionItemId:72, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> bid calculation initiated auctionItemId:72, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '72'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> Error code 001. HBP:115.00,HABP: 120.00, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> Error code 002. HBP:115.00,RP: 115, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> bid calculation Ended auctionItemId:72, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> Error code L002. auctionItemId:72, 2024-08-01 08:08:25
+ERROR - 2024-08-01 20:08:25 --> Error code L003. auctionItemId:72, 2024-08-01 08:08:25
+CRITICAL - 2024-08-01 20:27:33 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-01 20:27:57 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-01 20:28:00 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-01 20:31:08 --> auction floor entry auctionItemId:73, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> initial bidding value HBP:0, HABP:120, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> E006 HBP:0, HABP:120, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> auction floor ended HBP:0, HABP:120, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> auction start value:{"auction_item_id":"73","buyer_id":"2","bid_price":"0","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> auction floor entry auctionItemId:74, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> initial bidding value HBP:0, HABP:103, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> E006 HBP:0, HABP:103, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> auction floor ended HBP:0, HABP:103, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:08 --> auction start value:{"auction_item_id":"74","buyer_id":"2","bid_price":"0","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:31:08
+ERROR - 2024-08-01 20:31:09 --> auction floor entry auctionItemId:73, 2024-08-01 08:31:09
+ERROR - 2024-08-01 20:31:09 --> auction floor entry auctionItemId:74, 2024-08-01 08:31:09
+ERROR - 2024-08-01 20:31:10 --> auction floor entry auctionItemId:73, 2024-08-01 08:31:10
+ERROR - 2024-08-01 20:31:10 --> auction floor entry auctionItemId:74, 2024-08-01 08:31:10
+ERROR - 2024-08-01 20:32:07 --> bid calculation initiated auctionItemId:73, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 001. HBP:0.00,HABP: 120.00, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation Ended auctionItemId:73, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation initiated auctionItemId:74, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 001. HBP:0.00,HABP: 103.00, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation Ended auctionItemId:74, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation initiated auctionItemId:73, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 001. HBP:0.00,HABP: 120.00, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation Ended auctionItemId:73, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation initiated auctionItemId:74, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 001. HBP:0.00,HABP: 103.00, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:07 --> bid calculation Ended auctionItemId:74, 2024-08-01 08:32:07
+ERROR - 2024-08-01 20:32:08 --> bid calculation initiated auctionItemId:73, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> Error code 001. HBP:0.00,HABP: 120.00, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> bid calculation Ended auctionItemId:73, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> bid calculation initiated auctionItemId:74, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> Error code 001. HBP:0.00,HABP: 103.00, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:08 --> bid calculation Ended auctionItemId:74, 2024-08-01 08:32:08
+ERROR - 2024-08-01 20:32:37 --> current items data:[{"id":"73","inward_invoice_id":"V2","inward_item_id":"2","auction_id":"15","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"13","base_price":"0","reverse_price":"0","high_price":"0","valuation_price":"0","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:28:03","updated_at":"2024-08-01 20:28:03","created_by":"3","updated_by":"0"},{"id":"74","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"15","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"0","reverse_price":"0","high_price":"0","valuation_price":"0","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:28:03","updated_at":"2024-08-01 20:28:03","created_by":"3","updated_by":"0"}], 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L001. auctionItemId:73, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> bid calculation initiated auctionItemId:73, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '73'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code 001. HBP:0.00,HABP: 120.00, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> bid calculation Ended auctionItemId:73, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L002. auctionItemId:73, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L003. auctionItemId:73, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L001. auctionItemId:74, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> bid calculation initiated auctionItemId:74, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '74'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code 001. HBP:0.00,HABP: 103.00, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code 002. HBP:0.00,RP: 0, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> bid calculation Ended auctionItemId:74, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L002. auctionItemId:74, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:37 --> Error code L003. auctionItemId:74, 2024-08-01 08:32:37
+ERROR - 2024-08-01 20:32:38 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:38 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '75'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '75'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:38 --> initial bidding value HBP:0, HABP:120, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:38 --> E006 HBP:0, HABP:120, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:38 --> auction floor ended HBP:0, HABP:120, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:38 --> auction start value:{"auction_item_id":"75","buyer_id":"2","bid_price":"0","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:32:38
+ERROR - 2024-08-01 20:32:39 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:39
+ERROR - 2024-08-01 20:32:47 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:47
+ERROR - 2024-08-01 20:32:49 --> current items data:[], 2024-08-01 08:32:49
+ERROR - 2024-08-01 20:32:50 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:50
+ERROR - 2024-08-01 20:32:51 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:51
+ERROR - 2024-08-01 20:32:51 --> auction floor entry auctionItemId:75, 2024-08-01 08:32:51
+ERROR - 2024-08-01 20:33:21 --> auction floor entry auctionItemId:75, 2024-08-01 08:33:21
+ERROR - 2024-08-01 20:33:24 --> auction floor entry auctionItemId:75, 2024-08-01 08:33:24
+ERROR - 2024-08-01 20:33:47 --> current items data:[], 2024-08-01 08:33:47
+ERROR - 2024-08-01 20:33:47 --> auction floor entry auctionItemId:75, 2024-08-01 08:33:47
+ERROR - 2024-08-01 20:33:48 --> auction floor entry auctionItemId:75, 2024-08-01 08:33:48
+ERROR - 2024-08-01 20:34:28 --> auction floor entry auctionItemId:75, 2024-08-01 08:34:28
+ERROR - 2024-08-01 20:34:31 --> auction floor entry auctionItemId:75, 2024-08-01 08:34:31
+ERROR - 2024-08-01 20:34:47 --> bid calculation initiated auctionItemId:75, 2024-08-01 08:34:47
+ERROR - 2024-08-01 20:34:47 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '75'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:34:47
+ERROR - 2024-08-01 20:34:47 --> Error code 001. HBP:3.00,HABP: 120.00, 2024-08-01 08:34:47
+ERROR - 2024-08-01 20:34:47 --> Error code 002. HBP:3.00,RP: 100, 2024-08-01 08:34:47
+ERROR - 2024-08-01 20:34:47 --> bid calculation Ended auctionItemId:75, 2024-08-01 08:34:47
+ERROR - 2024-08-01 20:34:57 --> auction floor entry auctionItemId:75, 2024-08-01 08:34:57
+ERROR - 2024-08-01 20:35:00 --> auction floor entry auctionItemId:75, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:00 --> bid calculation initiated auctionItemId:75, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:00 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '75'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:00 --> Error code 001. HBP:100.00,HABP: 120.00, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:00 --> Error code 002. HBP:100.00,RP: 100, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:00 --> bid calculation Ended auctionItemId:75, 2024-08-01 08:35:00
+ERROR - 2024-08-01 20:35:16 --> current items data:[{"id":"75","inward_invoice_id":"V3","inward_item_id":"3","auction_id":"15","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"0","reverse_price":"100","high_price":"0","valuation_price":"0","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:28:03","updated_at":"2024-08-01 20:33:18","created_by":"3","updated_by":"0"}], 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> Error code L001. auctionItemId:75, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> bid calculation initiated auctionItemId:75, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '75'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> Error code 001. HBP:100.00,HABP: 120.00, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> Error code 002. HBP:100.00,RP: 100, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> bid calculation Ended auctionItemId:75, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> Error code L002. auctionItemId:75, 2024-08-01 08:35:16
+ERROR - 2024-08-01 20:35:16 --> Error code L003. auctionItemId:75, 2024-08-01 08:35:16
+CRITICAL - 2024-08-01 20:35:49 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-01 20:36:08 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-01 20:36:10 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-01 20:37:35 --> current items data:[], 2024-08-01 08:37:35
+ERROR - 2024-08-01 20:37:35 --> current items data:[], 2024-08-01 08:37:35
+ERROR - 2024-08-01 20:40:18 --> auction floor entry auctionItemId:76, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> initial bidding value HBP:0, HABP:120, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> E006 HBP:0, HABP:120, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction floor ended HBP:0, HABP:120, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction start value:{"auction_item_id":"76","buyer_id":"2","bid_price":"98","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction floor entry auctionItemId:77, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> initial bidding value HBP:0, HABP:100, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> E006 HBP:0, HABP:100, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction floor ended HBP:0, HABP:100, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction start value:{"auction_item_id":"77","buyer_id":"2","bid_price":"92","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction floor entry auctionItemId:76, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:18 --> auction floor entry auctionItemId:77, 2024-08-01 08:40:18
+ERROR - 2024-08-01 20:40:20 --> auction floor entry auctionItemId:76, 2024-08-01 08:40:20
+ERROR - 2024-08-01 20:40:20 --> auction floor entry auctionItemId:77, 2024-08-01 08:40:20
+ERROR - 2024-08-01 20:40:21 --> auction floor entry auctionItemId:76, 2024-08-01 08:40:21
+ERROR - 2024-08-01 20:40:21 --> auction floor entry auctionItemId:77, 2024-08-01 08:40:21
+ERROR - 2024-08-01 20:41:17 --> bid calculation initiated auctionItemId:76, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 001. HBP:98.00,HABP: 120.00, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 002. HBP:98.00,RP: 100, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation initiated auctionItemId:76, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation Ended auctionItemId:76, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation initiated auctionItemId:77, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 001. HBP:92.00,HABP: 100.00, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 002. HBP:92.00,RP: 98, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 001. HBP:100.00,HABP: 120.00, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 002. HBP:100.00,RP: 100, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation Ended auctionItemId:77, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation Ended auctionItemId:76, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation initiated auctionItemId:77, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 001. HBP:98.00,HABP: 100.00, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> Error code 002. HBP:98.00,RP: 98, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:17 --> bid calculation Ended auctionItemId:77, 2024-08-01 08:41:17
+ERROR - 2024-08-01 20:41:18 --> bid calculation initiated auctionItemId:76, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> Error code 001. HBP:100.00,HABP: 120.00, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> Error code 002. HBP:100.00,RP: 100, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> bid calculation Ended auctionItemId:76, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> bid calculation initiated auctionItemId:77, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> Error code 001. HBP:98.00,HABP: 100.00, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> Error code 002. HBP:98.00,RP: 98, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:18 --> bid calculation Ended auctionItemId:77, 2024-08-01 08:41:18
+ERROR - 2024-08-01 20:41:48 --> current items data:[{"id":"76","inward_invoice_id":"V2","inward_item_id":"2","auction_id":"16","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"13","base_price":"98","reverse_price":"100","high_price":"0","valuation_price":"116","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:36:14","updated_at":"2024-08-01 20:37:05","created_by":"3","updated_by":"3"},{"id":"77","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"16","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"92","reverse_price":"98","high_price":"0","valuation_price":"100","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:36:14","updated_at":"2024-08-01 20:37:05","created_by":"3","updated_by":"3"}], 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L001. auctionItemId:76, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> bid calculation initiated auctionItemId:76, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '76'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code 001. HBP:100.00,HABP: 120.00, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code 002. HBP:100.00,RP: 100, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> bid calculation Ended auctionItemId:76, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L002. auctionItemId:76, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L003. auctionItemId:76, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L001. auctionItemId:77, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> bid calculation initiated auctionItemId:77, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '77'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code 001. HBP:98.00,HABP: 100.00, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code 002. HBP:98.00,RP: 98, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> bid calculation Ended auctionItemId:77, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L002. auctionItemId:77, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:48 --> Error code L003. auctionItemId:77, 2024-08-01 08:41:48
+ERROR - 2024-08-01 20:41:49 --> auction floor entry auctionItemId:78, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:49 --> min value query HBP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '78'
+AND `min_price` != 0
+ORDER BY `min_price` DESC
+ LIMIT 1, max value query HABP:SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '78'
+AND `max_price` != 0
+ORDER BY `max_price` DESC
+ LIMIT 1, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:49 --> initial bidding value HBP:0, HABP:1258, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:49 --> E006 HBP:0, HABP:1258, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:49 --> auction floor ended HBP:0, HABP:1258, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:49 --> auction start value:{"auction_item_id":"78","buyer_id":"3","bid_price":"86","bid_type":1,"sq":1,"bq":1}, 2024-08-01 08:41:49
+ERROR - 2024-08-01 20:41:51 --> auction floor entry auctionItemId:78, 2024-08-01 08:41:51
+ERROR - 2024-08-01 20:42:50 --> bid calculation initiated auctionItemId:78, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '78'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> Error code 006. HBP:86.00,HABP: 1,258.00, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> bid calculation Ended auctionItemId:78, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> bid calculation initiated auctionItemId:78, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '78'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> Error code 006. HBP:86.00,HABP: 1,258.00, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:42:50 --> bid calculation Ended auctionItemId:78, 2024-08-01 08:42:50
+ERROR - 2024-08-01 20:43:22 --> current items data:[{"id":"78","inward_invoice_id":"V3","inward_item_id":"3","auction_id":"16","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"86","reverse_price":"92","high_price":"0","valuation_price":"98","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-01 20:36:14","updated_at":"2024-08-01 20:37:05","created_by":"3","updated_by":"3"}], 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> Error code L001. auctionItemId:78, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> bid calculation initiated auctionItemId:78, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> autoBidSql:SELECT DISTINCT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = '78'
+AND `max_price` != 0
+ORDER BY `max_price` DESC, `updated_at` ASC, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> Error code 006. HBP:86.00,HABP: 1,258.00, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> bid calculation Ended auctionItemId:78, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> Error code L002. auctionItemId:78, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:43:22 --> Error code L003. auctionItemId:78, 2024-08-01 08:43:22
+ERROR - 2024-08-01 20:44:43 --> current items data:[], 2024-08-01 08:44:43
+ERROR - 2024-08-01 20:44:43 --> current items data:[], 2024-08-01 08:44:43

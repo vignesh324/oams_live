@@ -1,0 +1,7 @@
+CRITICAL - 2024-03-20 19:25:45 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH\applications\USER\Controllers\Inward.php on line 136.
+ 1 FCPATH\applications\USER\Controllers\Inward.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Controllers\\Inward.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->Store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

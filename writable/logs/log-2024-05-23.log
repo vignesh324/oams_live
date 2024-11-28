@@ -1,0 +1,7 @@
+CRITICAL - 2024-05-23 17:07:18 --> ErrorException: Undefined array key 0
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 43.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

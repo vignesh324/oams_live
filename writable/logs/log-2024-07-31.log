@@ -1,0 +1,104 @@
+CRITICAL - 2024-07-31 10:29:33 --> ErrorException: Undefined variable $value
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 119.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 119)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:34:02 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:34:04 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:35:33 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:36:37 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:43:31 --> ErrorException: Undefined array key "auction_status"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 132.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_status"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 132)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:44:07 --> ErrorException: Undefined array key "auction_status"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 132.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_status"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 132)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:44:42 --> ErrorException: Undefined array key "auction_status"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 132.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_status"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 132)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:44:44 --> ErrorException: Undefined array key "auction_status"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 132.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_status"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 132)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:47:02 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:47:05 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('17')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 16:18:10 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/Auctions.php on line 297.
+ 1 FCPATH/applications/BUYER/Controllers/Auctions.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/Auctions.php', 297)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

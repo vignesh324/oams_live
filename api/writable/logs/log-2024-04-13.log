@@ -1,0 +1,9 @@
+CRITICAL - 2024-04-13 00:58:59 --> TypeError: Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 740.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(714): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'OR ', null)
+ 2 SYSTEMPATH\Model.php(872): CodeIgniter\Database\BaseBuilder->orWhere(Object(Closure))
+ 3 APPPATH\Controllers\BuyerDashboard.php(46): CodeIgniter\Model->__call('orWhere', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BuyerDashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

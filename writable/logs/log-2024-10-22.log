@@ -1,0 +1,155 @@
+CRITICAL - 2024-10-22 15:42:43 --> ErrorException: Undefined array key "auction_id"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 603.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(603): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_id"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 603)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('4')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 15:45:38 --> ErrorException: Undefined array key "auction_id"
+in FCPATH/applications/BUYER/Views/biddingFrame.php on line 603.
+ 1 FCPATH/applications/BUYER/Views/biddingFrame.php(603): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_id"', '/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php', 603)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/BUYER/Views/biddingFrame.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\BUYER\\Views\\biddingFrame', [], true)
+ 5 FCPATH/applications/BUYER/Controllers/Auctions.php(297): view('Applications\\BUYER\\Views\\biddingFrame', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->auctionLots('4')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:10:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:11:59 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:53 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:53 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:55 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:55 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:55 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:12:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:13:00 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:14:41 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:15:06 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:15:06 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:15:06 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:15 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:21 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('7')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:25 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('7')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:25 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('7')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:25 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('7')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-22 20:17:34 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/BUYER/Controllers/BiddingCenter.php on line 76.
+ 1 FCPATH/applications/BUYER/Controllers/BiddingCenter.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/BUYER/Controllers/BiddingCenter.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\BUYER\Controllers\BiddingCenter->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\BiddingCenter))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

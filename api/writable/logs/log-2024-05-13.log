@@ -1,0 +1,142 @@
+ERROR - 2024-05-13 20:19:22 --> mysqli_sql_exception: Column 'auction_id' in where clause is ambiguous in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `inward_...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\Auction.php(344): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\Auction->showAuctionItems('2')
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-13 20:19:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'auction_id' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auction.php(344): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->showAuctionItems('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 20:19:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'auction_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auction.php(344): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->showAuctionItems('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 20:19:22 --> [Caused by] mysqli_sql_exception: Column 'auction_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `inward_items`.*, `auction_items`.`id` AS `auctionitem_id`, `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `grade`.`name` AS `grade_name`, `center`.`name` AS `center_name`, `garden`.`name` AS `garden_name`, `warehouse`.`name` AS `warehouse_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward`.`id` = `inward_items`.`inward_id`
+LEFT JOIN `garden` ON `garden`.`id` = `inward`.`garden_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN `warehouse` ON `warehouse`.`id` = `inward`.`warehouse_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `center` ON `center`.`id` = `inward`.`center_id`
+WHERE `auction_id` = :auction_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auction.php(344): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->showAuctionItems('2')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 23:31:54 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 23:31:59 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Cart.php on line 494.
+ 1 APPPATH\Controllers\Cart.php(494): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 494)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 23:32:37 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Cart.php on line 470.
+ 1 APPPATH\Controllers\Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Cart.php', 470)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

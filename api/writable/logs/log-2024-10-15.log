@@ -1,0 +1,500 @@
+CRITICAL - 2024-10-15 12:58:51 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 12:59:00 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 12:59:03 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-15 13:11:30 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:11:30 --> Manual bid only
+ERROR - 2024-10-15 13:13:01 --> current items data:[{"id":"85","inward_invoice_id":"W1","inward_item_id":"11","auction_id":"8","lot_no":"1","lot_set":"1","auction_quantity":"40","sample_quantity":"0","auction_each_net":"21","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"11000","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"86","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"8","lot_no":"2","lot_set":"1","auction_quantity":"42","sample_quantity":"0","auction_each_net":"9","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"140","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L001. auctionItemId:85, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> bid calculation initiated auctionItemId:85, 2
+ERROR - 2024-10-15 13:13:01 --> bidding value array:{"id":"169","auction_item_id":"85","buyer_id":"3","bid_price":"110.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:11:30","updated_at":"2024-10-15 13:11:30"}
+ERROR - 2024-10-15 13:13:01 --> Error code 007. HBP:110.00, HABP: 110, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> bid calculation Ended auctionItemId:85, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L002. auctionItemId:85, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L003. auctionItemId:85, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L001. auctionItemId:86, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> bid calculation initiated auctionItemId:86, 2
+ERROR - 2024-10-15 13:13:01 --> bidding value array:{"id":"170","auction_item_id":"86","buyer_id":"1","bid_price":"200.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:11:30","updated_at":"2024-10-15 13:11:30"}
+ERROR - 2024-10-15 13:13:01 --> Error code 006. HBP:200.00, HABP: 0, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> bid calculation Ended auctionItemId:86, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L002. auctionItemId:86, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:01 --> Error code L003. auctionItemId:86, 2024-10-15 01:13:01
+ERROR - 2024-10-15 13:13:02 --> Auto bid only
+ERROR - 2024-10-15 13:13:02 --> Auto bid only:1
+ERROR - 2024-10-15 13:13:02 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:13:56 --> current items data:[], 2024-10-15 01:13:56
+ERROR - 2024-10-15 13:14:32 --> current items data:[{"id":"87","inward_invoice_id":"W2","inward_item_id":"12","auction_id":"8","lot_no":"3","lot_set":"2","auction_quantity":"41","sample_quantity":"0","auction_each_net":"23","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"113","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"88","inward_invoice_id":"WD3","inward_item_id":"43","auction_id":"8","lot_no":"4","lot_set":"2","auction_quantity":"29","sample_quantity":"0","auction_each_net":"6","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"108","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L001. auctionItemId:87, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> bid calculation initiated auctionItemId:87, 2
+ERROR - 2024-10-15 13:14:32 --> bidding value array:{"id":"171","auction_item_id":"87","buyer_id":"3","bid_price":"111.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:13:02","updated_at":"2024-10-15 13:13:02"}
+ERROR - 2024-10-15 13:14:32 --> Error code 001. HBP:111.00, HABP: 140, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code 003. HBP:111.00, RP: 105, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code 005. HBP:111.00, SLHABP: 110, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> bid calculation Ended auctionItemId:87, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L002. auctionItemId:87, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L003. auctionItemId:87, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L001. auctionItemId:88, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> bid calculation initiated auctionItemId:88, 2
+ERROR - 2024-10-15 13:14:32 --> bidding value array:{"id":"172","auction_item_id":"88","buyer_id":"1","bid_price":"102.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:13:02","updated_at":"2024-10-15 13:13:02"}
+ERROR - 2024-10-15 13:14:32 --> Error code 001. HBP:102.00, HABP: 300, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code 002. HBP:102.00, RP: 105, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> bid calculation Ended auctionItemId:88, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L002. auctionItemId:88, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:32 --> Error code L003. auctionItemId:88, 2024-10-15 01:14:32
+ERROR - 2024-10-15 13:14:34 --> Auto bid only
+ERROR - 2024-10-15 13:14:34 --> Auto bid only:1
+ERROR - 2024-10-15 13:14:34 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:16:05 --> current items data:[{"id":"89","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"8","lot_no":"5","lot_set":"3","auction_quantity":"42","sample_quantity":"0","auction_each_net":"4","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"108","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"90","inward_invoice_id":"W3","inward_item_id":"13","auction_id":"8","lot_no":"6","lot_set":"3","auction_quantity":"46","sample_quantity":"0","auction_each_net":"14","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"108","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L001. auctionItemId:89, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> bid calculation initiated auctionItemId:89, 2
+ERROR - 2024-10-15 13:16:05 --> bidding value array:{"id":"174","auction_item_id":"89","buyer_id":"1","bid_price":"151.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:14:34","updated_at":"2024-10-15 13:14:34"}
+ERROR - 2024-10-15 13:16:05 --> Error code 001. HBP:151.00, HABP: 300, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code 003. HBP:151.00, RP: 105, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code 005. HBP:151.00, SLHABP: 150, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> bid calculation Ended auctionItemId:89, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L002. auctionItemId:89, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L003. auctionItemId:89, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L001. auctionItemId:90, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> bid calculation initiated auctionItemId:90, 2
+ERROR - 2024-10-15 13:16:05 --> bidding value array:{"id":"175","auction_item_id":"90","buyer_id":"1","bid_price":"200.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:14:34","updated_at":"2024-10-15 13:14:34"}
+ERROR - 2024-10-15 13:16:05 --> Error code 007. HBP:200.00, HABP: 200, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> bid calculation Ended auctionItemId:90, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L002. auctionItemId:90, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:05 --> Error code L003. auctionItemId:90, 2024-10-15 01:16:05
+ERROR - 2024-10-15 13:16:06 --> current items data:[], 2024-10-15 01:16:06
+ERROR - 2024-10-15 13:16:06 --> Auto bid only
+ERROR - 2024-10-15 13:16:06 --> Auto bid only:1
+ERROR - 2024-10-15 13:17:37 --> current items data:[{"id":"91","inward_invoice_id":"WA5","inward_item_id":"25","auction_id":"8","lot_no":"7","lot_set":"4","auction_quantity":"42","sample_quantity":"0","auction_each_net":"21","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"116","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"92","inward_invoice_id":"WA1","inward_item_id":"21","auction_id":"8","lot_no":"8","lot_set":"4","auction_quantity":"41","sample_quantity":"0","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"116","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L001. auctionItemId:91, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> bid calculation initiated auctionItemId:91, 2
+ERROR - 2024-10-15 13:17:37 --> bidding value array:{"id":"176","auction_item_id":"91","buyer_id":"1","bid_price":"106.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:16:06","updated_at":"2024-10-15 13:16:06"}
+ERROR - 2024-10-15 13:17:37 --> Error code 001. HBP:106.00, HABP: 110, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code 003. HBP:106.00, RP: 105, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code 005. HBP:106.00, SLHABP: 105, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> bid calculation Ended auctionItemId:91, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L002. auctionItemId:91, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L003. auctionItemId:91, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L001. auctionItemId:92, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> bid calculation initiated auctionItemId:92, 2
+ERROR - 2024-10-15 13:17:37 --> bidding value array:{"id":"191","auction_item_id":"92","buyer_id":"3","bid_price":"301.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:17:05","updated_at":"2024-10-15 13:17:05"}
+ERROR - 2024-10-15 13:17:37 --> Error code 001. HBP:301.00, HABP: 302, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code 003. HBP:301.00, RP: 105, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code 005. HBP:301.00, SLHABP: 300, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> bid calculation Ended auctionItemId:92, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L002. auctionItemId:92, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:37 --> Error code L003. auctionItemId:92, 2024-10-15 01:17:37
+ERROR - 2024-10-15 13:17:38 --> Manual bid only
+ERROR - 2024-10-15 13:17:38 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:17:39 --> current items data:[], 2024-10-15 01:17:39
+ERROR - 2024-10-15 13:19:12 --> current items data:[{"id":"93","inward_invoice_id":"WA3","inward_item_id":"23","auction_id":"8","lot_no":"9","lot_set":"5","auction_quantity":"42","sample_quantity":"0","auction_each_net":"17","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"11000","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"94","inward_invoice_id":"WA2","inward_item_id":"22","auction_id":"8","lot_no":"10","lot_set":"5","auction_quantity":"42","sample_quantity":"0","auction_each_net":"5","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"11000","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L001. auctionItemId:93, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> bid calculation initiated auctionItemId:93, 2
+ERROR - 2024-10-15 13:19:12 --> bidding value array:{"id":"192","auction_item_id":"93","buyer_id":"1","bid_price":"200.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:17:38","updated_at":"2024-10-15 13:17:38"}
+ERROR - 2024-10-15 13:19:12 --> Error code 006. HBP:200.00, HABP: 0, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> bid calculation Ended auctionItemId:93, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L002. auctionItemId:93, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L003. auctionItemId:93, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L001. auctionItemId:94, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> bid calculation initiated auctionItemId:94, 2
+ERROR - 2024-10-15 13:19:12 --> bidding value array:{"id":"193","auction_item_id":"94","buyer_id":"3","bid_price":"120.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:17:38","updated_at":"2024-10-15 13:17:38"}
+ERROR - 2024-10-15 13:19:12 --> Error code 007. HBP:120.00, HABP: 120, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> bid calculation Ended auctionItemId:94, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L002. auctionItemId:94, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:12 --> Error code L003. auctionItemId:94, 2024-10-15 01:19:12
+ERROR - 2024-10-15 13:19:14 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:19:14 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:20:25 --> current items data:[{"id":"95","inward_invoice_id":"WA4","inward_item_id":"24","auction_id":"8","lot_no":"11","lot_set":"6","auction_quantity":"42","sample_quantity":"0","auction_each_net":"11","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"140","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"96","inward_invoice_id":"R1","inward_item_id":"26","auction_id":"8","lot_no":"12","lot_set":"6","auction_quantity":"49","sample_quantity":"0","auction_each_net":"20","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:00:03","created_by":"5","updated_by":"5"}], 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L001. auctionItemId:95, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> bid calculation initiated auctionItemId:95, 2
+ERROR - 2024-10-15 13:20:25 --> bidding value array:{"id":"194","auction_item_id":"95","buyer_id":"3","bid_price":"130.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:19:14","updated_at":"2024-10-15 13:19:14"}
+ERROR - 2024-10-15 13:20:25 --> Error code 006. HBP:130.00, HABP: 110, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> bid calculation Ended auctionItemId:95, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L002. auctionItemId:95, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L003. auctionItemId:95, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L001. auctionItemId:96, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> bid calculation initiated auctionItemId:96, 2
+ERROR - 2024-10-15 13:20:25 --> bidding value array:{"id":"195","auction_item_id":"96","buyer_id":"3","bid_price":"102.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:19:14","updated_at":"2024-10-15 13:19:14"}
+ERROR - 2024-10-15 13:20:25 --> Error code 001. HBP:102.00, HABP: 160, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code 002. HBP:102.00, RP: 105, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> bid calculation Ended auctionItemId:96, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L002. auctionItemId:96, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:25 --> Error code L003. auctionItemId:96, 2024-10-15 01:20:25
+ERROR - 2024-10-15 13:20:27 --> Manual bid only
+ERROR - 2024-10-15 13:20:27 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:20:43 --> current items data:[], 2024-10-15 01:20:43
+ERROR - 2024-10-15 13:22:15 --> current items data:[{"id":"97","inward_invoice_id":"R4","inward_item_id":"29","auction_id":"8","lot_no":"13","lot_set":"7","auction_quantity":"49","sample_quantity":"0","auction_each_net":"11","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"1110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:00:03","created_by":"5","updated_by":"5"},{"id":"98","inward_invoice_id":"V1","inward_item_id":"53","auction_id":"8","lot_no":"14","lot_set":"7","auction_quantity":"41","sample_quantity":"0","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"116","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L001. auctionItemId:97, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> bid calculation initiated auctionItemId:97, 2
+ERROR - 2024-10-15 13:22:15 --> bidding value array:{"id":"197","auction_item_id":"97","buyer_id":"3","bid_price":"155.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 13:20:27","updated_at":"2024-10-15 13:20:27"}
+ERROR - 2024-10-15 13:22:15 --> Error code 006. HBP:155.00, HABP: 0, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> bid calculation Ended auctionItemId:97, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L002. auctionItemId:97, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L003. auctionItemId:97, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L001. auctionItemId:98, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> bid calculation initiated auctionItemId:98, 2
+ERROR - 2024-10-15 13:22:15 --> bidding value array:{"id":"198","auction_item_id":"98","buyer_id":"1","bid_price":"102.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:20:27","updated_at":"2024-10-15 13:20:27"}
+ERROR - 2024-10-15 13:22:15 --> Error code 001. HBP:102.00, HABP: 110, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code 002. HBP:102.00, RP: 105, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> bid calculation Ended auctionItemId:98, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L002. auctionItemId:98, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:15 --> Error code L003. auctionItemId:98, 2024-10-15 01:22:15
+ERROR - 2024-10-15 13:22:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:22:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:22:18 --> current items data:[], 2024-10-15 01:22:18
+ERROR - 2024-10-15 13:23:47 --> current items data:[{"id":"99","inward_invoice_id":"V5","inward_item_id":"57","auction_id":"8","lot_no":"15","lot_set":"8","auction_quantity":"42","sample_quantity":"0","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"121","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"100","inward_invoice_id":"V2","inward_item_id":"54","auction_id":"8","lot_no":"16","lot_set":"8","auction_quantity":"42","sample_quantity":"0","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"11000","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L001. auctionItemId:99, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> bid calculation initiated auctionItemId:99, 2
+ERROR - 2024-10-15 13:23:47 --> bidding value array:{"id":"200","auction_item_id":"99","buyer_id":"3","bid_price":"102.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:22:16","updated_at":"2024-10-15 13:22:16"}
+ERROR - 2024-10-15 13:23:47 --> Error code 001. HBP:102.00, HABP: 110, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code 002. HBP:102.00, RP: 105, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> bid calculation Ended auctionItemId:99, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L002. auctionItemId:99, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L003. auctionItemId:99, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L001. auctionItemId:100, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> bid calculation initiated auctionItemId:100, 2
+ERROR - 2024-10-15 13:23:47 --> bidding value array:{"id":"201","auction_item_id":"100","buyer_id":"1","bid_price":"111.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:22:16","updated_at":"2024-10-15 13:22:16"}
+ERROR - 2024-10-15 13:23:47 --> Error code 001. HBP:111.00, HABP: 300, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code 003. HBP:111.00, RP: 105, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code 005. HBP:111.00, SLHABP: 110, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> bid calculation Ended auctionItemId:100, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L002. auctionItemId:100, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:47 --> Error code L003. auctionItemId:100, 2024-10-15 01:23:47
+ERROR - 2024-10-15 13:23:48 --> Both manual and auto bids exist
+ERROR - 2024-10-15 13:23:48 --> Auto bid only
+ERROR - 2024-10-15 13:23:48 --> Auto bid only:1
+ERROR - 2024-10-15 13:23:49 --> current items data:[], 2024-10-15 01:23:49
+ERROR - 2024-10-15 13:25:18 --> current items data:[{"id":"101","inward_invoice_id":"V4","inward_item_id":"56","auction_id":"8","lot_no":"17","lot_set":"9","auction_quantity":"42","sample_quantity":"0","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"114","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"},{"id":"102","inward_invoice_id":"V3","inward_item_id":"55","auction_id":"8","lot_no":"18","lot_set":"9","auction_quantity":"47","sample_quantity":"0","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":"113","status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 12:59:07","updated_at":"2024-10-15 13:01:22","created_by":"5","updated_by":"5"}], 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L001. auctionItemId:101, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> bid calculation initiated auctionItemId:101, 2
+ERROR - 2024-10-15 13:25:18 --> bidding value array:{"id":"203","auction_item_id":"101","buyer_id":"1","bid_price":"201.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:23:48","updated_at":"2024-10-15 13:23:48"}
+ERROR - 2024-10-15 13:25:18 --> Error code 001. HBP:201.00, HABP: 300, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code 003. HBP:201.00, RP: 105, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code 005. HBP:201.00, SLHABP: 0, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> bid calculation Ended auctionItemId:101, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L002. auctionItemId:101, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L003. auctionItemId:101, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L001. auctionItemId:102, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> bid calculation initiated auctionItemId:102, 2
+ERROR - 2024-10-15 13:25:18 --> bidding value array:{"id":"204","auction_item_id":"102","buyer_id":"3","bid_price":"300.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 13:23:48","updated_at":"2024-10-15 13:23:48"}
+ERROR - 2024-10-15 13:25:18 --> Error code 007. HBP:300.00, HABP: 300, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> bid calculation Ended auctionItemId:102, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L002. auctionItemId:102, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:18 --> Error code L003. auctionItemId:102, 2024-10-15 01:25:18
+ERROR - 2024-10-15 13:25:19 --> current items data:[], 2024-10-15 01:25:19
+CRITICAL - 2024-10-15 13:32:25 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 13:33:26 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-15 13:33:44 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-15 14:40:08 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:40:08 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:41:38 --> current items data:[{"id":"1","inward_invoice_id":"V2","inward_item_id":"2","auction_id":"1","lot_no":"1","lot_set":"1","auction_quantity":"10","sample_quantity":"2","auction_each_net":"13","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"2","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"1","lot_no":"2","lot_set":"1","auction_quantity":"5","sample_quantity":"2","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L001. auctionItemId:1, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> bid calculation initiated auctionItemId:1, 2
+ERROR - 2024-10-15 14:41:38 --> bidding value array:{"id":"1","auction_item_id":"1","buyer_id":"9","bid_price":"111.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:40:08","updated_at":"2024-10-15 14:40:08"}
+ERROR - 2024-10-15 14:41:38 --> Error code 001. HBP:111.00, HABP: 121, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code 003. HBP:111.00, RP: 105, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code 005. HBP:111.00, SLHABP: 110, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> bid calculation Ended auctionItemId:1, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L002. auctionItemId:1, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L003. auctionItemId:1, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L001. auctionItemId:2, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> bid calculation initiated auctionItemId:2, 6
+ERROR - 2024-10-15 14:41:38 --> bidding value array:{"id":"8","auction_item_id":"2","buyer_id":"6","bid_price":"109.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:41:23","updated_at":"2024-10-15 14:41:23"}
+ERROR - 2024-10-15 14:41:38 --> Error code 007. HBP:109.00, HABP: 109, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> bid calculation Ended auctionItemId:2, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L002. auctionItemId:2, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> Error code L003. auctionItemId:2, 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:38 --> current items data:[], 2024-10-15 02:41:38
+ERROR - 2024-10-15 14:41:39 --> current items data:[], 2024-10-15 02:41:39
+ERROR - 2024-10-15 14:41:41 --> current items data:[], 2024-10-15 02:41:41
+ERROR - 2024-10-15 14:41:41 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:41:41 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:41:41 --> current items data:[], 2024-10-15 02:41:41
+ERROR - 2024-10-15 14:41:41 --> current items data:[], 2024-10-15 02:41:41
+ERROR - 2024-10-15 14:43:09 --> current items data:[{"id":"3","inward_invoice_id":"V4","inward_item_id":"4","auction_id":"1","lot_no":"3","lot_set":"2","auction_quantity":"10","sample_quantity":"2","auction_each_net":"2","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"4","inward_invoice_id":"V3","inward_item_id":"3","auction_id":"1","lot_no":"4","lot_set":"2","auction_quantity":"5","sample_quantity":"2","auction_each_net":"9","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L001. auctionItemId:3, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> bid calculation initiated auctionItemId:3, 6
+ERROR - 2024-10-15 14:43:09 --> bidding value array:{"id":"17","auction_item_id":"3","buyer_id":"9","bid_price":"122.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:42:47","updated_at":"2024-10-15 14:42:47"}
+ERROR - 2024-10-15 14:43:09 --> Error code 001. HBP:122.00, HABP: 142, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code 003. HBP:122.00, RP: 105, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code 005. HBP:122.00, SLHABP: 121, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> bid calculation Ended auctionItemId:3, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L002. auctionItemId:3, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L003. auctionItemId:3, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L001. auctionItemId:4, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> bid calculation initiated auctionItemId:4, 5
+ERROR - 2024-10-15 14:43:09 --> bidding value array:{"id":"13","auction_item_id":"4","buyer_id":"7","bid_price":"111.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 14:41:57","updated_at":"2024-10-15 14:41:57"}
+ERROR - 2024-10-15 14:43:09 --> Error code 006. HBP:111.00, HABP: 105, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> bid calculation Ended auctionItemId:4, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L002. auctionItemId:4, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> Error code L003. auctionItemId:4, 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:09 --> current items data:[], 2024-10-15 02:43:09
+ERROR - 2024-10-15 14:43:10 --> current items data:[], 2024-10-15 02:43:10
+ERROR - 2024-10-15 14:43:10 --> current items data:[], 2024-10-15 02:43:10
+ERROR - 2024-10-15 14:43:10 --> current items data:[], 2024-10-15 02:43:10
+ERROR - 2024-10-15 14:43:11 --> current items data:[], 2024-10-15 02:43:11
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:43:13 --> current items data:[], 2024-10-15 02:43:13
+ERROR - 2024-10-15 14:44:40 --> current items data:[{"id":"5","inward_invoice_id":"V5","inward_item_id":"5","auction_id":"1","lot_no":"5","lot_set":"3","auction_quantity":"5","sample_quantity":"2","auction_each_net":"15","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"6","inward_invoice_id":"S1","inward_item_id":"6","auction_id":"1","lot_no":"6","lot_set":"3","auction_quantity":"10","sample_quantity":"2","auction_each_net":"17","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L001. auctionItemId:5, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> bid calculation initiated auctionItemId:5, 6
+ERROR - 2024-10-15 14:44:40 --> bidding value array:{"id":"18","auction_item_id":"5","buyer_id":"9","bid_price":"112.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:43:13","updated_at":"2024-10-15 14:43:13"}
+ERROR - 2024-10-15 14:44:40 --> Error code 001. HBP:112.00, HABP: 116, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code 003. HBP:112.00, RP: 105, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code 005. HBP:112.00, SLHABP: 105, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> bid calculation Ended auctionItemId:5, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L002. auctionItemId:5, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L003. auctionItemId:5, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L001. auctionItemId:6, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> bid calculation initiated auctionItemId:6, 5
+ERROR - 2024-10-15 14:44:40 --> bidding value array:{"id":"27","auction_item_id":"6","buyer_id":"7","bid_price":"116.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:44:19","updated_at":"2024-10-15 14:44:19"}
+ERROR - 2024-10-15 14:44:40 --> Error code 001. HBP:116.00, HABP: 120, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code 003. HBP:116.00, RP: 105, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code 005. HBP:116.00, SLHABP: 115, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> bid calculation Ended auctionItemId:6, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L002. auctionItemId:6, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:40 --> Error code L003. auctionItemId:6, 2024-10-15 02:44:40
+ERROR - 2024-10-15 14:44:41 --> current items data:[], 2024-10-15 02:44:41
+ERROR - 2024-10-15 14:44:41 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:44:41 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:44:41 --> current items data:[], 2024-10-15 02:44:41
+ERROR - 2024-10-15 14:44:45 --> current items data:[], 2024-10-15 02:44:45
+ERROR - 2024-10-15 14:44:45 --> current items data:[], 2024-10-15 02:44:45
+ERROR - 2024-10-15 14:44:45 --> current items data:[], 2024-10-15 02:44:45
+ERROR - 2024-10-15 14:44:45 --> current items data:[], 2024-10-15 02:44:45
+ERROR - 2024-10-15 14:46:12 --> current items data:[{"id":"7","inward_invoice_id":"S2","inward_item_id":"7","auction_id":"1","lot_no":"7","lot_set":"4","auction_quantity":"5","sample_quantity":"2","auction_each_net":"7","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"8","inward_invoice_id":"S3","inward_item_id":"8","auction_id":"1","lot_no":"8","lot_set":"4","auction_quantity":"10","sample_quantity":"2","auction_each_net":"21","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L001. auctionItemId:7, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> bid calculation initiated auctionItemId:7, 6
+ERROR - 2024-10-15 14:46:12 --> bidding value array:{"id":"31","auction_item_id":"7","buyer_id":"9","bid_price":"111.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:45:00","updated_at":"2024-10-15 14:45:00"}
+ERROR - 2024-10-15 14:46:12 --> Error code 001. HBP:111.00, HABP: 113, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code 003. HBP:111.00, RP: 105, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code 005. HBP:111.00, SLHABP: 110, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> bid calculation Ended auctionItemId:7, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L002. auctionItemId:7, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L003. auctionItemId:7, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L001. auctionItemId:8, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> bid calculation initiated auctionItemId:8, 6
+ERROR - 2024-10-15 14:46:12 --> bidding value array:{"id":"29","auction_item_id":"8","buyer_id":"9","bid_price":"115.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 14:44:41","updated_at":"2024-10-15 14:44:41"}
+ERROR - 2024-10-15 14:46:12 --> Error code 006. HBP:115.00, HABP: 105, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> bid calculation Ended auctionItemId:8, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L002. auctionItemId:8, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> Error code L003. auctionItemId:8, 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> current items data:[], 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:12 --> current items data:[], 2024-10-15 02:46:12
+ERROR - 2024-10-15 14:46:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:46:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:46:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:46:16 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:46:16 --> current items data:[], 2024-10-15 02:46:16
+ERROR - 2024-10-15 14:46:16 --> current items data:[], 2024-10-15 02:46:16
+ERROR - 2024-10-15 14:46:16 --> current items data:[], 2024-10-15 02:46:16
+ERROR - 2024-10-15 14:46:16 --> current items data:[], 2024-10-15 02:46:16
+ERROR - 2024-10-15 14:47:46 --> current items data:[{"id":"9","inward_invoice_id":"S4","inward_item_id":"9","auction_id":"1","lot_no":"9","lot_set":"5","auction_quantity":"5","sample_quantity":"2","auction_each_net":"11","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"10","inward_invoice_id":"S5","inward_item_id":"10","auction_id":"1","lot_no":"10","lot_set":"5","auction_quantity":"10","sample_quantity":"2","auction_each_net":"12","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L001. auctionItemId:9, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> bid calculation initiated auctionItemId:9, 5
+ERROR - 2024-10-15 14:47:46 --> bidding value array:{"id":"38","auction_item_id":"9","buyer_id":"5","bid_price":"108.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:22","updated_at":"2024-10-15 14:47:22"}
+ERROR - 2024-10-15 14:47:46 --> Error code 007. HBP:108.00, HABP: 108, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> bid calculation Ended auctionItemId:9, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L002. auctionItemId:9, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L003. auctionItemId:9, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L001. auctionItemId:10, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> bid calculation initiated auctionItemId:10, 4
+ERROR - 2024-10-15 14:47:46 --> bidding value array:{"id":"40","auction_item_id":"10","buyer_id":"9","bid_price":"114.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:42","updated_at":"2024-10-15 14:47:42"}
+ERROR - 2024-10-15 14:47:46 --> Error code 001. HBP:114.00, HABP: 115, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code 003. HBP:114.00, RP: 105, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code 005. HBP:114.00, SLHABP: 105, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> bid calculation Ended auctionItemId:10, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L002. auctionItemId:10, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> Error code L003. auctionItemId:10, 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:46 --> current items data:[], 2024-10-15 02:47:46
+ERROR - 2024-10-15 14:47:47 --> current items data:[], 2024-10-15 02:47:47
+ERROR - 2024-10-15 14:47:47 --> current items data:[], 2024-10-15 02:47:47
+ERROR - 2024-10-15 14:47:47 --> current items data:[], 2024-10-15 02:47:47
+ERROR - 2024-10-15 14:47:47 --> current items data:[], 2024-10-15 02:47:47
+ERROR - 2024-10-15 14:47:47 --> current items data:[], 2024-10-15 02:47:47
+ERROR - 2024-10-15 14:47:47 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:47:47 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:49:16 --> current items data:[{"id":"11","inward_invoice_id":"K2","inward_item_id":"17","auction_id":"1","lot_no":"11","lot_set":"6","auction_quantity":"10","sample_quantity":"2","auction_each_net":"8","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"12","inward_invoice_id":"K4","inward_item_id":"19","auction_id":"1","lot_no":"12","lot_set":"6","auction_quantity":"10","sample_quantity":"2","auction_each_net":"6","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L001. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> current items data:[{"id":"11","inward_invoice_id":"K2","inward_item_id":"17","auction_id":"1","lot_no":"11","lot_set":"6","auction_quantity":"10","sample_quantity":"2","auction_each_net":"8","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"12","inward_invoice_id":"K4","inward_item_id":"19","auction_id":"1","lot_no":"12","lot_set":"6","auction_quantity":"10","sample_quantity":"2","auction_each_net":"6","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L001. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation initiated auctionItemId:11, 5
+ERROR - 2024-10-15 14:49:16 --> bidding value array:{"id":"41","auction_item_id":"11","buyer_id":"4","bid_price":"105.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:47","updated_at":"2024-10-15 14:47:47"}
+ERROR - 2024-10-15 14:49:16 --> Error code 007. HBP:105.00, HABP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation Ended auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L002. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation initiated auctionItemId:11, 5
+ERROR - 2024-10-15 14:49:16 --> bidding value array:{"id":"41","auction_item_id":"11","buyer_id":"4","bid_price":"105.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:47","updated_at":"2024-10-15 14:47:47"}
+ERROR - 2024-10-15 14:49:16 --> Error code 007. HBP:105.00, HABP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation Ended auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L002. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L003. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L001. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L003. auctionItemId:11, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L001. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation initiated auctionItemId:12, 6
+ERROR - 2024-10-15 14:49:16 --> bid calculation initiated auctionItemId:12, 6
+ERROR - 2024-10-15 14:49:16 --> bidding value array:{"id":"42","auction_item_id":"12","buyer_id":"9","bid_price":"116.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:47","updated_at":"2024-10-15 14:47:47"}
+ERROR - 2024-10-15 14:49:16 --> Error code 001. HBP:116.00, HABP: 132, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code 003. HBP:116.00, RP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code 005. HBP:116.00, SLHABP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bidding value array:{"id":"42","auction_item_id":"12","buyer_id":"9","bid_price":"116.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:47:47","updated_at":"2024-10-15 14:47:47"}
+ERROR - 2024-10-15 14:49:16 --> Error code 001. HBP:116.00, HABP: 132, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code 003. HBP:116.00, RP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code 005. HBP:116.00, SLHABP: 105, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation Ended auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L002. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> bid calculation Ended auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L002. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L003. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> Error code L003. auctionItemId:12, 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:16 --> current items data:[], 2024-10-15 02:49:16
+ERROR - 2024-10-15 14:49:19 --> current items data:[], 2024-10-15 02:49:19
+ERROR - 2024-10-15 14:49:20 --> current items data:[], 2024-10-15 02:49:20
+ERROR - 2024-10-15 14:49:20 --> current items data:[], 2024-10-15 02:49:20
+ERROR - 2024-10-15 14:49:20 --> current items data:[], 2024-10-15 02:49:20
+ERROR - 2024-10-15 14:49:20 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:49:20 --> Auto bid only
+ERROR - 2024-10-15 14:49:20 --> Auto bid only:1
+ERROR - 2024-10-15 14:50:47 --> current items data:[{"id":"13","inward_invoice_id":"K3","inward_item_id":"18","auction_id":"1","lot_no":"13","lot_set":"7","auction_quantity":"5","sample_quantity":"2","auction_each_net":"4","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"14","inward_invoice_id":"K5","inward_item_id":"20","auction_id":"1","lot_no":"14","lot_set":"7","auction_quantity":"5","sample_quantity":"2","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L001. auctionItemId:13, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> bid calculation initiated auctionItemId:13, 6
+ERROR - 2024-10-15 14:50:47 --> bidding value array:{"id":"97","auction_item_id":"13","buyer_id":"4","bid_price":"162.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:50:45","updated_at":"2024-10-15 14:50:45"}
+ERROR - 2024-10-15 14:50:47 --> Error code 001. HBP:162.00, HABP: 167, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code 003. HBP:162.00, RP: 105, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code 005. HBP:162.00, SLHABP: 160, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> bid calculation Ended auctionItemId:13, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L002. auctionItemId:13, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L003. auctionItemId:13, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L001. auctionItemId:14, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> bid calculation initiated auctionItemId:14, 6
+ERROR - 2024-10-15 14:50:47 --> bidding value array:{"id":"99","auction_item_id":"14","buyer_id":"9","bid_price":"170.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:50:45","updated_at":"2024-10-15 14:50:45"}
+ERROR - 2024-10-15 14:50:47 --> Error code 007. HBP:170.00, HABP: 170, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> bid calculation Ended auctionItemId:14, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L002. auctionItemId:14, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> Error code L003. auctionItemId:14, 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:47 --> current items data:[], 2024-10-15 02:50:47
+ERROR - 2024-10-15 14:50:48 --> current items data:[], 2024-10-15 02:50:48
+ERROR - 2024-10-15 14:50:48 --> current items data:[], 2024-10-15 02:50:48
+ERROR - 2024-10-15 14:50:48 --> current items data:[], 2024-10-15 02:50:48
+ERROR - 2024-10-15 14:50:48 --> current items data:[], 2024-10-15 02:50:48
+ERROR - 2024-10-15 14:50:48 --> current items data:[], 2024-10-15 02:50:48
+ERROR - 2024-10-15 14:50:48 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:50:48 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:52:18 --> current items data:[{"id":"15","inward_invoice_id":"K1","inward_item_id":"16","auction_id":"1","lot_no":"15","lot_set":"8","auction_quantity":"5","sample_quantity":"2","auction_each_net":"2","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"16","inward_invoice_id":"W1","inward_item_id":"11","auction_id":"1","lot_no":"16","lot_set":"8","auction_quantity":"10","sample_quantity":"2","auction_each_net":"21","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L001. auctionItemId:15, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> bid calculation initiated auctionItemId:15, 5
+ERROR - 2024-10-15 14:52:18 --> bidding value array:{"id":"152","auction_item_id":"15","buyer_id":"7","bid_price":"191.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:52:12","updated_at":"2024-10-15 14:52:12"}
+ERROR - 2024-10-15 14:52:18 --> Error code 001. HBP:191.00, HABP: 195, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code 003. HBP:191.00, RP: 105, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code 005. HBP:191.00, SLHABP: 190, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> bid calculation Ended auctionItemId:15, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L002. auctionItemId:15, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L003. auctionItemId:15, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L001. auctionItemId:16, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> bid calculation initiated auctionItemId:16, 5
+ERROR - 2024-10-15 14:52:18 --> bidding value array:{"id":"156","auction_item_id":"16","buyer_id":"4","bid_price":"211.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:52:17","updated_at":"2024-10-15 14:52:17"}
+ERROR - 2024-10-15 14:52:18 --> Error code 001. HBP:211.00, HABP: 215, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code 003. HBP:211.00, RP: 105, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code 005. HBP:211.00, SLHABP: 210, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> bid calculation Ended auctionItemId:16, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L002. auctionItemId:16, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> Error code L003. auctionItemId:16, 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> current items data:[], 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:18 --> current items data:[], 2024-10-15 02:52:18
+ERROR - 2024-10-15 14:52:19 --> current items data:[], 2024-10-15 02:52:19
+ERROR - 2024-10-15 14:52:19 --> current items data:[], 2024-10-15 02:52:19
+ERROR - 2024-10-15 14:52:19 --> current items data:[], 2024-10-15 02:52:19
+ERROR - 2024-10-15 14:52:19 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:52:19 --> Auto bid only
+ERROR - 2024-10-15 14:52:19 --> Auto bid only:1
+ERROR - 2024-10-15 14:52:19 --> current items data:[], 2024-10-15 02:52:19
+ERROR - 2024-10-15 14:53:49 --> current items data:[{"id":"17","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"1","lot_no":"17","lot_set":"9","auction_quantity":"5","sample_quantity":"2","auction_each_net":"9","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"18","inward_invoice_id":"W2","inward_item_id":"12","auction_id":"1","lot_no":"18","lot_set":"9","auction_quantity":"5","sample_quantity":"2","auction_each_net":"23","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L001. auctionItemId:17, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> bid calculation initiated auctionItemId:17, 5
+ERROR - 2024-10-15 14:53:49 --> bidding value array:{"id":"236","auction_item_id":"17","buyer_id":"9","bid_price":"302.00","sq":"1.000","bq":"1.000","bid_type":"0","created_at":"2024-10-15 14:53:47","updated_at":"2024-10-15 14:53:47"}
+ERROR - 2024-10-15 14:53:49 --> Error code 006. HBP:302.00, HABP: 300, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> bid calculation Ended auctionItemId:17, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L002. auctionItemId:17, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L003. auctionItemId:17, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L001. auctionItemId:18, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> bid calculation initiated auctionItemId:18, 5
+ERROR - 2024-10-15 14:53:49 --> bidding value array:{"id":"235","auction_item_id":"18","buyer_id":"7","bid_price":"328.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:53:46","updated_at":"2024-10-15 14:53:46"}
+ERROR - 2024-10-15 14:53:49 --> Error code 001. HBP:328.00, HABP: 350, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code 003. HBP:328.00, RP: 105, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code 005. HBP:328.00, SLHABP: 315, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> bid calculation Ended auctionItemId:18, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L002. auctionItemId:18, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> Error code L003. auctionItemId:18, 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> current items data:[], 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:49 --> current items data:[], 2024-10-15 02:53:49
+ERROR - 2024-10-15 14:53:50 --> current items data:[], 2024-10-15 02:53:50
+ERROR - 2024-10-15 14:53:50 --> current items data:[], 2024-10-15 02:53:50
+ERROR - 2024-10-15 14:53:50 --> current items data:[], 2024-10-15 02:53:50
+ERROR - 2024-10-15 14:53:51 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:53:51 --> Both manual and auto bids exist
+ERROR - 2024-10-15 14:53:51 --> current items data:[], 2024-10-15 02:53:51
+ERROR - 2024-10-15 14:55:27 --> current items data:[{"id":"19","inward_invoice_id":"W3","inward_item_id":"13","auction_id":"1","lot_no":"19","lot_set":"10","auction_quantity":"10","sample_quantity":"2","auction_each_net":"14","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"},{"id":"20","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"1","lot_no":"20","lot_set":"10","auction_quantity":"10","sample_quantity":"2","auction_each_net":"4","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-10-15 13:33:52","updated_at":"2024-10-15 13:35:10","created_by":"5","updated_by":"5"}], 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L001. auctionItemId:19, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> bid calculation initiated auctionItemId:19, 5
+ERROR - 2024-10-15 14:55:27 --> bidding value array:{"id":"348","auction_item_id":"19","buyer_id":"6","bid_price":"536.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:55:27","updated_at":"2024-10-15 14:55:27"}
+ERROR - 2024-10-15 14:55:27 --> Error code 001. HBP:536.00, HABP: 1000, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code 003. HBP:536.00, RP: 105, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code 005. HBP:536.00, SLHABP: 535, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> bid calculation Ended auctionItemId:19, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L002. auctionItemId:19, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L003. auctionItemId:19, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L001. auctionItemId:20, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> bid calculation initiated auctionItemId:20, 5
+ERROR - 2024-10-15 14:55:27 --> bidding value array:{"id":"346","auction_item_id":"20","buyer_id":"6","bid_price":"551.00","sq":"1.000","bq":"1.000","bid_type":"1","created_at":"2024-10-15 14:55:21","updated_at":"2024-10-15 14:55:21"}
+ERROR - 2024-10-15 14:55:27 --> Error code 001. HBP:551.00, HABP: 1500, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code 003. HBP:551.00, RP: 105, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code 005. HBP:551.00, SLHABP: 550, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> bid calculation Ended auctionItemId:20, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L002. auctionItemId:20, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> Error code L003. auctionItemId:20, 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:27 --> current items data:[], 2024-10-15 02:55:27
+ERROR - 2024-10-15 14:55:28 --> current items data:[], 2024-10-15 02:55:28
+ERROR - 2024-10-15 14:55:28 --> current items data:[], 2024-10-15 02:55:28
+ERROR - 2024-10-15 14:55:28 --> current items data:[], 2024-10-15 02:55:28
+ERROR - 2024-10-15 14:55:28 --> current items data:[], 2024-10-15 02:55:28
+ERROR - 2024-10-15 14:55:28 --> current items data:[], 2024-10-15 02:55:28

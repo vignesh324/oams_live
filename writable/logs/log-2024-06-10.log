@@ -1,0 +1,62 @@
+CRITICAL - 2024-06-10 13:10:12 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 379.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 379)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->View('Š{è‰Ç©®)í†Ù¥')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 17:17:41 --> ErrorException: Undefined variable $value_price
+in FCPATH/applications/USER/Views/Invoice/view.php on line 239.
+ 1 FCPATH/applications/USER/Views/Invoice/view.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value_price', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php', 239)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Invoice\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/Invoice.php(100): view('Applications\\USER\\Views\\Invoice\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Invoice->view('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Invoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 18:21:31 --> ErrorException: Undefined variable $item
+in FCPATH/applications/USER/Views/Invoice/view.php on line 230.
+ 1 FCPATH/applications/USER/Views/Invoice/view.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php', 230)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Invoice\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/Invoice.php(100): view('Applications\\USER\\Views\\Invoice\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Invoice->view('4')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Invoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 18:21:36 --> ErrorException: Undefined variable $item
+in FCPATH/applications/USER/Views/Invoice/view.php on line 230.
+ 1 FCPATH/applications/USER/Views/Invoice/view.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php', 230)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Invoice\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/Invoice.php(100): view('Applications\\USER\\Views\\Invoice\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Invoice->view('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Invoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 18:21:42 --> ErrorException: Undefined variable $item
+in FCPATH/applications/USER/Views/Invoice/view.php on line 230.
+ 1 FCPATH/applications/USER/Views/Invoice/view.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php', 230)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Invoice/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Invoice\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/Invoice.php(100): view('Applications\\USER\\Views\\Invoice\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Invoice->view('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Invoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 18:54:07 --> ErrorException: Undefined array key "grade_type"
+in FCPATH/applications/USER/Views/AuctionToBuyerInvoice/view.php on line 180.
+ 1 FCPATH/applications/USER/Views/AuctionToBuyerInvoice/view.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grade_type"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/AuctionToBuyerInvoice/view.php', 180)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/AuctionToBuyerInvoice/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\AuctionToBuyerInvoice\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/AuctionToBuyerInvoice.php(90): view('Applications\\USER\\Views\\AuctionToBuyerInvoice\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\AuctionToBuyerInvoice->view('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\AuctionToBuyerInvoice))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

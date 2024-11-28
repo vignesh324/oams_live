@@ -1,0 +1,9 @@
+CRITICAL - 2024-01-13 13:15:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Applications\SA\Views\roll.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Applications\\SA\\Views\\roll.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\SA\\Views\\roll', [], true)
+ 3 FCPATH\applications\SA\Controllers\Roll.php(27): view('Applications\\SA\\Views\\roll', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): Applications\SA\Controllers\Roll->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\SA\Controllers\Roll))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

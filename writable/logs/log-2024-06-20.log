@@ -1,0 +1,72 @@
+CRITICAL - 2024-06-20 12:52:37 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/Inward.php on line 163.
+ 1 FCPATH/applications/USER/Controllers/Inward.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/Inward.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Inward->Store()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 15:10:22 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 1791.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(1791): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 1791)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->deleteCart()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 15:16:15 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 1791.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(1791): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 1791)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->deleteCart()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 15:16:23 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/BiddingSession.php on line 1791.
+ 1 FCPATH/applications/USER/Controllers/BiddingSession.php(1791): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 1791)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->deleteCart()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 18:17:16 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 82.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 82)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(68): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 18:37:56 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 82.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 82)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(68): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 18:57:05 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 82.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 82)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(68): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-20 19:00:59 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Views/ProductLog/index.php on line 82.
+ 1 FCPATH/applications/USER/Views/ProductLog/index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php', 82)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/ProductLog/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\ProductLog\\index', [], true)
+ 5 FCPATH/applications/USER/Controllers/Log.php(68): view('Applications\\USER\\Views\\ProductLog\\index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Log->productLog()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Log))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

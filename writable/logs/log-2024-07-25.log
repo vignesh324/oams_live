@@ -1,0 +1,103 @@
+CRITICAL - 2024-07-25 20:04:40 --> ParseError: Unmatched '}'
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 130.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 3 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:28:53 --> Error: Call to undefined function calculatePercentage()
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 66.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 4 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:54 --> DivisionByZeroError: Division by zero
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 4 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:54 --> [Caused by] ErrorException: Undefined variable $gardenTotalQty1
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 FCPATH/applications/USER/Views/Reports/views/buyergardenview.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gardenTotalQty1', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php', 75)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 5 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:56 --> DivisionByZeroError: Division by zero
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 4 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:56 --> [Caused by] ErrorException: Undefined variable $gardenTotalQty1
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 FCPATH/applications/USER/Views/Reports/views/buyergardenview.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gardenTotalQty1', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php', 75)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 5 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:57 --> DivisionByZeroError: Division by zero
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 4 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:57 --> [Caused by] ErrorException: Undefined variable $gardenTotalQty1
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 FCPATH/applications/USER/Views/Reports/views/buyergardenview.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gardenTotalQty1', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php', 75)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 5 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:57 --> DivisionByZeroError: Division by zero
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 4 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-25 20:32:57 --> [Caused by] ErrorException: Undefined variable $gardenTotalQty1
+in FCPATH/applications/USER/Views/Reports/views/buyergardenview.php on line 75.
+ 1 FCPATH/applications/USER/Views/Reports/views/buyergardenview.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gardenTotalQty1', '/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php', 75)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/Reports/views/buyergardenview.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [], true)
+ 5 FCPATH/applications/USER/Controllers/Reports.php(830): view('Applications\\USER\\Views\\Reports\\views\\buyergardenview', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\Reports->buyerSellerWiseReportSubmit()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Reports))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

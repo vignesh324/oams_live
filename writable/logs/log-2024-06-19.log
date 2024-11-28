@@ -1,0 +1,22 @@
+CRITICAL - 2024-06-19 15:59:59 --> ErrorException: Undefined variable $auction_data
+in FCPATH/applications/USER/Views/DeliveryManagement/add.php on line 116.
+ 1 FCPATH/applications/USER/Views/DeliveryManagement/add.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/applications/USER/Views/DeliveryManagement/add.php', 116)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/DeliveryManagement/add.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\DeliveryManagement\\add', [], true)
+ 5 FCPATH/applications/USER/Controllers/DeliveryManagement.php(135): view('Applications\\USER\\Views\\DeliveryManagement\\add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\DeliveryManagement->create()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\DeliveryManagement))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-19 19:18:47 --> ErrorException: Undefined array key "description"
+in FCPATH/applications/USER/Views/DeliveryManagement/view.php on line 171.
+ 1 FCPATH/applications/USER/Views/DeliveryManagement/view.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', '/var/www/eazyhosting.in/public_html/applications/USER/Views/DeliveryManagement/view.php', 171)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/eazyhosting.in/public_html/applications/USER/Views/DeliveryManagement/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\DeliveryManagement\\view', [], true)
+ 5 FCPATH/applications/USER/Controllers/DeliveryManagement.php(100): view('Applications\\USER\\Views\\DeliveryManagement\\view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\DeliveryManagement->getDeliveryItems('3')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\DeliveryManagement))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,1377 @@
+CRITICAL - 2024-07-30 10:50:27 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 10:53:11 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 10:53:18 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 10:53:56 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 10:54:04 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 10:54:08 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:31:57 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:31:59 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:32:57 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:34:00 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:34:18 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:34:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:38:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:38:18 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:39:58 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:01 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:28 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:29 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:40:31 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:43:03 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:43:06 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:43:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 11:43:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:17:04 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:17:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:10 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:31 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:40 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:41 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:18:48 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:19:10 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:19:13 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:21:11 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:21:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 341.
+ 1 APPPATH/Controllers/BuyerDashboard.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 341)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:21:22 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 12:21:27 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:20:53 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:20:55 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:23:13 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:23:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:23:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:23:38 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 352.
+ 1 APPPATH/Controllers/BuyerDashboard.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 352)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:27:33 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:27:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:27:52 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:27:55 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:28:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:28:48 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:31:04 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:31:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:33:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 354.
+ 1 APPPATH/Controllers/BuyerDashboard.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 354)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:33:29 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 354.
+ 1 APPPATH/Controllers/BuyerDashboard.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 354)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:33:59 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 354.
+ 1 APPPATH/Controllers/BuyerDashboard.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 354)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:34:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 354.
+ 1 APPPATH/Controllers/BuyerDashboard.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 354)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:35:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 355.
+ 1 APPPATH/Controllers/BuyerDashboard.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 355)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:35:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 355.
+ 1 APPPATH/Controllers/BuyerDashboard.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 355)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:36:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 355.
+ 1 APPPATH/Controllers/BuyerDashboard.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 355)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:36:17 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 355.
+ 1 APPPATH/Controllers/BuyerDashboard.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 355)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:37:05 --> ErrorException: Undefined variable $max_auto_bidding_amt
+in APPPATH/Controllers/BuyerDashboard.php on line 314.
+ 1 APPPATH/Controllers/BuyerDashboard.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $max_auto_bidding_amt', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 314)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:37:09 --> ErrorException: Undefined variable $max_auto_bidding_amt
+in APPPATH/Controllers/BuyerDashboard.php on line 314.
+ 1 APPPATH/Controllers/BuyerDashboard.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $max_auto_bidding_amt', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 314)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:40:27 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 321.
+ 1 APPPATH/Controllers/BuyerDashboard.php(321): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 321)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:40:30 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 321.
+ 1 APPPATH/Controllers/BuyerDashboard.php(321): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 321)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:45:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 363.
+ 1 APPPATH/Controllers/BuyerDashboard.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 363)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:45:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 363.
+ 1 APPPATH/Controllers/BuyerDashboard.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 363)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:46:59 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 363.
+ 1 APPPATH/Controllers/BuyerDashboard.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 363)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:47:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 363.
+ 1 APPPATH/Controllers/BuyerDashboard.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 363)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:47:22 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 365.
+ 1 APPPATH/Controllers/BuyerDashboard.php(365): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 365)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:47:24 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 365.
+ 1 APPPATH/Controllers/BuyerDashboard.php(365): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 365)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:47:35 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 365.
+ 1 APPPATH/Controllers/BuyerDashboard.php(365): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 365)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:47:38 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 365.
+ 1 APPPATH/Controllers/BuyerDashboard.php(365): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 365)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:48:13 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 366.
+ 1 APPPATH/Controllers/BuyerDashboard.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 366)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:48:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 366.
+ 1 APPPATH/Controllers/BuyerDashboard.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 366)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-30 13:49:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-30 13:49:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-30 13:49:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-30 13:49:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-30 13:49:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-30 13:49:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:49:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-30 13:50:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4 in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-30 13:50:00 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:50:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:50:00 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=
+ORDER BY `min_price` DESC
+ LIMIT 1' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = \'50\'
+AND min_price = !=
+ORDER BY `min_price` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `auto_bidding`
+WHERE `auction_item_id` = :auction_item_id:
+AND min_price = :min_price:
+ORDER BY `min_price` DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', '1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:56:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:56:03 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:56:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:57:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:57:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 13:57:29 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/BuyerDashboard.php on line 367.
+ 1 APPPATH/Controllers/BuyerDashboard.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 367)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('9', 0)
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:31:25 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:31:46 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:31:50 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:40:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:40:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:40:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:41:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:41:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:42:04 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:42:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 44.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 44)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:43:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:43:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:44:11 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:44:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:44:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:44:17 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:45:19 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:45:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:48:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:48:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:48:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:49:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:52:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:53:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 14:56:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:22:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:22:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:23:50 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:26:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:32:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:33:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:34:25 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(724): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->InitialAutoCall()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:36:09 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Helpers/AuctionBiddingHelper.php on line 50.
+ 1 APPPATH/Helpers/AuctionBiddingHelper.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Helpers/AuctionBiddingHelper.php', 50)
+ 2 APPPATH/Controllers/BuyerDashboard.php(495): App\Helpers\AuctionBiddingHelper::auctionBiddingCalculate('59', '110')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->movetoclosed()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:48:59 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:49:16 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:49:19 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:57:20 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:57:36 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 15:57:39 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 17:43:52 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 17:44:04 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 17:44:05 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:34:56 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:37:19 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:37:21 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:54:06 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:55:16 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-30 18:55:21 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

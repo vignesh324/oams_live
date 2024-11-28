@@ -1,0 +1,933 @@
+CRITICAL - 2024-08-05 10:46:37 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 10:56:56 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 10:57:15 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 10:57:22 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-05 11:05:04 --> bid calculation initiated auctionItemId:35, 2024-08-05 11:05:04
+ERROR - 2024-08-05 11:05:04 --> bid calculation Ended auctionItemId:35, 2024-08-05 11:05:04
+ERROR - 2024-08-05 11:05:04 --> bid calculation initiated auctionItemId:36, 2024-08-05 11:05:04
+ERROR - 2024-08-05 11:05:04 --> bid calculation Ended auctionItemId:36, 2024-08-05 11:05:04
+ERROR - 2024-08-05 11:05:24 --> bid calculation initiated auctionItemId:35, 2024-08-05 11:05:24
+ERROR - 2024-08-05 11:05:24 --> bid calculation Ended auctionItemId:35, 2024-08-05 11:05:24
+ERROR - 2024-08-05 11:05:24 --> bid calculation initiated auctionItemId:36, 2024-08-05 11:05:24
+ERROR - 2024-08-05 11:05:24 --> bid calculation Ended auctionItemId:36, 2024-08-05 11:05:24
+ERROR - 2024-08-05 11:05:35 --> current items data:[{"id":"35","inward_invoice_id":"S1","inward_item_id":"15","auction_id":"13","lot_no":"1","lot_set":"1","auction_quantity":"2","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"},{"id":"36","inward_invoice_id":"S2","inward_item_id":"16","auction_id":"13","lot_no":"2","lot_set":"1","auction_quantity":"2","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"}], 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L001. auctionItemId:35, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> bid calculation initiated auctionItemId:35, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> bid calculation Ended auctionItemId:35, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L002. auctionItemId:35, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L003. auctionItemId:35, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L001. auctionItemId:36, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> bid calculation initiated auctionItemId:36, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> bid calculation Ended auctionItemId:36, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L002. auctionItemId:36, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> Error code L003. auctionItemId:36, 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:05:35 --> current items data:[], 2024-08-05 11:05:35
+ERROR - 2024-08-05 11:06:37 --> bid calculation initiated auctionItemId:37, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation initiated auctionItemId:37, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation Ended auctionItemId:37, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation initiated auctionItemId:38, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation Ended auctionItemId:37, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation initiated auctionItemId:38, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 001. HBP:111.00,HABP: 120.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 003. HBP:111.00,RP: 105, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 005. HBP:111.00,SLHABP: 0.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 001. HBP:111.00,HABP: 120.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 003. HBP:111.00,RP: 105, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> Error code 005. HBP:111.00,SLHABP: 0.00, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation Ended auctionItemId:38, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:06:37 --> bid calculation Ended auctionItemId:38, 2024-08-05 11:06:37
+ERROR - 2024-08-05 11:07:07 --> current items data:[{"id":"37","inward_invoice_id":"S3","inward_item_id":"17","auction_id":"13","lot_no":"3","lot_set":"2","auction_quantity":"2","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"},{"id":"38","inward_invoice_id":"S4","inward_item_id":"18","auction_id":"13","lot_no":"4","lot_set":"2","auction_quantity":"2","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"}], 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L001. auctionItemId:37, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> bid calculation initiated auctionItemId:37, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> bid calculation Ended auctionItemId:37, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L002. auctionItemId:37, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L003. auctionItemId:37, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L001. auctionItemId:38, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> bid calculation initiated auctionItemId:38, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code 001. HBP:112.00,HABP: 120.00, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code 003. HBP:112.00,RP: 105, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code 005. HBP:112.00,SLHABP: 0.00, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> bid calculation Ended auctionItemId:38, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L002. auctionItemId:38, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:07 --> Error code L003. auctionItemId:38, 2024-08-05 11:07:07
+ERROR - 2024-08-05 11:07:09 --> current items data:[], 2024-08-05 11:07:09
+ERROR - 2024-08-05 11:08:08 --> bid calculation initiated auctionItemId:39, 2024-08-05 11:08:08
+ERROR - 2024-08-05 11:08:08 --> bid calculation Ended auctionItemId:39, 2024-08-05 11:08:08
+ERROR - 2024-08-05 11:08:08 --> bid calculation initiated auctionItemId:40, 2024-08-05 11:08:08
+ERROR - 2024-08-05 11:08:08 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:08:08
+ERROR - 2024-08-05 11:08:08 --> bid calculation Ended auctionItemId:40, 2024-08-05 11:08:08
+ERROR - 2024-08-05 11:08:09 --> bid calculation initiated auctionItemId:39, 2024-08-05 11:08:09
+ERROR - 2024-08-05 11:08:09 --> bid calculation Ended auctionItemId:39, 2024-08-05 11:08:09
+ERROR - 2024-08-05 11:08:09 --> bid calculation initiated auctionItemId:40, 2024-08-05 11:08:09
+ERROR - 2024-08-05 11:08:09 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:08:09
+ERROR - 2024-08-05 11:08:09 --> bid calculation Ended auctionItemId:40, 2024-08-05 11:08:09
+ERROR - 2024-08-05 11:08:38 --> current items data:[{"id":"39","inward_invoice_id":"V1","inward_item_id":"5","auction_id":"13","lot_no":"5","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"},{"id":"40","inward_invoice_id":"V2","inward_item_id":"6","auction_id":"13","lot_no":"6","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"}], 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L001. auctionItemId:39, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> bid calculation initiated auctionItemId:39, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> bid calculation Ended auctionItemId:39, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L002. auctionItemId:39, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L003. auctionItemId:39, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L001. auctionItemId:40, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> bid calculation initiated auctionItemId:40, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> bid calculation Ended auctionItemId:40, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L002. auctionItemId:40, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:38 --> Error code L003. auctionItemId:40, 2024-08-05 11:08:38
+ERROR - 2024-08-05 11:08:41 --> current items data:[], 2024-08-05 11:08:41
+ERROR - 2024-08-05 11:16:04 --> current items data:[{"id":"41","inward_invoice_id":"V3","inward_item_id":"7","auction_id":"13","lot_no":"7","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"},{"id":"42","inward_invoice_id":"V4","inward_item_id":"8","auction_id":"13","lot_no":"8","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 10:57:24","updated_at":"2024-08-05 10:58:00","created_by":"5","updated_by":"5"}], 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L001. auctionItemId:41, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> bid calculation initiated auctionItemId:41, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> bid calculation Ended auctionItemId:41, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L002. auctionItemId:41, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L003. auctionItemId:41, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L001. auctionItemId:42, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> bid calculation initiated auctionItemId:42, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code 001. HBP:112.00,HABP: 130.00, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code 003. HBP:112.00,RP: 105, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code 004. HBP:112.00,SLHABP: 120.00, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> bid calculation Ended auctionItemId:42, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L002. auctionItemId:42, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:04 --> Error code L003. auctionItemId:42, 2024-08-05 11:16:04
+ERROR - 2024-08-05 11:16:06 --> current items data:[], 2024-08-05 11:16:06
+CRITICAL - 2024-08-05 11:23:45 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 11:24:22 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 11:24:24 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-05 11:29:04 --> bid calculation initiated auctionItemId:43, 2024-08-05 11:29:04
+ERROR - 2024-08-05 11:29:04 --> bid calculation Ended auctionItemId:43, 2024-08-05 11:29:04
+ERROR - 2024-08-05 11:29:04 --> bid calculation initiated auctionItemId:44, 2024-08-05 11:29:04
+ERROR - 2024-08-05 11:29:04 --> bid calculation Ended auctionItemId:44, 2024-08-05 11:29:04
+ERROR - 2024-08-05 11:29:05 --> bid calculation initiated auctionItemId:43, 2024-08-05 11:29:05
+ERROR - 2024-08-05 11:29:05 --> bid calculation Ended auctionItemId:43, 2024-08-05 11:29:05
+ERROR - 2024-08-05 11:29:05 --> bid calculation initiated auctionItemId:44, 2024-08-05 11:29:05
+ERROR - 2024-08-05 11:29:05 --> bid calculation Ended auctionItemId:44, 2024-08-05 11:29:05
+ERROR - 2024-08-05 11:29:35 --> current items data:[{"id":"43","inward_invoice_id":"V1","inward_item_id":"5","auction_id":"14","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"},{"id":"44","inward_invoice_id":"V2","inward_item_id":"6","auction_id":"14","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"}], 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L001. auctionItemId:43, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> bid calculation initiated auctionItemId:43, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> bid calculation Ended auctionItemId:43, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L002. auctionItemId:43, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L003. auctionItemId:43, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L001. auctionItemId:44, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> bid calculation initiated auctionItemId:44, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> bid calculation Ended auctionItemId:44, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L002. auctionItemId:44, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:35 --> Error code L003. auctionItemId:44, 2024-08-05 11:29:35
+ERROR - 2024-08-05 11:29:36 --> current items data:[], 2024-08-05 11:29:36
+ERROR - 2024-08-05 11:30:36 --> bid calculation initiated auctionItemId:45, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> bid calculation Ended auctionItemId:45, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> bid calculation initiated auctionItemId:46, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> Error code 001. HBP:116.00,HABP: 120.00, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> Error code 003. HBP:116.00,RP: 105, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> Error code 005. HBP:116.00,SLHABP: 0.00, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:36 --> bid calculation Ended auctionItemId:46, 2024-08-05 11:30:36
+ERROR - 2024-08-05 11:30:37 --> bid calculation initiated auctionItemId:45, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> bid calculation Ended auctionItemId:45, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> bid calculation initiated auctionItemId:46, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> Error code 001. HBP:117.00,HABP: 120.00, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> Error code 003. HBP:117.00,RP: 105, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> Error code 005. HBP:117.00,SLHABP: 0.00, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:30:37 --> bid calculation Ended auctionItemId:46, 2024-08-05 11:30:37
+ERROR - 2024-08-05 11:31:06 --> current items data:[{"id":"45","inward_invoice_id":"V8","inward_item_id":"12","auction_id":"14","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"},{"id":"46","inward_invoice_id":"V3","inward_item_id":"7","auction_id":"14","lot_no":"4","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"}], 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L001. auctionItemId:45, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> bid calculation initiated auctionItemId:45, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> bid calculation Ended auctionItemId:45, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L002. auctionItemId:45, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L003. auctionItemId:45, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L001. auctionItemId:46, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> bid calculation initiated auctionItemId:46, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code 001. HBP:118.00,HABP: 120.00, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code 003. HBP:118.00,RP: 105, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code 005. HBP:118.00,SLHABP: 0.00, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> bid calculation Ended auctionItemId:46, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L002. auctionItemId:46, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> Error code L003. auctionItemId:46, 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:31:06 --> current items data:[], 2024-08-05 11:31:06
+ERROR - 2024-08-05 11:32:07 --> bid calculation initiated auctionItemId:47, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 001. HBP:101.00,HABP: 110.00, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 002. HBP:101.00,RP: 105, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation Ended auctionItemId:47, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation initiated auctionItemId:48, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation Ended auctionItemId:48, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation initiated auctionItemId:47, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation Ended auctionItemId:47, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation initiated auctionItemId:48, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:07 --> bid calculation Ended auctionItemId:48, 2024-08-05 11:32:07
+ERROR - 2024-08-05 11:32:37 --> current items data:[{"id":"47","inward_invoice_id":"V4","inward_item_id":"8","auction_id":"14","lot_no":"5","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"},{"id":"48","inward_invoice_id":"V5","inward_item_id":"9","auction_id":"14","lot_no":"6","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"}], 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L001. auctionItemId:47, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> bid calculation initiated auctionItemId:47, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> bid calculation Ended auctionItemId:47, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L002. auctionItemId:47, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L003. auctionItemId:47, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L001. auctionItemId:48, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> bid calculation initiated auctionItemId:48, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> bid calculation Ended auctionItemId:48, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L002. auctionItemId:48, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:37 --> Error code L003. auctionItemId:48, 2024-08-05 11:32:37
+ERROR - 2024-08-05 11:32:38 --> current items data:[], 2024-08-05 11:32:38
+ERROR - 2024-08-05 11:35:45 --> current items data:[{"id":"49","inward_invoice_id":"V7","inward_item_id":"11","auction_id":"14","lot_no":"7","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"},{"id":"50","inward_invoice_id":"V6","inward_item_id":"10","auction_id":"14","lot_no":"8","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:24:28","updated_at":"2024-08-05 11:25:13","created_by":"5","updated_by":"5"}], 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L001. auctionItemId:49, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> bid calculation initiated auctionItemId:49, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> bid calculation Ended auctionItemId:49, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L002. auctionItemId:49, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L003. auctionItemId:49, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L001. auctionItemId:50, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> bid calculation initiated auctionItemId:50, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code 001. HBP:108.00,HABP: 130.00, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code 003. HBP:108.00,RP: 105, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code 004. HBP:108.00,SLHABP: 120.00, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> bid calculation Ended auctionItemId:50, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L002. auctionItemId:50, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:45 --> Error code L003. auctionItemId:50, 2024-08-05 11:35:45
+ERROR - 2024-08-05 11:35:46 --> current items data:[], 2024-08-05 11:35:46
+CRITICAL - 2024-08-05 11:47:01 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 11:47:29 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 11:47:31 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 11:47:33 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-05 11:58:55 --> bid calculation initiated auctionItemId:51, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation Ended auctionItemId:51, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation initiated auctionItemId:52, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation Ended auctionItemId:52, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation initiated auctionItemId:51, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation Ended auctionItemId:51, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation initiated auctionItemId:52, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:58:55 --> bid calculation Ended auctionItemId:52, 2024-08-05 11:58:55
+ERROR - 2024-08-05 11:59:25 --> current items data:[{"id":"51","inward_invoice_id":"S1","inward_item_id":"15","auction_id":"15","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"},{"id":"52","inward_invoice_id":"S2","inward_item_id":"16","auction_id":"15","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"}], 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L001. auctionItemId:51, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> bid calculation initiated auctionItemId:51, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> bid calculation Ended auctionItemId:51, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L002. auctionItemId:51, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L003. auctionItemId:51, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L001. auctionItemId:52, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> bid calculation initiated auctionItemId:52, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> bid calculation Ended auctionItemId:52, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L002. auctionItemId:52, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> Error code L003. auctionItemId:52, 2024-08-05 11:59:25
+ERROR - 2024-08-05 11:59:25 --> current items data:[], 2024-08-05 11:59:25
+ERROR - 2024-08-05 12:00:27 --> bid calculation initiated auctionItemId:53, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation Ended auctionItemId:53, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation initiated auctionItemId:54, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 001. HBP:116.00,HABP: 120.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 003. HBP:116.00,RP: 105, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 005. HBP:116.00,SLHABP: 0.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation Ended auctionItemId:54, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation initiated auctionItemId:53, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation Ended auctionItemId:53, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation initiated auctionItemId:54, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 001. HBP:117.00,HABP: 120.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 003. HBP:117.00,RP: 105, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> Error code 005. HBP:117.00,SLHABP: 0.00, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:27 --> bid calculation Ended auctionItemId:54, 2024-08-05 12:00:27
+ERROR - 2024-08-05 12:00:57 --> current items data:[{"id":"53","inward_invoice_id":"S3","inward_item_id":"17","auction_id":"15","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"},{"id":"54","inward_invoice_id":"S4","inward_item_id":"18","auction_id":"15","lot_no":"4","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"}], 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L001. auctionItemId:53, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> bid calculation initiated auctionItemId:53, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> bid calculation Ended auctionItemId:53, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L002. auctionItemId:53, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L003. auctionItemId:53, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L001. auctionItemId:54, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> bid calculation initiated auctionItemId:54, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code 001. HBP:118.00,HABP: 120.00, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code 003. HBP:118.00,RP: 105, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code 005. HBP:118.00,SLHABP: 0.00, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> bid calculation Ended auctionItemId:54, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L002. auctionItemId:54, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> Error code L003. auctionItemId:54, 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:00:57 --> current items data:[], 2024-08-05 12:00:57
+ERROR - 2024-08-05 12:01:58 --> bid calculation initiated auctionItemId:55, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:58 --> bid calculation Ended auctionItemId:55, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:58 --> bid calculation initiated auctionItemId:56, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:58 --> Error code 001. HBP:102.00,HABP: 120.00, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:58 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:58 --> bid calculation Ended auctionItemId:56, 2024-08-05 12:01:58
+ERROR - 2024-08-05 12:01:59 --> bid calculation initiated auctionItemId:55, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:01:59 --> bid calculation Ended auctionItemId:55, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:01:59 --> bid calculation initiated auctionItemId:56, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:01:59 --> Error code 001. HBP:105.00,HABP: 120.00, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:01:59 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:01:59 --> bid calculation Ended auctionItemId:56, 2024-08-05 12:01:59
+ERROR - 2024-08-05 12:02:28 --> current items data:[{"id":"55","inward_invoice_id":"S5","inward_item_id":"19","auction_id":"15","lot_no":"5","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"},{"id":"56","inward_invoice_id":"S6","inward_item_id":"20","auction_id":"15","lot_no":"6","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"}], 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L001. auctionItemId:55, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> bid calculation initiated auctionItemId:55, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> bid calculation Ended auctionItemId:55, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L002. auctionItemId:55, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L003. auctionItemId:55, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L001. auctionItemId:56, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> bid calculation initiated auctionItemId:56, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code 001. HBP:105.00,HABP: 120.00, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> bid calculation Ended auctionItemId:56, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L002. auctionItemId:56, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> Error code L003. auctionItemId:56, 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:02:28 --> current items data:[], 2024-08-05 12:02:28
+ERROR - 2024-08-05 12:04:36 --> current items data:[{"id":"57","inward_invoice_id":"S8","inward_item_id":"22","auction_id":"15","lot_no":"7","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"},{"id":"58","inward_invoice_id":"S7","inward_item_id":"21","auction_id":"15","lot_no":"8","lot_set":"4","auction_quantity":"1","sample_quantity":"1","auction_each_net":"10","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 11:47:37","updated_at":"2024-08-05 11:48:18","created_by":"5","updated_by":"5"}], 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L001. auctionItemId:57, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> bid calculation initiated auctionItemId:57, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code 007. HBP:110.00,HABP: 110.00, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> bid calculation Ended auctionItemId:57, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L002. auctionItemId:57, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L003. auctionItemId:57, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L001. auctionItemId:58, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> bid calculation initiated auctionItemId:58, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code 001. HBP:108.00,HABP: 110.00, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code 003. HBP:108.00,RP: 105, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code 005. HBP:108.00,SLHABP: 0.00, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> bid calculation Ended auctionItemId:58, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L002. auctionItemId:58, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:36 --> Error code L003. auctionItemId:58, 2024-08-05 12:04:36
+ERROR - 2024-08-05 12:04:38 --> current items data:[], 2024-08-05 12:04:38
+CRITICAL - 2024-08-05 15:20:04 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 15:20:05 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 15:20:59 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 15:21:12 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 16:20:15 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 16:21:17 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 16:21:37 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 16:21:42 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-05 17:17:35 --> bid calculation initiated auctionItemId:1, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 001. HBP:126.00,HABP: 131.00, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 003. HBP:126.00,RP: 105, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 005. HBP:126.00,SLHABP: 117.00, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> bid calculation Ended auctionItemId:1, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> bid calculation initiated auctionItemId:2, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 001. HBP:150.00,HABP: 155.00, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 003. HBP:150.00,RP: 105, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> Error code 005. HBP:150.00,SLHABP: 147.00, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:17:35 --> bid calculation Ended auctionItemId:2, 2024-08-05 05:17:35
+ERROR - 2024-08-05 17:18:05 --> current items data:[{"id":"1","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"1","lot_no":"1","lot_set":"1","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"2","inward_invoice_id":"V2","inward_item_id":"2","auction_id":"1","lot_no":"2","lot_set":"1","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L001. auctionItemId:1, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> bid calculation initiated auctionItemId:1, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 001. HBP:127.00,HABP: 131.00, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 003. HBP:127.00,RP: 105, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 005. HBP:127.00,SLHABP: 117.00, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> bid calculation Ended auctionItemId:1, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L002. auctionItemId:1, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L003. auctionItemId:1, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L001. auctionItemId:2, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> bid calculation initiated auctionItemId:2, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 001. HBP:151.00,HABP: 155.00, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 003. HBP:151.00,RP: 105, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code 004. HBP:151.00,SLHABP: 152.00, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> bid calculation Ended auctionItemId:2, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L002. auctionItemId:2, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> Error code L003. auctionItemId:2, 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> current items data:[], 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:05 --> current items data:[], 2024-08-05 05:18:05
+ERROR - 2024-08-05 17:18:06 --> current items data:[], 2024-08-05 05:18:06
+ERROR - 2024-08-05 17:18:09 --> current items data:[], 2024-08-05 05:18:09
+ERROR - 2024-08-05 17:18:09 --> current items data:[], 2024-08-05 05:18:09
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:132.00,HABP: 152.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:132.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 004. HBP:132.00,SLHABP: 140.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:142.00,HABP: 150.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:142.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:142.00,SLHABP: 119.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:141.00,HABP: 152.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:141.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:141.00,SLHABP: 140.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:143.00,HABP: 150.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:143.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:143.00,SLHABP: 119.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:142.00,HABP: 152.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:142.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:142.00,SLHABP: 140.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:144.00,HABP: 150.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:144.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:144.00,SLHABP: 119.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:143.00,HABP: 152.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:143.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:143.00,SLHABP: 140.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 001. HBP:145.00,HABP: 150.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 003. HBP:145.00,RP: 110, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> Error code 005. HBP:145.00,SLHABP: 119.00, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:07 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:07
+ERROR - 2024-08-05 17:19:08 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 001. HBP:144.00,HABP: 152.00, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 003. HBP:144.00,RP: 110, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 005. HBP:144.00,SLHABP: 140.00, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 001. HBP:146.00,HABP: 150.00, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 003. HBP:146.00,RP: 110, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> Error code 005. HBP:146.00,SLHABP: 119.00, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:08 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:08
+ERROR - 2024-08-05 17:19:09 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 001. HBP:145.00,HABP: 152.00, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 003. HBP:145.00,RP: 110, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 005. HBP:145.00,SLHABP: 140.00, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 001. HBP:147.00,HABP: 150.00, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 003. HBP:147.00,RP: 110, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> Error code 005. HBP:147.00,SLHABP: 119.00, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:09 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:09
+ERROR - 2024-08-05 17:19:37 --> current items data:[{"id":"3","inward_invoice_id":"V3","inward_item_id":"3","auction_id":"1","lot_no":"3","lot_set":"2","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"105","reverse_price":"110","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"4","inward_invoice_id":"V4","inward_item_id":"4","auction_id":"1","lot_no":"4","lot_set":"2","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"105","reverse_price":"110","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L001. auctionItemId:3, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> bid calculation initiated auctionItemId:3, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 001. HBP:146.00,HABP: 152.00, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 003. HBP:146.00,RP: 110, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 005. HBP:146.00,SLHABP: 140.00, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> bid calculation Ended auctionItemId:3, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L002. auctionItemId:3, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L003. auctionItemId:3, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L001. auctionItemId:4, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> bid calculation initiated auctionItemId:4, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 001. HBP:148.00,HABP: 150.00, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 003. HBP:148.00,RP: 110, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code 005. HBP:148.00,SLHABP: 119.00, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> bid calculation Ended auctionItemId:4, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L002. auctionItemId:4, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> Error code L003. auctionItemId:4, 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:37 --> current items data:[], 2024-08-05 05:19:37
+ERROR - 2024-08-05 17:19:38 --> current items data:[], 2024-08-05 05:19:38
+ERROR - 2024-08-05 17:19:40 --> current items data:[], 2024-08-05 05:19:40
+ERROR - 2024-08-05 17:19:41 --> current items data:[], 2024-08-05 05:19:41
+ERROR - 2024-08-05 17:19:41 --> current items data:[], 2024-08-05 05:19:41
+ERROR - 2024-08-05 17:20:38 --> current items data:[{"id":"5","inward_invoice_id":"V5","inward_item_id":"5","auction_id":"1","lot_no":"5","lot_set":"3","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"105","reverse_price":"110","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"6","inward_invoice_id":"S1","inward_item_id":"11","auction_id":"1","lot_no":"6","lot_set":"3","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"95","reverse_price":"100","high_price":"0","valuation_price":"105","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L001. auctionItemId:5, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> bid calculation initiated auctionItemId:5, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code 006. HBP:120.00,HABP: 110.00, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> bid calculation Ended auctionItemId:5, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L002. auctionItemId:5, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L003. auctionItemId:5, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L001. auctionItemId:6, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> bid calculation initiated auctionItemId:6, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code 001. HBP:110.00,HABP: 120.00, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code 003. HBP:110.00,RP: 100, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code 005. HBP:110.00,SLHABP: 110.00, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> bid calculation Ended auctionItemId:6, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L002. auctionItemId:6, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:20:38 --> Error code L003. auctionItemId:6, 2024-08-05 05:20:38
+ERROR - 2024-08-05 17:22:16 --> current items data:[], 2024-08-05 05:22:16
+ERROR - 2024-08-05 17:22:16 --> current items data:[], 2024-08-05 05:22:16
+ERROR - 2024-08-05 17:22:16 --> current items data:[], 2024-08-05 05:22:16
+ERROR - 2024-08-05 17:22:17 --> current items data:[], 2024-08-05 05:22:17
+ERROR - 2024-08-05 17:22:48 --> current items data:[], 2024-08-05 05:22:48
+ERROR - 2024-08-05 17:22:50 --> current items data:[], 2024-08-05 05:22:50
+ERROR - 2024-08-05 17:23:17 --> bid calculation initiated auctionItemId:7, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> Error code 001. HBP:113.00,HABP: 135.00, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> Error code 003. HBP:113.00,RP: 100, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> Error code 004. HBP:113.00,SLHABP: 118.00, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> bid calculation Ended auctionItemId:7, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> bid calculation initiated auctionItemId:8, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> Error code 006. HBP:110.00,HABP: 101.00, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:17 --> bid calculation Ended auctionItemId:8, 2024-08-05 05:23:17
+ERROR - 2024-08-05 17:23:18 --> bid calculation initiated auctionItemId:7, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 001. HBP:119.00,HABP: 135.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 003. HBP:119.00,RP: 100, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 005. HBP:119.00,SLHABP: 118.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation Ended auctionItemId:7, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation initiated auctionItemId:8, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 006. HBP:110.00,HABP: 101.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation Ended auctionItemId:8, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation initiated auctionItemId:7, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 001. HBP:120.00,HABP: 135.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 003. HBP:120.00,RP: 100, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 005. HBP:120.00,SLHABP: 118.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation Ended auctionItemId:7, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation initiated auctionItemId:8, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> Error code 006. HBP:110.00,HABP: 101.00, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:18 --> bid calculation Ended auctionItemId:8, 2024-08-05 05:23:18
+ERROR - 2024-08-05 17:23:20 --> bid calculation initiated auctionItemId:7, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> Error code 001. HBP:121.00,HABP: 135.00, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> Error code 003. HBP:121.00,RP: 100, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> Error code 005. HBP:121.00,SLHABP: 118.00, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> bid calculation Ended auctionItemId:7, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> bid calculation initiated auctionItemId:8, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> Error code 006. HBP:110.00,HABP: 101.00, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:20 --> bid calculation Ended auctionItemId:8, 2024-08-05 05:23:20
+ERROR - 2024-08-05 17:23:47 --> current items data:[{"id":"7","inward_invoice_id":"S2","inward_item_id":"12","auction_id":"1","lot_no":"7","lot_set":"4","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"95","reverse_price":"100","high_price":"0","valuation_price":"105","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"8","inward_invoice_id":"S3","inward_item_id":"13","auction_id":"1","lot_no":"8","lot_set":"4","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"95","reverse_price":"100","high_price":"0","valuation_price":"105","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L001. auctionItemId:7, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> bid calculation initiated auctionItemId:7, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 001. HBP:122.00,HABP: 135.00, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 003. HBP:122.00,RP: 100, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 005. HBP:122.00,SLHABP: 118.00, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> bid calculation Ended auctionItemId:7, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L002. auctionItemId:7, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L003. auctionItemId:7, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L001. auctionItemId:8, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> bid calculation initiated auctionItemId:8, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 001. HBP:110.00,HABP: 120.00, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 003. HBP:110.00,RP: 100, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code 005. HBP:110.00,SLHABP: 101.00, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> bid calculation Ended auctionItemId:8, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L002. auctionItemId:8, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:47 --> Error code L003. auctionItemId:8, 2024-08-05 05:23:47
+ERROR - 2024-08-05 17:23:48 --> current items data:[], 2024-08-05 05:23:48
+ERROR - 2024-08-05 17:23:49 --> current items data:[], 2024-08-05 05:23:49
+ERROR - 2024-08-05 17:23:51 --> current items data:[], 2024-08-05 05:23:51
+ERROR - 2024-08-05 17:24:21 --> current items data:[], 2024-08-05 05:24:21
+ERROR - 2024-08-05 17:24:21 --> current items data:[], 2024-08-05 05:24:21
+ERROR - 2024-08-05 17:24:38 --> current items data:[], 2024-08-05 05:24:38
+ERROR - 2024-08-05 17:26:14 --> current items data:[{"id":"9","inward_invoice_id":"S4","inward_item_id":"14","auction_id":"1","lot_no":"9","lot_set":"5","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"10","inward_invoice_id":"S5","inward_item_id":"15","auction_id":"1","lot_no":"10","lot_set":"5","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L001. auctionItemId:9, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> bid calculation initiated auctionItemId:9, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 001. HBP:113.00,HABP: 115.00, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 003. HBP:113.00,RP: 105, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 005. HBP:113.00,SLHABP: 113.00, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> bid calculation Ended auctionItemId:9, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L002. auctionItemId:9, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L003. auctionItemId:9, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L001. auctionItemId:10, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> bid calculation initiated auctionItemId:10, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 001. HBP:112.00,HABP: 130.00, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 003. HBP:112.00,RP: 105, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code 004. HBP:112.00,SLHABP: 114.00, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> bid calculation Ended auctionItemId:10, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L002. auctionItemId:10, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> Error code L003. auctionItemId:10, 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:14 --> current items data:[], 2024-08-05 05:26:14
+ERROR - 2024-08-05 17:26:15 --> current items data:[], 2024-08-05 05:26:15
+ERROR - 2024-08-05 17:26:16 --> current items data:[], 2024-08-05 05:26:16
+ERROR - 2024-08-05 17:26:17 --> current items data:[], 2024-08-05 05:26:17
+ERROR - 2024-08-05 17:26:17 --> current items data:[], 2024-08-05 05:26:17
+ERROR - 2024-08-05 17:28:22 --> current items data:[{"id":"11","inward_invoice_id":"K1","inward_item_id":"21","auction_id":"1","lot_no":"11","lot_set":"6","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"105","reverse_price":"107","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"12","inward_invoice_id":"K2","inward_item_id":"22","auction_id":"1","lot_no":"12","lot_set":"6","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"105","reverse_price":"107","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L001. auctionItemId:11, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> bid calculation initiated auctionItemId:11, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code 001. HBP:111.00,HABP: 150.00, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code 003. HBP:111.00,RP: 107, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code 004. HBP:111.00,SLHABP: 145.00, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> bid calculation Ended auctionItemId:11, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L002. auctionItemId:11, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L003. auctionItemId:11, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L001. auctionItemId:12, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> bid calculation initiated auctionItemId:12, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code 001. HBP:107.00,HABP: 120.00, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code 002. HBP:107.00,RP: 107, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> bid calculation Ended auctionItemId:12, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L002. auctionItemId:12, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> Error code L003. auctionItemId:12, 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:22 --> current items data:[], 2024-08-05 05:28:22
+ERROR - 2024-08-05 17:28:23 --> current items data:[], 2024-08-05 05:28:23
+ERROR - 2024-08-05 17:28:26 --> current items data:[], 2024-08-05 05:28:26
+ERROR - 2024-08-05 17:28:26 --> current items data:[], 2024-08-05 05:28:26
+ERROR - 2024-08-05 17:28:26 --> current items data:[], 2024-08-05 05:28:26
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:24 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:24
+ERROR - 2024-08-05 17:29:25 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:25 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:25
+ERROR - 2024-08-05 17:29:26 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:26 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:26
+ERROR - 2024-08-05 17:29:27 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:27 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:27
+ERROR - 2024-08-05 17:29:38 --> current items data:[{"id":"13","inward_invoice_id":"K3","inward_item_id":"23","auction_id":"1","lot_no":"13","lot_set":"7","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"110","reverse_price":"112","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:48","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"14","inward_invoice_id":"K4","inward_item_id":"24","auction_id":"1","lot_no":"14","lot_set":"7","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"110","reverse_price":"112","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L001. auctionItemId:13, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> bid calculation initiated auctionItemId:13, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code 006. HBP:125.00,HABP: 115.00, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> bid calculation Ended auctionItemId:13, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L002. auctionItemId:13, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L003. auctionItemId:13, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L001. auctionItemId:14, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> bid calculation initiated auctionItemId:14, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code 001. HBP:112.00,HABP: 126.00, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code 002. HBP:112.00,RP: 112, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> bid calculation Ended auctionItemId:14, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L002. auctionItemId:14, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:38 --> Error code L003. auctionItemId:14, 2024-08-05 05:29:38
+ERROR - 2024-08-05 17:29:54 --> current items data:[], 2024-08-05 05:29:54
+ERROR - 2024-08-05 17:29:54 --> current items data:[], 2024-08-05 05:29:54
+ERROR - 2024-08-05 17:29:54 --> current items data:[], 2024-08-05 05:29:54
+ERROR - 2024-08-05 17:29:58 --> current items data:[], 2024-08-05 05:29:58
+ERROR - 2024-08-05 17:29:58 --> current items data:[], 2024-08-05 05:29:58
+ERROR - 2024-08-05 17:29:58 --> current items data:[], 2024-08-05 05:29:58
+ERROR - 2024-08-05 17:32:37 --> current items data:[{"id":"15","inward_invoice_id":"K5","inward_item_id":"25","auction_id":"1","lot_no":"15","lot_set":"8","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"110","reverse_price":"112","high_price":"0","valuation_price":"115","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"16","inward_invoice_id":"K7","inward_item_id":"27","auction_id":"1","lot_no":"16","lot_set":"8","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"110","reverse_price":"115","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L001. auctionItemId:15, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> bid calculation initiated auctionItemId:15, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 001. HBP:134.00,HABP: 140.00, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 003. HBP:134.00,RP: 112, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 005. HBP:134.00,SLHABP: 132.00, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> bid calculation Ended auctionItemId:15, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L002. auctionItemId:15, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L003. auctionItemId:15, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L001. auctionItemId:16, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> bid calculation initiated auctionItemId:16, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 001. HBP:128.00,HABP: 140.00, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 003. HBP:128.00,RP: 115, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code 004. HBP:128.00,SLHABP: 132.00, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> bid calculation Ended auctionItemId:16, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L002. auctionItemId:16, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:37 --> Error code L003. auctionItemId:16, 2024-08-05 05:32:37
+ERROR - 2024-08-05 17:32:38 --> current items data:[], 2024-08-05 05:32:38
+ERROR - 2024-08-05 17:32:38 --> current items data:[], 2024-08-05 05:32:38
+ERROR - 2024-08-05 17:32:41 --> current items data:[], 2024-08-05 05:32:41
+ERROR - 2024-08-05 17:32:41 --> current items data:[], 2024-08-05 05:32:41
+ERROR - 2024-08-05 17:32:41 --> current items data:[], 2024-08-05 05:32:41
+ERROR - 2024-08-05 17:32:41 --> current items data:[], 2024-08-05 05:32:41
+ERROR - 2024-08-05 17:33:38 --> bid calculation initiated auctionItemId:17, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> Error code 001. HBP:127.00,HABP: 135.00, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> Error code 003. HBP:127.00,RP: 115, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> Error code 004. HBP:127.00,SLHABP: 130.00, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> bid calculation Ended auctionItemId:17, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> bid calculation initiated auctionItemId:18, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> Error code 001. HBP:112.00,HABP: 132.00, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> Error code 002. HBP:112.00,RP: 115, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:38 --> bid calculation Ended auctionItemId:18, 2024-08-05 05:33:38
+ERROR - 2024-08-05 17:33:39 --> bid calculation initiated auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 001. HBP:131.00,HABP: 135.00, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 003. HBP:131.00,RP: 115, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 005. HBP:131.00,SLHABP: 130.00, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation Ended auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation initiated auctionItemId:18, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 001. HBP:115.00,HABP: 132.00, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 002. HBP:115.00,RP: 115, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation Ended auctionItemId:18, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> current items data:[{"id":"17","inward_invoice_id":"K6","inward_item_id":"26","auction_id":"1","lot_no":"17","lot_set":"9","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"110","reverse_price":"115","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"18","inward_invoice_id":"WA1","inward_item_id":"28","auction_id":"1","lot_no":"18","lot_set":"9","auction_quantity":"10","sample_quantity":"0","auction_each_net":"40","base_price":"110","reverse_price":"115","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code L001. auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation initiated auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 001. HBP:132.00,HABP: 135.00, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 003. HBP:132.00,RP: 115, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code 005. HBP:132.00,SLHABP: 130.00, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation Ended auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code L002. auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code L003. auctionItemId:17, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> Error code L001. auctionItemId:18, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:39 --> bid calculation initiated auctionItemId:18, 2024-08-05 05:33:39
+ERROR - 2024-08-05 17:33:40 --> Error code 001. HBP:115.00,HABP: 132.00, 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> Error code 002. HBP:115.00,RP: 115, 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> bid calculation Ended auctionItemId:18, 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> Error code L002. auctionItemId:18, 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> Error code L003. auctionItemId:18, 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> current items data:[], 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:33:40 --> current items data:[], 2024-08-05 05:33:40
+ERROR - 2024-08-05 17:34:12 --> current items data:[], 2024-08-05 05:34:12
+ERROR - 2024-08-05 17:34:12 --> current items data:[], 2024-08-05 05:34:12
+ERROR - 2024-08-05 17:34:12 --> current items data:[], 2024-08-05 05:34:12
+ERROR - 2024-08-05 17:34:15 --> current items data:[], 2024-08-05 05:34:15
+ERROR - 2024-08-05 17:35:42 --> current items data:[{"id":"19","inward_invoice_id":"WA2","inward_item_id":"29","auction_id":"1","lot_no":"19","lot_set":"10","auction_quantity":"10","sample_quantity":"0","auction_each_net":"40","base_price":"115","reverse_price":"117","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"},{"id":"20","inward_invoice_id":"WA3","inward_item_id":"30","auction_id":"1","lot_no":"20","lot_set":"10","auction_quantity":"10","sample_quantity":"0","auction_each_net":"40","base_price":"115","reverse_price":"117","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 16:21:49","updated_at":"2024-08-05 16:25:09","created_by":"3","updated_by":"3"}], 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L001. auctionItemId:19, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> bid calculation initiated auctionItemId:19, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code 007. HBP:135.00,HABP: 135.00, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> bid calculation Ended auctionItemId:19, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L002. auctionItemId:19, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L003. auctionItemId:19, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L001. auctionItemId:20, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> bid calculation initiated auctionItemId:20, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code 001. HBP:132.00,HABP: 140.00, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code 003. HBP:132.00,RP: 117, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code 004. HBP:132.00,SLHABP: 135.00, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> bid calculation Ended auctionItemId:20, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L002. auctionItemId:20, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:35:42 --> Error code L003. auctionItemId:20, 2024-08-05 05:35:42
+ERROR - 2024-08-05 17:36:42 --> current items data:[], 2024-08-05 05:36:42
+ERROR - 2024-08-05 17:36:42 --> current items data:[], 2024-08-05 05:36:42
+ERROR - 2024-08-05 17:36:43 --> current items data:[], 2024-08-05 05:36:43
+ERROR - 2024-08-05 17:36:43 --> current items data:[], 2024-08-05 05:36:43
+ERROR - 2024-08-05 17:36:45 --> current items data:[], 2024-08-05 05:36:45
+ERROR - 2024-08-05 17:36:45 --> current items data:[], 2024-08-05 05:36:45
+CRITICAL - 2024-08-05 17:52:30 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 17:53:09 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-05 17:53:13 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-08-05 18:13:13 --> bid calculation initiated auctionItemId:21, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 001. HBP:104.00,HABP: 110.00, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 002. HBP:104.00,RP: 105, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation initiated auctionItemId:21, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation Ended auctionItemId:21, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation initiated auctionItemId:22, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 001. HBP:102.00,HABP: 110.00, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation Ended auctionItemId:21, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation initiated auctionItemId:22, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation Ended auctionItemId:22, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:13 --> bid calculation Ended auctionItemId:22, 2024-08-05 06:13:13
+ERROR - 2024-08-05 18:13:41 --> current items data:[{"id":"21","inward_invoice_id":"V1","inward_item_id":"1","auction_id":"2","lot_no":"1","lot_set":"1","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:17","created_by":"3","updated_by":"3"},{"id":"22","inward_invoice_id":"V2","inward_item_id":"2","auction_id":"2","lot_no":"2","lot_set":"1","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:17","created_by":"3","updated_by":"3"}], 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L001. auctionItemId:21, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> bid calculation initiated auctionItemId:21, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> bid calculation Ended auctionItemId:21, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L002. auctionItemId:21, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L003. auctionItemId:21, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L001. auctionItemId:22, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> bid calculation initiated auctionItemId:22, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code 001. HBP:105.00,HABP: 110.00, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code 002. HBP:105.00,RP: 105, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> bid calculation Ended auctionItemId:22, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L002. auctionItemId:22, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:13:41 --> Error code L003. auctionItemId:22, 2024-08-05 06:13:41
+ERROR - 2024-08-05 18:14:39 --> current items data:[], 2024-08-05 06:14:39
+ERROR - 2024-08-05 18:14:40 --> current items data:[], 2024-08-05 06:14:40
+ERROR - 2024-08-05 18:14:41 --> current items data:[], 2024-08-05 06:14:41
+ERROR - 2024-08-05 18:14:42 --> current items data:[], 2024-08-05 06:14:42
+ERROR - 2024-08-05 18:14:42 --> current items data:[], 2024-08-05 06:14:42
+ERROR - 2024-08-05 18:15:14 --> current items data:[{"id":"23","inward_invoice_id":"V3","inward_item_id":"3","auction_id":"2","lot_no":"3","lot_set":"2","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:17","created_by":"3","updated_by":"3"},{"id":"24","inward_invoice_id":"V4","inward_item_id":"4","auction_id":"2","lot_no":"4","lot_set":"2","auction_quantity":"10","sample_quantity":"1","auction_each_net":"40","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"}], 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L001. auctionItemId:23, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> bid calculation initiated auctionItemId:23, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code 001. HBP:104.00,HABP: 110.00, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code 002. HBP:104.00,RP: 105, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> bid calculation Ended auctionItemId:23, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L002. auctionItemId:23, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L003. auctionItemId:23, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L001. auctionItemId:24, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> bid calculation initiated auctionItemId:24, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> bid calculation Ended auctionItemId:24, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L002. auctionItemId:24, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> Error code L003. auctionItemId:24, 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:14 --> current items data:[], 2024-08-05 06:15:14
+ERROR - 2024-08-05 18:15:15 --> current items data:[], 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> current items data:[], 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> current items data:[], 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> current items data:[{"id":"25","inward_invoice_id":"S1","inward_item_id":"11","auction_id":"2","lot_no":"5","lot_set":"3","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"},{"id":"26","inward_invoice_id":"S2","inward_item_id":"12","auction_id":"2","lot_no":"6","lot_set":"3","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"}], 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L001. auctionItemId:25, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> bid calculation initiated auctionItemId:25, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code 001. HBP:102.00,HABP: 112.00, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> bid calculation Ended auctionItemId:25, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L002. auctionItemId:25, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L003. auctionItemId:25, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L001. auctionItemId:26, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> bid calculation initiated auctionItemId:26, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code 001. HBP:102.00,HABP: 114.00, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> bid calculation Ended auctionItemId:26, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L002. auctionItemId:26, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> Error code L003. auctionItemId:26, 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:15 --> current items data:[], 2024-08-05 06:15:15
+ERROR - 2024-08-05 18:15:16 --> current items data:[], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> current items data:[], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> current items data:[], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> current items data:[], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> current items data:[{"id":"27","inward_invoice_id":"S3","inward_item_id":"13","auction_id":"2","lot_no":"7","lot_set":"4","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"},{"id":"28","inward_invoice_id":"S4","inward_item_id":"14","auction_id":"2","lot_no":"8","lot_set":"4","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"}], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L001. auctionItemId:27, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> bid calculation initiated auctionItemId:27, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code 001. HBP:102.00,HABP: 111.00, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code 002. HBP:102.00,RP: 105, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> bid calculation Ended auctionItemId:27, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L002. auctionItemId:27, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L003. auctionItemId:27, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L001. auctionItemId:28, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> bid calculation initiated auctionItemId:28, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> bid calculation Ended auctionItemId:28, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L002. auctionItemId:28, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> Error code L003. auctionItemId:28, 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:16 --> current items data:[], 2024-08-05 06:15:16
+ERROR - 2024-08-05 18:15:17 --> current items data:[], 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> current items data:[], 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> current items data:[], 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> current items data:[], 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> current items data:[{"id":"29","inward_invoice_id":"W1","inward_item_id":"16","auction_id":"2","lot_no":"9","lot_set":"5","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"},{"id":"30","inward_invoice_id":"W2","inward_item_id":"17","auction_id":"2","lot_no":"10","lot_set":"5","auction_quantity":"10","sample_quantity":"1","auction_each_net":"35","base_price":"100","reverse_price":"105","high_price":"0","valuation_price":"110","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-08-05 17:53:17","updated_at":"2024-08-05 17:54:18","created_by":"3","updated_by":"3"}], 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L001. auctionItemId:29, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> bid calculation initiated auctionItemId:29, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code 001. HBP:100.00,HABP: 111.00, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code 002. HBP:100.00,RP: 105, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> bid calculation Ended auctionItemId:29, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L002. auctionItemId:29, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L003. auctionItemId:29, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L001. auctionItemId:30, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> bid calculation initiated auctionItemId:30, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code 001. HBP:100.00,HABP: 111.00, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code 002. HBP:100.00,RP: 105, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> bid calculation Ended auctionItemId:30, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L002. auctionItemId:30, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:15:17 --> Error code L003. auctionItemId:30, 2024-08-05 06:15:17
+ERROR - 2024-08-05 18:16:41 --> current items data:[], 2024-08-05 06:16:41
+ERROR - 2024-08-05 18:16:41 --> current items data:[], 2024-08-05 06:16:41
+ERROR - 2024-08-05 18:16:41 --> current items data:[], 2024-08-05 06:16:41
+ERROR - 2024-08-05 18:16:41 --> current items data:[], 2024-08-05 06:16:41
+ERROR - 2024-08-05 18:16:43 --> current items data:[], 2024-08-05 06:16:43

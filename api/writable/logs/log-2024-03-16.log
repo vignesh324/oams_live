@@ -1,0 +1,24 @@
+CRITICAL - 2024-03-16 09:30:02 --> ErrorException: require_once(/core/Controller.php): Failed to open stream: No such file or directory
+in APPPATH\Helpers\AutoDelete_helper.php on line 9.
+ 1 APPPATH\Helpers\AutoDelete_helper.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/core/Controller.php): Failed to open stream: No such file or directory', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Helpers\\AutoDelete_helper.php', 9)
+ 2 APPPATH\Helpers\AutoDelete_helper.php(9): require_once()
+ 3 APPPATH\Controllers\State.php(143): deleteRelations()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\State->delete('3')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\State))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 09:31:54 --> ErrorException: require_once(F:\xampp\htdocs\oams_staging\api\app\core/Controller.php): Failed to open stream: No such file or directory
+in APPPATH\Helpers\AutoDelete_helper.php on line 12.
+ 1 APPPATH\Helpers\AutoDelete_helper.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(F:\\xampp\\htdocs\\oams_staging\\api\\app\\core/Controller.php): Failed to open stream: No such file or directory', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Helpers\\AutoDelete_helper.php', 12)
+ 2 APPPATH\Helpers\AutoDelete_helper.php(12): require_once()
+ 3 APPPATH\Controllers\State.php(143): deleteRelations()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\State->delete('3')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\State))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-16 09:34:30 --> Error: Call to undefined function App\Controllers\deleteRelations()
+in APPPATH\Controllers\State.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\State->delete('3')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\State))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

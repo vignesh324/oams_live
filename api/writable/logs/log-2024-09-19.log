@@ -1,0 +1,258 @@
+CRITICAL - 2024-09-19 19:23:38 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:24:01 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:24:06 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-19 19:27:18 --> E002 - 2024-09-19 07:27:18
+ERROR - 2024-09-19 19:27:18 --> E003 - 2024-09-19 07:27:18
+ERROR - 2024-09-19 19:27:18 --> E003.2 - 2024-09-19 07:27:18
+ERROR - 2024-09-19 19:28:47 --> E004 - 2024-09-19 07:28:47
+ERROR - 2024-09-19 19:28:47 --> E004.2 - 2024-09-19 07:28:47
+ERROR - 2024-09-19 19:28:48 --> E004 - 2024-09-19 07:28:48
+ERROR - 2024-09-19 19:28:48 --> E004.2 - 2024-09-19 07:28:48
+ERROR - 2024-09-19 19:29:47 --> current items data:[{"id":"57","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"14","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:24:09","updated_at":"2024-09-19 19:25:00","created_by":"3","updated_by":"3"},{"id":"58","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"14","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:24:09","updated_at":"2024-09-19 19:25:00","created_by":"3","updated_by":"3"}], 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L001. auctionItemId:57, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> bid calculation initiated auctionItemId:57, 2
+ERROR - 2024-09-19 19:29:47 --> Error code 006. HBP:1015.00,HABP: 1,500.00, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> bid calculation Ended auctionItemId:57, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L002. auctionItemId:57, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L003. auctionItemId:57, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L001. auctionItemId:58, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> bid calculation initiated auctionItemId:58, 0
+ERROR - 2024-09-19 19:29:47 --> bid calculation Ended auctionItemId:58, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L002. auctionItemId:58, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:47 --> Error code L003. auctionItemId:58, 2024-09-19 07:29:47
+ERROR - 2024-09-19 19:29:48 --> E002 - 2024-09-19 07:29:48
+ERROR - 2024-09-19 19:29:48 --> E002.1 - 2024-09-19 07:29:48
+ERROR - 2024-09-19 19:29:49 --> current items data:[], 2024-09-19 07:29:49
+ERROR - 2024-09-19 19:31:38 --> E004 - 2024-09-19 07:31:38
+ERROR - 2024-09-19 19:31:38 --> E004.2 - 2024-09-19 07:31:38
+ERROR - 2024-09-19 19:32:38 --> current items data:[{"id":"59","inward_invoice_id":"K2","inward_item_id":"17","auction_id":"14","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"8","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:24:09","updated_at":"2024-09-19 19:25:00","created_by":"3","updated_by":"3"},{"id":"60","inward_invoice_id":"K3","inward_item_id":"18","auction_id":"14","lot_no":"4","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:24:09","updated_at":"2024-09-19 19:25:00","created_by":"3","updated_by":"3"}], 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L001. auctionItemId:59, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> bid calculation initiated auctionItemId:59, 1
+ERROR - 2024-09-19 19:32:38 --> Error code 001. HBP:110.00,HABP: 3,000.00, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code 002. HBP:110.00,RP: 200, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> bid calculation Ended auctionItemId:59, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L002. auctionItemId:59, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L003. auctionItemId:59, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L001. auctionItemId:60, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> bid calculation initiated auctionItemId:60, 0
+ERROR - 2024-09-19 19:32:38 --> bid calculation Ended auctionItemId:60, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L002. auctionItemId:60, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:38 --> Error code L003. auctionItemId:60, 2024-09-19 07:32:38
+ERROR - 2024-09-19 19:32:39 --> E002 - 2024-09-19 07:32:39
+ERROR - 2024-09-19 19:32:39 --> E002.1 - 2024-09-19 07:32:39
+ERROR - 2024-09-19 19:34:09 --> E004 - 2024-09-19 07:34:09
+ERROR - 2024-09-19 19:34:09 --> E004.2 - 2024-09-19 07:34:09
+ERROR - 2024-09-19 19:34:40 --> E004 - 2024-09-19 07:34:40
+ERROR - 2024-09-19 19:34:40 --> E004.2 - 2024-09-19 07:34:40
+ERROR - 2024-09-19 19:35:09 --> current items data:[{"id":"61","inward_invoice_id":"K1","inward_item_id":"16","auction_id":"14","lot_no":"5","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"2","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:24:09","updated_at":"2024-09-19 19:25:00","created_by":"3","updated_by":"3"}], 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:09 --> Error code L001. auctionItemId:61, 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:09 --> bid calculation initiated auctionItemId:61, 1
+ERROR - 2024-09-19 19:35:09 --> Error code 006. HBP:115.00,HABP: 1,000.00, 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:09 --> bid calculation Ended auctionItemId:61, 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:09 --> Error code L002. auctionItemId:61, 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:09 --> Error code L003. auctionItemId:61, 2024-09-19 07:35:09
+ERROR - 2024-09-19 19:35:21 --> current items data:[], 2024-09-19 07:35:21
+CRITICAL - 2024-09-19 19:36:56 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:37:20 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:37:22 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-19 19:40:10 --> E002 - 2024-09-19 07:40:10
+ERROR - 2024-09-19 19:40:10 --> E002.1 - 2024-09-19 07:40:10
+ERROR - 2024-09-19 19:43:18 --> current items data:[{"id":"62","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"15","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:37:24","updated_at":"2024-09-19 19:38:03","created_by":"3","updated_by":"3"},{"id":"63","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"15","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:37:24","updated_at":"2024-09-19 19:38:03","created_by":"3","updated_by":"3"}], 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L001. auctionItemId:62, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> bid calculation initiated auctionItemId:62, 2
+ERROR - 2024-09-19 19:43:18 --> Error code 006. HBP:3050.00,HABP: 3,050.00, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> bid calculation Ended auctionItemId:62, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L002. auctionItemId:62, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L003. auctionItemId:62, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L001. auctionItemId:63, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> bid calculation initiated auctionItemId:63, 0
+ERROR - 2024-09-19 19:43:18 --> bid calculation Ended auctionItemId:63, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L002. auctionItemId:63, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:18 --> Error code L003. auctionItemId:63, 2024-09-19 07:43:18
+ERROR - 2024-09-19 19:43:19 --> E002 - 2024-09-19 07:43:19
+ERROR - 2024-09-19 19:43:19 --> E002.1 - 2024-09-19 07:43:19
+ERROR - 2024-09-19 19:43:19 --> E002 - 2024-09-19 07:43:19
+ERROR - 2024-09-19 19:43:19 --> E002.1 - 2024-09-19 07:43:19
+ERROR - 2024-09-19 19:44:49 --> E004 - 2024-09-19 07:44:49
+ERROR - 2024-09-19 19:44:49 --> E004.2 - 2024-09-19 07:44:49
+ERROR - 2024-09-19 19:44:49 --> E004 - 2024-09-19 07:44:49
+ERROR - 2024-09-19 19:44:49 --> E004.2 - 2024-09-19 07:44:49
+ERROR - 2024-09-19 19:45:32 --> current items data:[{"id":"64","inward_invoice_id":"K2","inward_item_id":"17","auction_id":"15","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"8","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:37:24","updated_at":"2024-09-19 19:38:03","created_by":"3","updated_by":"3"},{"id":"65","inward_invoice_id":"K4","inward_item_id":"19","auction_id":"15","lot_no":"4","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"6","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:37:24","updated_at":"2024-09-19 19:38:03","created_by":"3","updated_by":"3"}], 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L001. auctionItemId:64, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> bid calculation initiated auctionItemId:64, 1
+ERROR - 2024-09-19 19:45:32 --> Error code 006. HBP:110.00,HABP: 1,200.00, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> bid calculation Ended auctionItemId:64, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L002. auctionItemId:64, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L003. auctionItemId:64, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L001. auctionItemId:65, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> bid calculation initiated auctionItemId:65, 1
+ERROR - 2024-09-19 19:45:32 --> Error code 001. HBP:110.00,HABP: 500.00, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code 002. HBP:110.00,RP: 200, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> bid calculation Ended auctionItemId:65, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L002. auctionItemId:65, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:32 --> Error code L003. auctionItemId:65, 2024-09-19 07:45:32
+ERROR - 2024-09-19 19:45:50 --> current items data:[], 2024-09-19 07:45:50
+ERROR - 2024-09-19 19:48:24 --> current items data:[{"id":"66","inward_invoice_id":"K3","inward_item_id":"18","auction_id":"15","lot_no":"5","lot_set":"3","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:37:24","updated_at":"2024-09-19 19:38:03","created_by":"3","updated_by":"3"}], 2024-09-19 07:48:24
+ERROR - 2024-09-19 19:48:24 --> Error code L001. auctionItemId:66, 2024-09-19 07:48:24
+ERROR - 2024-09-19 19:48:24 --> bid calculation initiated auctionItemId:66, 0
+ERROR - 2024-09-19 19:48:24 --> bid calculation Ended auctionItemId:66, 2024-09-19 07:48:24
+ERROR - 2024-09-19 19:48:24 --> Error code L002. auctionItemId:66, 2024-09-19 07:48:24
+ERROR - 2024-09-19 19:48:24 --> Error code L003. auctionItemId:66, 2024-09-19 07:48:24
+CRITICAL - 2024-09-19 19:48:55 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:49:38 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 19:49:41 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-19 19:53:27 --> E002 - 2024-09-19 07:53:27
+ERROR - 2024-09-19 19:53:27 --> E003 - 2024-09-19 07:53:27
+ERROR - 2024-09-19 19:53:27 --> E003.2 - 2024-09-19 07:53:27
+ERROR - 2024-09-19 19:53:27 --> E002 - 2024-09-19 07:53:27
+ERROR - 2024-09-19 19:53:27 --> E002.1 - 2024-09-19 07:53:27
+ERROR - 2024-09-19 19:54:56 --> E004 - 2024-09-19 07:54:56
+ERROR - 2024-09-19 19:54:56 --> E004.2 - 2024-09-19 07:54:56
+ERROR - 2024-09-19 19:54:56 --> E004 - 2024-09-19 07:54:56
+ERROR - 2024-09-19 19:54:56 --> E004.2 - 2024-09-19 07:54:56
+ERROR - 2024-09-19 19:54:57 --> E004 - 2024-09-19 07:54:57
+ERROR - 2024-09-19 19:54:57 --> E004.2 - 2024-09-19 07:54:57
+ERROR - 2024-09-19 19:54:57 --> E004 - 2024-09-19 07:54:57
+ERROR - 2024-09-19 19:54:57 --> E004.2 - 2024-09-19 07:54:57
+ERROR - 2024-09-19 19:55:56 --> current items data:[{"id":"67","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"16","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:49:49","updated_at":"2024-09-19 19:50:16","created_by":"3","updated_by":"3"},{"id":"68","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"16","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:49:49","updated_at":"2024-09-19 19:50:16","created_by":"3","updated_by":"3"}], 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L001. auctionItemId:67, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> bid calculation initiated auctionItemId:67, 2
+ERROR - 2024-09-19 19:55:56 --> Error code 001. HBP:1015.00,HABP: 2,000.00, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code 003. HBP:1015.00,RP: 200, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code 005. HBP:1015.00,SLHABP: 1,000.00, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> bid calculation Ended auctionItemId:67, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L002. auctionItemId:67, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L003. auctionItemId:67, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L001. auctionItemId:68, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> bid calculation initiated auctionItemId:68, 1
+ERROR - 2024-09-19 19:55:56 --> Error code 006. HBP:115.00,HABP: 1,000.00, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> bid calculation Ended auctionItemId:68, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L002. auctionItemId:68, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:56 --> Error code L003. auctionItemId:68, 2024-09-19 07:55:56
+ERROR - 2024-09-19 19:55:58 --> E002 - 2024-09-19 07:55:58
+ERROR - 2024-09-19 19:55:58 --> E002.1 - 2024-09-19 07:55:58
+ERROR - 2024-09-19 19:55:59 --> current items data:[], 2024-09-19 07:55:59
+ERROR - 2024-09-19 19:57:28 --> E004 - 2024-09-19 07:57:28
+ERROR - 2024-09-19 19:57:28 --> E004.2 - 2024-09-19 07:57:28
+ERROR - 2024-09-19 20:00:17 --> current items data:[{"id":"69","inward_invoice_id":"K1","inward_item_id":"16","auction_id":"16","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"2","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 19:49:49","updated_at":"2024-09-19 19:50:16","created_by":"3","updated_by":"3"}], 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> Error code L001. auctionItemId:69, 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> bid calculation initiated auctionItemId:69, 1
+ERROR - 2024-09-19 20:00:17 --> Error code 006. HBP:2005.00,HABP: 2,005.00, 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> bid calculation Ended auctionItemId:69, 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> Error code L002. auctionItemId:69, 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> Error code L003. auctionItemId:69, 2024-09-19 08:00:17
+ERROR - 2024-09-19 20:00:17 --> current items data:[], 2024-09-19 08:00:17
+CRITICAL - 2024-09-19 20:01:03 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 20:01:19 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-19 20:01:20 --> ErrorException: Undefined variable $auction_data
+in APPPATH/Controllers/Cart.php on line 427.
+ 1 APPPATH/Controllers/Cart.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auction_data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 427)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-19 20:04:19 --> E002 - 2024-09-19 08:04:19
+ERROR - 2024-09-19 20:04:19 --> E003 - 2024-09-19 08:04:19
+ERROR - 2024-09-19 20:04:19 --> E003.2 - 2024-09-19 08:04:19
+ERROR - 2024-09-19 20:04:19 --> E002 - 2024-09-19 08:04:19
+ERROR - 2024-09-19 20:04:19 --> E002.1 - 2024-09-19 08:04:19
+ERROR - 2024-09-19 20:05:48 --> E004 - 2024-09-19 08:05:48
+ERROR - 2024-09-19 20:05:48 --> E004.2 - 2024-09-19 08:05:48
+ERROR - 2024-09-19 20:05:48 --> E004 - 2024-09-19 08:05:48
+ERROR - 2024-09-19 20:05:48 --> E004.2 - 2024-09-19 08:05:48
+ERROR - 2024-09-19 20:05:49 --> E004 - 2024-09-19 08:05:49
+ERROR - 2024-09-19 20:05:49 --> E004.2 - 2024-09-19 08:05:49
+ERROR - 2024-09-19 20:05:49 --> E004 - 2024-09-19 08:05:49
+ERROR - 2024-09-19 20:05:49 --> E004.2 - 2024-09-19 08:05:49
+ERROR - 2024-09-19 20:07:34 --> current items data:[{"id":"70","inward_invoice_id":"W3","inward_item_id":"14","auction_id":"17","lot_no":"1","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"9","base_price":"100","reverse_price":"200","high_price":"0","valuation_price":"300","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 20:01:23","updated_at":"2024-09-19 20:01:56","created_by":"3","updated_by":"3"},{"id":"71","inward_invoice_id":"W5","inward_item_id":"15","auction_id":"17","lot_no":"2","lot_set":"1","auction_quantity":"1","sample_quantity":"1","auction_each_net":"4","base_price":"100","reverse_price":"110","high_price":"0","valuation_price":"120","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 20:01:24","updated_at":"2024-09-19 20:01:56","created_by":"3","updated_by":"3"}], 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L001. auctionItemId:70, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> bid calculation initiated auctionItemId:70, 2
+ERROR - 2024-09-19 20:07:34 --> Error code 006. HBP:1015.00,HABP: 1,200.00, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> bid calculation Ended auctionItemId:70, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L002. auctionItemId:70, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L003. auctionItemId:70, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L001. auctionItemId:71, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> bid calculation initiated auctionItemId:71, 1
+ERROR - 2024-09-19 20:07:34 --> Error code 001. HBP:115.00,HABP: 2,000.00, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code 003. HBP:115.00,RP: 110, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code 005. HBP:115.00,SLHABP: 0.00, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> bid calculation Ended auctionItemId:71, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L002. auctionItemId:71, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:34 --> Error code L003. auctionItemId:71, 2024-09-19 08:07:34
+ERROR - 2024-09-19 20:07:35 --> current items data:[], 2024-09-19 08:07:35
+ERROR - 2024-09-19 20:07:35 --> E002 - 2024-09-19 08:07:35
+ERROR - 2024-09-19 20:07:35 --> E003 - 2024-09-19 08:07:35
+ERROR - 2024-09-19 20:07:35 --> E003.1 - 2024-09-19 08:07:35
+ERROR - 2024-09-19 20:12:04 --> current items data:[{"id":"72","inward_invoice_id":"K1","inward_item_id":"16","auction_id":"17","lot_no":"3","lot_set":"2","auction_quantity":"1","sample_quantity":"1","auction_each_net":"2","base_price":"100","reverse_price":"150","high_price":"0","valuation_price":"180","last_sold_price":null,"status":"1","is_sold":"0","min_bid_added":"0","is_withdrawn":"0","created_at":"2024-09-19 20:01:24","updated_at":"2024-09-19 20:01:56","created_by":"3","updated_by":"3"}], 2024-09-19 08:12:04
+ERROR - 2024-09-19 20:12:04 --> Error code L001. auctionItemId:72, 2024-09-19 08:12:04
+ERROR - 2024-09-19 20:12:04 --> bid calculation initiated auctionItemId:72, 2
+ERROR - 2024-09-19 20:12:04 --> Error code 006. HBP:2005.00,HABP: 2,005.00, 2024-09-19 08:12:04
+ERROR - 2024-09-19 20:12:04 --> bid calculation Ended auctionItemId:72, 2024-09-19 08:12:04
+ERROR - 2024-09-19 20:12:04 --> Error code L002. auctionItemId:72, 2024-09-19 08:12:04
+ERROR - 2024-09-19 20:12:04 --> Error code L003. auctionItemId:72, 2024-09-19 08:12:04

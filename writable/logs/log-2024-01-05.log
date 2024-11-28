@@ -1,0 +1,18 @@
+CRITICAL - 2024-01-05 12:41:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "applications\SA\Views\index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('applications\\SA\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('applications\\SA\\Views\\index', [], true)
+ 3 FCPATH\applications\SA\Controllers\SA.php(16): view('applications\\SA\\Views\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): Applications\SA\Controllers\SA->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\SA\Controllers\SA))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 12:48:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "applications\SA\Views\index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('applications\\SA\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('applications\\SA\\Views\\index', [], true)
+ 3 FCPATH\applications\SA\Controllers\SA.php(16): view('applications\\SA\\Views\\index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): Applications\SA\Controllers\SA->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\SA\Controllers\SA))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

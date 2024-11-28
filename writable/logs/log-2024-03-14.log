@@ -1,0 +1,51 @@
+CRITICAL - 2024-03-14 19:06:49 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH\applications\USER\Controllers\Inward.php on line 53.
+ 1 FCPATH\applications\USER\Controllers\Inward.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Controllers\\Inward.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 19:07:50 --> ErrorException: foreach() argument must be of type array|object, null given
+in FCPATH\applications\USER\Views\Inward\index.php on line 78.
+ 1 FCPATH\applications\USER\Views\Inward\index.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php', 78)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Inward\\index', [], true)
+ 5 FCPATH\applications\USER\Controllers\Inward.php(52): view('Applications\\USER\\Views\\Inward\\index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 19:10:12 --> ErrorException: Undefined array key "center_name"
+in FCPATH\applications\USER\Views\Inward\index.php on line 83.
+ 1 FCPATH\applications\USER\Views\Inward\index.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "center_name"', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php', 83)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Inward\\index', [], true)
+ 5 FCPATH\applications\USER\Controllers\Inward.php(51): view('Applications\\USER\\Views\\Inward\\index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 19:10:27 --> ErrorException: Undefined array key "center_name"
+in FCPATH\applications\USER\Views\Inward\index.php on line 83.
+ 1 FCPATH\applications\USER\Views\Inward\index.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "center_name"', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php', 83)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Inward\\index', [], true)
+ 5 FCPATH\applications\USER\Controllers\Inward.php(52): view('Applications\\USER\\Views\\Inward\\index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 19:11:15 --> ErrorException: Undefined array key "center_name"
+in FCPATH\applications\USER\Views\Inward\index.php on line 83.
+ 1 FCPATH\applications\USER\Views\Inward\index.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "center_name"', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php', 83)
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\USER\\Views\\Inward\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Applications\\USER\\Views\\Inward\\index', [], true)
+ 5 FCPATH\applications\USER\Controllers\Inward.php(52): view('Applications\\USER\\Views\\Inward\\index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): Applications\USER\Controllers\Inward->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\Inward))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

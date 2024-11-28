@@ -1,0 +1,21 @@
+CRITICAL - 2024-08-04 13:09:51 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/USER.php on line 76.
+ 1 FCPATH/applications/USER/Controllers/USER.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/USER.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-04 13:10:18 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/USER.php on line 76.
+ 1 FCPATH/applications/USER/Controllers/USER.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/USER.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-04 13:12:24 --> ErrorException: Trying to access array offset on value of type null
+in FCPATH/applications/USER/Controllers/USER.php on line 76.
+ 1 FCPATH/applications/USER/Controllers/USER.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/USER.php', 76)
+ 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\USER->Login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\USER))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

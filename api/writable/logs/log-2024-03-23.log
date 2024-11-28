@@ -1,0 +1,104 @@
+ERROR - 2024-03-23 09:14:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auct...' at line 2 in F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\xampp\htdocs\oams_staging\api\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 F:\xampp\htdocs\oams_staging\api\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 F:\xampp\htdocs\oams_staging\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 F:\xampp\htdocs\oams_staging\api\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\oams_staging\api\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\oams_staging\api\app\Controllers\Auction.php(439): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(941): App\Controllers\Auction->auctionStock()
+#8 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 F:\xampp\htdocs\oams_staging\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\oams_staging\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 09:14:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auct...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = :auction_items.status:
+ORDER BY `id`', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auction.php(439): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->auctionStock()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 09:14:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auct...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = 1
+ORDER BY `id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = 1
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = :auction_items.status:
+ORDER BY `id`', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auction.php(439): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->auctionStock()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 09:14:45 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auct...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = 1
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = 1
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = 1
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`invoice_id` AS `invoice_no`, `grade`.`name` AS `gradename`, inward_items.bag_type
+        (SELECT SUM(qty) FROM auction_stock WHERE auction_stock.auction_item_id = auction_items.id) AS total_count
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`status` = :auction_items.status:
+ORDER BY `id`', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auction.php(439): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->auctionStock()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 18:56:25 --> ErrorException: Undefined variable $a
+in APPPATH\Controllers\Auction.php on line 506.
+ 1 APPPATH\Controllers\Auction.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'F:\\xampp\\htdocs\\oams_staging\\api\\app\\Controllers\\Auction.php', 506)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auction->getAuctionItemsUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,1368 @@
+ERROR - 2024-05-20 17:21:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/api/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'oams_staging', 3306, '', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/api/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /var/www/html/api/app/Controllers/login.php(57): CodeIgniter\BaseModel->first()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\login->loginAuth()
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /var/www/html/api/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/api/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/api/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/api/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/api/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 /var/www/html/api/app/Controllers/login.php(57): CodeIgniter\BaseModel->first()
+#6 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\login->loginAuth()
+#7 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#8 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-20 17:21:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `role_id` = :role_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/login.php(57): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\login->loginAuth()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 17:41:34 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 17:41:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:34 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:34 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 17:41:38 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 17:41:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:38 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:38 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 17:41:40 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 17:41:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:40 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 17:41:40 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 21:07:02 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 21:07:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:02 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'4\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('4')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:02 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 21:07:35 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 21:07:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:35 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:35 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 21:07:38 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 21:07:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:38 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:38 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 21:07:56 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 21:07:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:56 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:56 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 21:07:58 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 /var/www/html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/api/app/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 21:07:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:58 --> [Caused by] mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.cart.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = \'5\'
+AND `inward_items`.`status` = 1
+GROUP BY `inward_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `auction`.`lot_count`
+FROM `cart`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `cart`.`inward_item_id`
+LEFT JOIN `auction` ON `auction`.`id` = `cart`.`auction_id`
+WHERE `auction_id` = :auction_id:
+AND `inward_items`.`status` = :inward_items.status:
+GROUP BY `inward_id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Cart.php(79): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->inwarddetail('5')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:07:58 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 470.
+ 1 APPPATH/Controllers/Cart.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/html/api/app/Controllers/Cart.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:10:53 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:11:00 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:11:36 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:14:13 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:15:41 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:15:56 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:16:08 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:06 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:27 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:17:59 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:18:17 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:20:11 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 239.
+ 1 APPPATH/Controllers/BuyerDashboard.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 239)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:20:35 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 240.
+ 1 APPPATH/Controllers/BuyerDashboard.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 240)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 21:23:00 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 241.
+ 1 APPPATH/Controllers/BuyerDashboard.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/html/api/app/Controllers/BuyerDashboard.php', 241)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '12')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 23:15:49 --> mysqli_sql_exception: Unknown column 'bid_info.buyer_id' in 'field list' in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/html/api/system/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(577): CodeIgniter\Model->doFind(false, NULL)
+#6 /var/www/html/api/app/Controllers/BuyerDashboard.php(163): CodeIgniter\BaseModel->find()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 23:15:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH/Controllers/BuyerDashboard.php(163): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:15:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 4 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH/Controllers/BuyerDashboard.php(163): CodeIgniter\BaseModel->find()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:15:49 --> [Caused by] mysqli_sql_exception: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH/Controllers/BuyerDashboard.php(163): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 23:17:17 --> mysqli_sql_exception: Unknown column 'bid_info.buyer_id' in 'field list' in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/html/api/system/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(577): CodeIgniter\Model->doFind(false, NULL)
+#6 /var/www/html/api/app/Controllers/BuyerDashboard.php(164): CodeIgniter\BaseModel->find()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 23:17:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH/Controllers/BuyerDashboard.php(164): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:17:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 4 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH/Controllers/BuyerDashboard.php(164): CodeIgniter\BaseModel->find()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:17:17 --> [Caused by] mysqli_sql_exception: Unknown column 'bid_info.buyer_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH/Controllers/BuyerDashboard.php(164): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-20 23:19:13 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.ab.bid_price' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/html/api/system/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/api/system/BaseModel.php(577): CodeIgniter\Model->doFind(false, NULL)
+#6 /var/www/html/api/app/Controllers/BuyerDashboard.php(179): CodeIgniter\BaseModel->find()
+#7 /var/www/html/api/system/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+#8 /var/www/html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+#9 /var/www/html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-20 23:19:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.ab.bid_price' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH/Controllers/BuyerDashboard.php(179): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:19:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.ab.bid_price' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 4 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH/Controllers/BuyerDashboard.php(179): CodeIgniter\BaseModel->find()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-20 23:19:13 --> [Caused by] mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'oams.ab.bid_price' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, (SELECT MAX(bid_price) FROM auction_biddings WHERE auction_biddings.auction_item_id = auction_items.id) AS bid_price, (SELECT status FROM buyer_catalog WHERE buyer_catalog.buyer_id=12 AND buyer_catalog.auction_item_id = auction_items.id) AS is_catalog, `bid_info`.`buyer_id`, `bid_info`.`buyer_name` AS `highest_bidder_name`
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN (SELECT ab.auction_item_id, 
+             ab.bid_price, 
+             ab.buyer_id, 
+             b.name AS buyer_name 
+      FROM auction_biddings ab 
+      LEFT JOIN buyer b ON ab.buyer_id = b.id 
+      WHERE ab.bid_price = (
+          SELECT MAX(ab2.bid_price) 
+          FROM auction_biddings ab2 
+          WHERE ab2.auction_item_id = ab.auction_item_id
+      ) 
+      GROUP BY ab.auction_item_id) AS bid_info ON `bid_info`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(577): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH/Controllers/BuyerDashboard.php(179): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemDetails('5', '12')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

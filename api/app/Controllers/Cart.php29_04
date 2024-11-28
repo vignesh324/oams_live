@@ -1,0 +1,374 @@
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\HTTP\Request;
+use App\Models\AuctionModel;
+use App\Models\AuctionItemModel;
+use App\Models\AuctionGardenOrderModel;
+use App\Models\AuctionStockModel;
+use App\Models\CenterGardenModel;
+use App\Models\CartModel;
+use App\Models\StockModel;
+use App\Models\InwardModel;
+use App\Models\InwardItemModel;
+use CodeIgniter\API\ResponseTrait;
+use \Firebase\JWT\JWT;
+use Config\Services;
+
+
+class Cart extends ResourceController
+{
+    use ResponseTrait;
+    protected $session; // Define session as a class property
+
+    public function __construct()
+    {
+        $this->session = Services::session(); // Initialize session in the constructor
+    }
+    public function detail($id)
+    {
+
+        $cart_model = new CartModel();
+        $auctiongarden_model = new AuctionGardenOrderModel();
+
+        $check_count = $auctiongarden_model->where('auction_id', $id)->findAll();
+
+
+
+        $cartItems = $cart_model->select('cart.id as cart_id,cart.qty AS cart_qty,cart.auction_id as auction_id,inward_items.*,grade.name AS grade_name,center.name AS center_name,garden.id AS garden_id,garden.name AS garden_name,warehouse.name AS warehouse_name')
+            ->join('inward_items', 'inward_items.id = cart.inward_item_id', 'left')
+            ->join('inward', 'inward.id = inward_items.inward_id', 'left')
+            ->join('garden', 'garden.id = inward.garden_id', 'left')
+            ->join('grade', 'grade.id = inward_items.grade_id', 'left')
+            ->join('warehouse', 'warehouse.id = inward.warehouse_id', 'left')
+            ->join('center', 'center.id = inward.center_id', 'left')
+            ->where('cart.auction_id', $id)
+            ->findAll();
+
+        $data['auction'] = $cartItems;
+        //  $lastQuery = $cart_model->getLastQuery();
+        //  echo "Last Query: " . $lastQuery . "<br>";exit;
+        return $this->respond($data);
+    }
+
+    public function auctionGardenOrder($id)
+    {
+        $model = new AuctionGardenOrderModel();
+
+        $data = $model->select('auction_garden_order.garden_id')
+            ->where('auction_garden_order.auction_id', $id)
+            ->orderBy('auction_garden_order.order_seq')
+            ->findAll();
+
+        return $this->respond($data);
+    }
+
+    public function inwarddetail($id)
+    {
+        $cart_model = new CartModel();
+        $cartItems = $cart_model->select('cart.*')
+            ->join('inward_items', 'inward_items.id = cart.inward_item_id', 'left')
+            ->where('auction_id', $id)
+            ->groupBy('inward_id')
+            ->findAll();
+
+        $data['auction'] = $cartItems;
+        return $this->respond($data);
+    }
+
+    public function create()
+    {
+        $model = new CartModel();
+        $session_user_id = $this->session->get('session_user_id');
+
+        $rules = [
+            'inward_id' => 'required|numeric',
+            'inward_item_id' => 'required',
+            'qty' => 'required'
+        ];
+
+        $messages = [
+            'inward_id' => [
+                'required' => 'Please enter inward.',
+                'numeric' => 'The inward ID must be numeric.',
+            ],
+            'date' => [
+                'required' => 'The inward item id is required.',
+            ],
+            'qty' => [
+                'required' => 'The quantity is required.'
+            ]
+        ];
+
+        if (!$this->validate($rules, $messages)) {
+            $validationErrors = $this->validator->getErrors();
+            return $this->fail($validationErrors, 422); // Bad request
+        } else {
+
+            $auction_data = $this->request->getVar('auction_data');
+            foreach ($auction_data as $i => $a) {
+                $data = [
+                    'inward_id' => $a->inward_id,
+                    'inward_item_id' => $a->inward_item_id,
+                    'qty' => $a->qty,
+                    'created_by' => $this->request->getVar('session_user_id'),
+                ];
+
+
+                $model->insert($data);
+            }
+        }
+
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'message' => 'Inserted Successfully'
+        ];
+
+        return $this->respondCreated($response);
+    }
+
+    public function reorderAuctionGarden()
+    {
+        $auctionGardenOrderModel = new AuctionGardenOrderModel();
+        $garden_id = $this->request->getVar('garden_id');
+        if (isset($garden_id)) {
+            $auction_stock = $auctionGardenOrderModel->where('auction_id', $this->request->getVar('auction_id'))
+                ->delete();
+            for ($i = 0; $i < count($this->request->getVar('garden_id')); $i++) {
+                $auctionGardenOrderData = [
+                    'order_seq' => $this->request->getVar('sequence')[$i],
+                    'garden_id' => $this->request->getVar('garden_id')[$i],
+                    'center_id' => $this->request->getVar('center_id'),
+                    'auction_id' => $this->request->getVar('auction_id'),
+                ];
+
+                $auctionGardenOrderModel->insert($auctionGardenOrderData);
+            }
+        }
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'message' => 'Inserted Successfully'
+        ];
+
+        return $this->respondCreated($response);
+    }
+
+    public function addTocart()
+    {
+        $auctionItemModel = new AuctionItemModel();
+        $inwardItemModel = new InwardItemModel();
+
+        $cart_model = new CartModel();
+        $stock_model = new StockModel();
+
+        for ($i = 0; $i < count($this->request->getVar('check-auctionitem')); $i++) {
+            $inward_item_id = $this->request->getVar('inward_item_id')[$i];
+            $auction_id = $this->request->getVar('auction_id');
+            $inward_id = $this->request->getVar('inward_id')[$i];
+            $qty = $this->request->getVar('qty')[$i];
+            $garden_id = $this->request->getVar('garden_id')[$i];
+            $session_user_id = $this->request->getVar('session_user_id');
+
+            // print_r($this->request->getVar('qty'));exit;
+            $cart_where = [
+                'auction_id' => $auction_id,
+                'inward_id' => $inward_id,
+                'inward_item_id' => $inward_item_id,
+            ];
+
+            $cart_detail = $cart_model->where($cart_where)->first();
+
+            if ($cart_detail) {
+                $existing_qty = $cart_detail['qty'];
+                $id = $cart_detail['id'];
+                $new_qty = $existing_qty + $qty;
+
+                $auctionItemData = [
+                    'qty' => $new_qty,
+                    'created_by' => $session_user_id,
+                ];
+
+                $cart_model->update($id, $auctionItemData);
+
+                $stock_detail = $stock_model->where('inward_item_id', $inward_item_id)->first();
+                $stock_qty = $stock_detail['qty'] - $qty;
+
+                $stock_data = ['qty' => $stock_qty];
+                $stock_model->where('inward_item_id', $inward_item_id)->set($stock_data)->update();
+            } else {
+                $auctionItemData = [
+                    'inward_id' => $inward_id,
+                    'inward_item_id' => $inward_item_id,
+                    'auction_id' => $auction_id,
+                    'qty' => $qty,
+                    'garden_id' => $garden_id,
+                    'created_by' => $session_user_id,
+                ];
+
+                $cart_model->insert($auctionItemData);
+
+                $stock_detail = $stock_model->where('inward_item_id', $inward_item_id)->first();
+                $stock_qty = $stock_detail['qty'] - $qty;
+
+                $stock_data = ['qty' => $stock_qty];
+                $stock_model->where('inward_item_id', $inward_item_id)->set($stock_data)->update();
+            }
+        }
+
+        // $auctionGardenOrderModel = new AuctionGardenOrderModel();
+        // $auction_stock = $auctionGardenOrderModel->where('auction_id', $this->request->getVar('auction_id'))
+        //     ->delete();
+        // for ($i = 0; $i < count($this->request->getVar('garden_id')); $i++) {
+        //     $auctionGardenOrderData = [
+        //         'order_seq' => $this->request->getVar('sequence')[$i],
+        //         'garden_id' => $this->request->getVar('garden_id')[$i],
+        //         'center_id' => $this->request->getVar('center_id'),
+        //         'auction_id' => $this->request->getVar('auction_id'),
+        //     ];
+
+        //     $auctionGardenOrderModel->insert($auctionGardenOrderData);
+        // }
+
+        // Prepare response
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'message' => 'Inserted Successfully'
+        ];
+
+        return $this->respondCreated($response);
+    }
+    public function delete($id = null)
+    {
+
+
+        $model = new CartModel();
+
+        $data = $model->find($id);
+
+        if ($data) {
+            $stock_model = new StockModel();
+
+            $existing_stock = $stock_model->where('inward_item_id', $data['inward_item_id'])->first();
+            $existing_qty = $existing_stock['qty'];
+            $inward_item_id = $data['inward_item_id'];
+            $cart_qty = $existing_qty + $data['qty'];
+            $stock_data = ['qty' => $cart_qty];
+            $stock_model->where('inward_item_id', $inward_item_id)->set('qty', $cart_qty)->update();
+
+            $auction_stock = $model->where('id', $id)
+                ->delete();
+
+            $response = [
+                'status' => 200,
+                'error' => false,
+                'message' => 'Deleted Successfully',
+                'data' => $data
+            ];
+
+            return $this->respondDeleted($response);
+        } else {
+            return $this->failNotFound('No Data Found with id : ' . $id);
+        }
+    }
+
+    public function movetoAuction()
+    {
+        $auctionModel = new AuctionModel();
+        $auctionItemModel = new AuctionItemModel();
+        $inwardItemModel = new InwardItemModel();
+        $cart_model = new CartModel();
+
+        $cart_items = $cart_model->where('auction_id',$this->request->getVar('auction_id'))->findAll();
+        
+        $sequence = $this->request->getVar('garden_id');
+        usort($cart_items, function($a, $b) use ($sequence) {
+            $posA = array_search($a["garden_id"], $sequence);
+            $posB = array_search($b["garden_id"], $sequence);
+            return $posA - $posB;
+        });
+
+        for ($i = 0; $i < count($this->request->getVar('garden_id')); $i++) {
+            $auctionGardenOrderModel = new AuctionGardenOrderModel();
+            $auctionGardenOrderData = [
+                'order_seq' => $this->request->getVar('sequence')[$i],
+                'garden_id' => $this->request->getVar('garden_id')[$i],
+                'center_id' => $this->request->getVar('center_id'),
+                'auction_id' => $this->request->getVar('auction_id'),
+            ];
+            $auctionGardenOrderModel->insert($auctionGardenOrderData);
+        }
+
+        foreach ($cart_items as $key => $value) {
+
+            $inward_item_detail = $inwardItemModel->where('id',$value['inward_item_id'])->first();
+            $invoice_no = $inward_item_detail['invoice_id'];
+            $auctionItemData = [
+                'inward_invoice_id' => $invoice_no,
+                'inward_item_id' => $value['inward_item_id'],
+                'lot_no' => (1001 + $key),
+                'auction_quantity' => $value['qty'],
+                'auction_id' => $this->request->getVar('auction_id'),
+                'created_by' => $this->request->getVar('session_user_id'),
+            ];
+            $auctionItemModel->insert($auctionItemData);
+            
+            $inwardItemModel->update($auctionItemData['inward_item_id'], ['is_assigned' => 1]);
+
+
+            $auctionModel->where('id', $auctionItemData['auction_id'])->set('is_publish', 1)->update();
+        } 
+        
+        $delete_cart = $cart_model->where('auction_id',$this->request->getVar('auction_id'))->delete();
+
+        
+
+        // Prepare response
+        $response = [
+            'status' => 200,
+            'error' => false,
+            'message' => 'Inserted Successfully'
+        ];
+
+        return $this->respondCreated($response);
+    }
+
+    public function auctiongardenlist()
+    {
+        $auction_data = $this->request->getVar('auction');
+        // print_r($auction_data);exit;
+        $model = new CenterGardenModel();
+
+        foreach ($auction_data as $key => $value) {
+            $sql = "SELECT center_garden.*,garden.name AS garden_name 
+            FROM center_garden
+            LEFT JOIN garden ON center_garden.garden_id = garden.id
+            WHERE garden_id IN (SELECT DISTINCT(inward.garden_id) 
+                                FROM cart
+                                LEFT JOIN inward ON cart.inward_id = inward.id 
+                                WHERE auction_id=?)
+            AND center_id=(SELECT DISTINCT(inward.center_id) 
+                           FROM cart
+                           LEFT JOIN inward ON cart.inward_id = inward.id 
+                           WHERE auction_id=? 
+                           LIMIT 1)";
+
+    $data['center_garden'] = $model->query($sql, [$value->auction_id, $value->auction_id])->getResult();
+
+    // $lastQuery = $model->getLastQuery();
+    // echo "Last Query: " . $lastQuery . "<br>";
+    // exit;
+        }
+        return $this->respond($data);
+    }
+    public function customSort($a, $b) {
+        global $sequence;
+        $posA = array_search($a["garden_id"], $sequence);
+        $posB = array_search($b["garden_id"], $sequence);
+        return $posA - $posB;
+    }
+}

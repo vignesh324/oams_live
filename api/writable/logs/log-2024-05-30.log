@@ -1,0 +1,1640 @@
+CRITICAL - 2024-05-30 08:49:57 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:10:17 --> ErrorException: Undefined variable $value
+in APPPATH/Controllers/BuyerDashboard.php on line 302.
+ 1 APPPATH/Controllers/BuyerDashboard.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 302)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:10:23 --> ErrorException: Undefined variable $value
+in APPPATH/Controllers/BuyerDashboard.php on line 302.
+ 1 APPPATH/Controllers/BuyerDashboard.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 302)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:11:52 --> ErrorException: Undefined variable $value
+in APPPATH/Controllers/BuyerDashboard.php on line 306.
+ 1 APPPATH/Controllers/BuyerDashboard.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 306)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:12:25 --> ErrorException: Attempt to read property "auction_item_id" on array
+in APPPATH/Controllers/BuyerDashboard.php on line 316.
+ 1 APPPATH/Controllers/BuyerDashboard.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auction_item_id" on array', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 316)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:13:19 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AuctionBiddingModel"
+in SYSTEMPATH/Model.php on line 766.
+ 1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AuctionBiddingModel')
+ 2 SYSTEMPATH/BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BuyerDashboard.php(322): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:15:03 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AuctionBiddingModel"
+in SYSTEMPATH/Model.php on line 766.
+ 1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AuctionBiddingModel')
+ 2 SYSTEMPATH/BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/BuyerDashboard.php(322): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('5', '2')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:03 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:03 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:04 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:05 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:05 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:06 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:07 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:08 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:08 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:09 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:10 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:11 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:12 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:12 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:12 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:13 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:13 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:13 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:14 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:15 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:15 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:15 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:16 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:16 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:17 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:19 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:19 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:19 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:20 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:20 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:20 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:21 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:21 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:22 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:22 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:23 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:23 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:23 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:24 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:24 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:25 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:25 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:25 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:26 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:26 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:26 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:27 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:27 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:27 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:28 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:28 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:28 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:29 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:29 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:29 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:30 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:30 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:31 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:31 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:32 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:32 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:32 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:33 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:34 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:34 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:34 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:35 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:35 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:36 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:36 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:37 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:37 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:37 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:38 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:38 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:38 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:39 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:39 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:40 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:40 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:41 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:41 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:42 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:42 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:43 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:44 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:25:48 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:26:51 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:26:58 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:38 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:38 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:39 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:39 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:40 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:40 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:41 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:41 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:42 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:42 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:43 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:44 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:44 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:46 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:48 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:48 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:49 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:49 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:49 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:49 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:50 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:50 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:51 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:51 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:52 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:50:53 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:51:45 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:51:47 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:53:36 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:55:00 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:55:01 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:56:03 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 09:56:04 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:09:35 --> ErrorException: Undefined property: App\Controllers\Auction::$db
+in APPPATH/Controllers/Auction.php on line 1788.
+ 1 APPPATH/Controllers/Auction.php(1788): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$db', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1788)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:10:58 --> Error: Cannot call constructor
+in APPPATH/Controllers/Auction.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:01 --> Error: Cannot call constructor
+in APPPATH/Controllers/Auction.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:13 --> ErrorException: Undefined property: App\Controllers\Auction::$load
+in APPPATH/Controllers/Auction.php on line 44.
+ 1 APPPATH/Controllers/Auction.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$load', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:26 --> ErrorException: Undefined property: App\Controllers\Auction::$load
+in APPPATH/Controllers/Auction.php on line 44.
+ 1 APPPATH/Controllers/Auction.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$load', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:28 --> ErrorException: Undefined property: App\Controllers\Auction::$load
+in APPPATH/Controllers/Auction.php on line 44.
+ 1 APPPATH/Controllers/Auction.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$load', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:32 --> ErrorException: Undefined property: App\Controllers\Auction::$load
+in APPPATH/Controllers/Auction.php on line 44.
+ 1 APPPATH/Controllers/Auction.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$load', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:11:35 --> ErrorException: Undefined property: App\Controllers\Auction::$load
+in APPPATH/Controllers/Auction.php on line 44.
+ 1 APPPATH/Controllers/Auction.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auction::$load', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Auction->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:16:35 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:16:37 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:17:25 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-30 10:31:47 --> mysqli_sql_exception: Unknown column 'buyer.name' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-30 10:31:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:31:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:31:47 --> [Caused by] mysqli_sql_exception: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-30 10:31:49 --> mysqli_sql_exception: Unknown column 'buyer.name' in 'field list' in /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/eazyhosting.in/public_html/api/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction...', 0)
+#1 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 /var/www/eazyhosting.in/public_html/api/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 /var/www/eazyhosting.in/public_html/api/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 /var/www/eazyhosting.in/public_html/api/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/eazyhosting.in/public_html/api/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+#7 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+#8 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+#9 /var/www/eazyhosting.in/public_html/api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/eazyhosting.in/public_html/api/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-05-30 10:31:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:31:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:31:49 --> [Caused by] mysqli_sql_exception: Unknown column 'buyer.name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = \'8\'
+AND TIME(auction_session_times.start_time) <= CURTIME()
+AND TIME(auction_session_times.end_time) >= CURTIME()
+ORDER BY `auction_items`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `auction_items`.*, `auction_session_times`.`lot_set`, `auction_session_times`.`start_time`, `auction_session_times`.`end_time`, `inward_items`.`weight_net`, `inward_items`.`total_net`, `grade`.`name` AS `gradename`, `garden`.`name` AS `gardenname`, `inward_items`.`bag_type`, `max_bid`.`bid_price` AS `bid_price`, `max_bid`.`buyer_id` AS `buyer_id`, `buyer`.`name` AS `highest_bidder_name`, (SELECT increment_amount FROM settings ORDER BY id DESC LIMIT 0, 1) AS settings, (SELECT buyer_show FROM settings ORDER BY id DESC LIMIT 1) AS settings_buyer_show
+FROM `auction_items`
+LEFT JOIN `inward_items` ON `inward_items`.`id` = `auction_items`.`inward_item_id`
+LEFT JOIN `auction_session_times` ON `auction_session_times`.`auction_item_id` = `auction_items`.`id`
+LEFT JOIN `inward` ON `inward_items`.`inward_id` = `inward`.`id`
+LEFT JOIN `garden` ON `inward`.`garden_id` = `garden`.`id`
+LEFT JOIN `grade` ON `grade`.`id` = `inward_items`.`grade_id`
+LEFT JOIN 
+        (
+            SELECT ab1.auction_item_id, ab1.bid_price, ab1.buyer_id
+            FROM auction_biddings ab1
+            INNER JOIN (
+                SELECT auction_item_id, MAX(id) as max_id
+                FROM auction_biddings
+                GROUP BY auction_item_id
+            ) ab2 ON ab1.id = ab2.max_id
+        ) as max_bid ON `max_bid`.`auction_item_id` = `auction_items`.`id`
+WHERE `auction_items`.`auction_id` = :auction_items.auction_id:
+AND TIME(auction_session_times.start_time) <= :TIME(auction_session_times.start_time):
+AND TIME(auction_session_times.end_time) >= :TIME(auction_session_times.end_time):
+ORDER BY `auction_items`.`id`', [...], false)
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Auction.php(1756): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:32:01 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1768.
+ 1 APPPATH/Controllers/Auction.php(1768): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1768)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:32:01 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1768.
+ 1 APPPATH/Controllers/Auction.php(1768): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1768)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:32:02 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1768.
+ 1 APPPATH/Controllers/Auction.php(1768): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1768)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:32:15 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:32:17 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:43:33 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:44:29 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 476.
+ 1 APPPATH/Controllers/Cart.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 476)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:44:48 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 476.
+ 1 APPPATH/Controllers/Cart.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 476)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:58:01 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/BuyerDashboard.php on line 353.
+ 1 APPPATH/Controllers/BuyerDashboard.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/BuyerDashboard.php', 353)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\BuyerDashboard->getAuctionItemsByAuction('1', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BuyerDashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 10:58:02 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:09:35 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:12:07 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 476.
+ 1 APPPATH/Controllers/Cart.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 476)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:45:57 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:51:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Controllers/Inward.php on line 607.
+ 1 APPPATH/Controllers/Inward.php(607): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Inward.php', 607)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Inward->gardenGrade()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inward))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:56:19 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Cart.php on line 500.
+ 1 APPPATH/Controllers/Cart.php(500): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 500)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:57:02 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 476.
+ 1 APPPATH/Controllers/Cart.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 476)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 17:57:26 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Cart.php on line 476.
+ 1 APPPATH/Controllers/Cart.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Cart.php', 476)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Cart->auctiongardenlist()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-30 18:12:24 --> ErrorException: Undefined array key 0
+in APPPATH/Controllers/Auction.php on line 1751.
+ 1 APPPATH/Controllers/Auction.php(1751): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', '/var/www/eazyhosting.in/public_html/api/app/Controllers/Auction.php', 1751)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Auction->getResesrveBidframe()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
