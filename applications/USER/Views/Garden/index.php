@@ -109,12 +109,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($garden_permission[0]['create_permission'] == 1) : ?>
-                <button class="btn btn-app float-sm-right" onclick="addGarden()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </button>
-              <?php endif ?>
+              <?php echo render_add_button(5, 'addGarden()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -198,17 +193,10 @@
                           <td>
                             <a href="#" onclick="assignGrade(<?php echo $value['id']; ?>,<?php echo $value['category_id']; ?>)" data-toggle="modal" data-target="#modal-assign" class="btn btn-dark-cyne edit_button" id="#"><i class="fa fa-arrow-right" title="Assign"></i> </a>
 
-                            <?php if ($garden_permission[0]['update_permission'] == 1) : ?>
-                              <a href="#" onclick="editGarden(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" data-toggle="modal" data-target="#modal-sm" title="Edit">
-                                <i class="fa fa-edit"></i>
-                              </a>
-                            <?php endif; ?>
-
-                            <?php if ($garden_permission[0]['delete_permission'] == 1) : ?>
-                              <a href="#" onclick="deleteGarden(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne delete_button" title="Delete">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php endif; ?>
+                            <?php
+                            echo render_edit_button(5, "editGarden({$value['id']})");
+                            echo render_delete_button(5, "deleteGarden({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

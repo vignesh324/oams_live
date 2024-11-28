@@ -49,12 +49,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($package_permission[0]['create_permission'] == 1) { ?>
-                <button class="btn btn-app float-sm-right" onclick="addPackage()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </button>
-              <?php } ?>
+              <?php echo render_add_button(12, 'addPackage()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -103,17 +98,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <?php if ($package_permission[0]['update_permission'] == 1) { ?>
-                              <a href="#" onclick="editPackage(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm">
-                                <i class="fa fa-edit" title="Edit"></i>
-                              </a>
-                            <?php } ?>
-
-                            <?php if ($package_permission[0]['delete_permission'] == 1) { ?>
-                              <a href="#" title="Delete" onclick="deletePackage(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php } ?>
+                            <?php
+                            echo render_edit_button(11, "editPackage({$value['id']})");
+                            echo render_delete_button(11, "deletePackage({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

@@ -49,12 +49,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($hsn_permission[0]['create_permission'] == 1) { ?>
-                <button class="btn btn-app float-sm-right" onclick="addHsn()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </button>
-              <?php } ?>
+              <?php echo render_add_button(11, 'addHsn()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -105,17 +100,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <?php if ($hsn_permission[0]['update_permission'] == 1) { ?>
-                              <a href="#" onclick="editHsn(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm">
-                                <i class="fa fa-edit" title="Edit"></i>
-                              </a>
-                            <?php } ?>
-
-                            <?php if ($hsn_permission[0]['delete_permission'] == 1) { ?>
-                              <a href="#" title="Delete" onclick="deleteHsn(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php } ?>
+                            <?php
+                            echo render_edit_button(11, "editHsn({$value['id']})");
+                            echo render_delete_button(11, "deleteHsn({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

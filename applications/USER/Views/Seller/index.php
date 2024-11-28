@@ -40,10 +40,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <button class="btn btn-app float-sm-right" onclick="addSeller()" data-toggle="modal" data-target="#modal-sm">
-                <span class="badge bg-purple">New</span>
-                <i class="fas fa-users"></i> ADD
-              </button>
+              <?php echo render_add_button(4, 'addSeller()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -106,12 +103,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <a href="#" onclick="editSeller(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm">
-                              <i class="fa fa-edit" title="Edit"></i>
-                            </a>
-                            <a href="#" title="Delete" onclick="deleteSeller(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                              <i class="fa fa-trash-alt"></i>
-                            </a>
+                            <?php
+                            echo render_edit_button(4, "editSeller({$value['id']})");
+                            echo render_delete_button(4, "deleteSeller({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

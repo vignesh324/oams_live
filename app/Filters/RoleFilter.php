@@ -15,15 +15,15 @@ class RoleFilter implements FilterInterface
         $tokenRole = $session->get('access_token_role');
         $roleId = $session->get('role_id');
         $permissions = $session->get('permissions');
-echo '<pre>';print_r($permissions);exit;
+        // echo '<pre>';print_r($permissions);exit;
         // Validate token, role, and role_id
         if (empty($token) || empty($tokenRole) || empty($roleId) || $tokenRole != 'user' || $roleId != 2) {
             return redirect()->to('/user_login');
         }
 
         // Ensure both module_id and permission_type are provided
-        if (empty($arguments) || count($arguments) < 2) {
-            return redirect()->to('/access_denied');
+        if (empty($arguments)) {
+            return redirect()->to('USER/Access-Denied');
         }
 
         [$moduleId, $permissionType] = $arguments;
@@ -32,9 +32,11 @@ echo '<pre>';print_r($permissions);exit;
         $filteredPermissions = array_filter($permissions ?? [], function ($value) use ($moduleId) {
             return isset($value['module_id']) && $value['module_id'] == $moduleId;
         });
-        // print_r($filteredPermissions);exit;
+        $filteredPermissions = array_values($filteredPermissions);
+
+        // echo '<pre>';print_r($filteredPermissions);exit;
         if (empty($filteredPermissions) || empty($filteredPermissions[0]["{$permissionType}_permission"])) {
-            return redirect()->to('/access_denied');
+            return redirect()->to('USER/Access-Denied');
         }
     }
 

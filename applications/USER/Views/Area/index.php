@@ -49,13 +49,8 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($area_permission[0]['create_permission'] == 1) : ?>
+              <?php echo render_add_button(3, 'addArea()'); ?>
 
-                <button class="btn btn-app float-sm-right" onclick="addArea()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </button>
-              <?php endif ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -110,17 +105,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <?php if ($area_permission[0]['update_permission'] == 1) : ?>
-                              <a href="#" onclick="editArea(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm" title="Edit">
-                                <i class="fa fa-edit"></i>
-                              </a>
-                            <?php endif; ?>
-
-                            <?php if ($area_permission[0]['delete_permission'] == 1) : ?>
-                              <a href="#" onclick="deleteArea(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne delete_button" title="Delete">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php endif; ?>
+                            <?php
+                            echo render_edit_button(3, "editArea({$value['id']})");
+                            echo render_delete_button(3, "deleteArea({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

@@ -49,12 +49,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($grade_permission[0]['create_permission'] == 1) { ?>
-                <button class="btn btn-app float-sm-right" onclick="addGrade()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </button>
-              <?php } ?>
+              <?php echo render_add_button(10, 'addGrade()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -117,17 +112,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <?php if ($grade_permission[0]['update_permission'] == 1) { ?>
-                              <a href="#" onclick="editGrade(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm">
-                                <i class="fa fa-edit" title="Edit"></i>
-                              </a>
-                            <?php } ?>
-
-                            <?php if ($grade_permission[0]['delete_permission'] == 1) { ?>
-                              <a href="#" title="Delete" onclick="deleteGrade(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php } ?>
+                            <?php
+                            echo render_edit_button(10, "editGrade({$value['id']})");
+                            echo render_delete_button(10, "deleteGrade({$value['id']})");
+                            ?>
                           </td>
                         </tr>
                       <?php endforeach; ?>

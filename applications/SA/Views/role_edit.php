@@ -37,13 +37,17 @@
           if ($value['id'] == 17) {
             $edit_checked = 'disabled';
           }
-          if (in_array($value['id'], [22, 23, 24])) {
+          if (in_array($value['id'], [22, 23, 24, 26])) {
             $create_checked = 'disabled';
             $edit_checked = 'disabled';
             $delete_checked = 'disabled';
           }
           if (in_array($value['id'], [18, 16])) {
             $delete_checked = 'disabled';
+          }
+          if (in_array($value['id'], [16])) {
+            $delete_checked = 'disabled';
+            $create_checked = 'disabled';
           }
 
           // Check permissions from $old_data['role_detail']

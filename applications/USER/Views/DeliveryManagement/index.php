@@ -98,9 +98,10 @@
                               <a class="btn btn-dark-cyne view_button" href="<?= @basePath ?>USER/DeliveryManagement/GetDeliveryItems/<?php echo base64_encode($value['id']); ?>">
                                 <span><i class="fa fa-eye"></i></span>
                               </a>
-                              <a href="#" onclick="deleteDeliveryManagement(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne delete_button" title="Delete">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
+
+                              <?php
+                              echo render_delete_button(21, "deleteDeliveryManagement({$value['id']})");
+                              ?>
                             </td>
                           </tr>
                         <?php

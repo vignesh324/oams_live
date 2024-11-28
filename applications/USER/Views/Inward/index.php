@@ -90,11 +90,14 @@
                           <td>
                             <a href="<?= @basePath ?>USER/Inward/View/<?php echo  base64_encode($value['id']); ?>" class="btn btn-dark-cyne" id="#" style="margin-right: 5px;"><i class="fa fa-eye" title="View"></i> </a>
                             <!-- <a href="<?= @basePath ?>USER/Inward/Edit/<?php echo  base64_encode($value['id']); ?>" class="btn btn-dark-cyne edit_button" id="#" style="margin-right: 5px;"><i class="fa fa-edit" title="Edit"></i> </a> -->
-                            <?php if ($value['cnt'] == 0 && $value['auction_cnt']==0 && $value['cart_cnt']==0) { ?>
-                              <a href="#" title="Delete" onclick="deleteInward(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php } ?>
+                            
+                            <?php if ($value['cnt'] == 0 && $value['auction_cnt'] == 0 && $value['cart_cnt'] == 0) {
+                              echo render_delete_button(17, "deleteInward({$value['id']})");
+                            } ?>
+
+                            <?php
+                            ?>
+
                           </td>
                         </tr>
                       <?php endforeach; ?>

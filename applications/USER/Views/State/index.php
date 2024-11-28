@@ -59,12 +59,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <?php if ($state_permission[0]['create_permission'] == 1) : ?>
-                <a href="#" class="btn btn-app float-sm-right" onclick="add_state()" data-toggle="modal" data-target="#modal-sm">
-                  <span class="badge bg-purple">New</span>
-                  <i class="fas fa-users"></i> ADD
-                </a>
-              <?php endif; ?>
+              <?php echo render_add_button(1, 'add_state()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -119,17 +114,10 @@
                             <?php endif; ?>
                           </td>
                           <td>
-                            <?php if ($state_permission[0]['update_permission'] == 1) : ?>
-                              <a href="#" onclick="edit_state(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm" title="Edit">
-                                <i class="fa fa-edit"></i>
-                              </a>
-                            <?php endif; ?>
-
-                            <?php if ($state_permission[0]['delete_permission'] == 1) : ?>
-                              <a href="#" onclick="delete_state(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne delete_button" title="Delete">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                            <?php endif; ?>
+                            <?php
+                            echo render_edit_button(1, "edit_state({$value['id']})");
+                            echo render_delete_button(1, "delete_state({$value['id']})");
+                            ?>
 
                           </td>
                         </tr>
