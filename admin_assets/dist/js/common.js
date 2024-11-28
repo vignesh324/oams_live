@@ -1,4 +1,4 @@
-let basePath = window.location.origin;
+let basePath = window.location.origin + '/oams_live';
 // Event listener for the state select element
 $(document).on("change", "#state_id", function (event) {
   var stateId = $(this).val(); // Get the selected state ID
