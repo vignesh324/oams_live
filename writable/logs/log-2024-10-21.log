@@ -1,7 +1,0 @@
-CRITICAL - 2024-10-21 08:36:21 --> ErrorException: Undefined array key "auction"
-in FCPATH/applications/USER/Controllers/BiddingSession.php on line 1215.
- 1 FCPATH/applications/USER/Controllers/BiddingSession.php(1215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction"', '/var/www/eazyhosting.in/public_html/applications/USER/Controllers/BiddingSession.php', 1215)
- 2 SYSTEMPATH/CodeIgniter.php(941): Applications\USER\Controllers\BiddingSession->addAuctionItems('1')
- 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\USER\Controllers\BiddingSession))
- 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

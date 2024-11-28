@@ -1,7 +1,0 @@
-CRITICAL - 2024-05-14 12:52:52 --> ErrorException: Trying to access array offset on value of type null
-in FCPATH\applications\BUYER\Controllers\Auctions.php on line 286.
- 1 FCPATH\applications\BUYER\Controllers\Auctions.php(286): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\xampp\\htdocs\\oams_staging\\frontend\\applications\\BUYER\\Controllers\\Auctions.php', 286)
- 2 SYSTEMPATH\CodeIgniter.php(941): Applications\BUYER\Controllers\Auctions->mybidBook('')
- 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Applications\BUYER\Controllers\Auctions))
- 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
