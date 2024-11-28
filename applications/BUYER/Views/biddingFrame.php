@@ -210,7 +210,7 @@
                                 if ($completed != 'yes') {
                             ?>
                                     <div class="input-groups d-flex" style="width:0%">
-                                        <input type="number" <?php if ($completed == 'yes' || $value['is_withdrawn'] == 1) { ?> readonly <?php } ?> id="result_<?php echo $value['id']; ?>" class="form-control bidPriceInput message-receiver min-bid-input" value="<?php echo @$value['min_price']; ?>" />
+                                        <input type="number" name="min_price" <?php if ($completed == 'yes' || $value['is_withdrawn'] == 1) { ?> readonly <?php } ?> id="result_<?php echo $value['id']; ?>" class="form-control bidPriceInput message-receiver min-bid-input" value="<?php echo @$value['min_price']; ?>" />
                                         <span class="input-groups-append">
                                             <i class="fa fa-caret-up plus-btn 
                                     <?php if ((@$completed == 'yes') || $value['is_withdrawn'] == 1) {
@@ -237,7 +237,7 @@
                             } else {
                                 ?>
                                 <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control min-bid-input" name="min_bid" value="<?php echo $value['min_price']; ?>" id="result_<?php echo $value['id']; ?>" <?php echo ($value['is_withdrawn'] == 1) ? 'readonly' : ''; ?>>
+                                    <input type="text" class="form-control min-bid-input" name="min_price" value="<?php echo $value['min_price']; ?>" id="result_<?php echo $value['id']; ?>" <?php echo ($value['is_withdrawn'] == 1) ? 'readonly' : ''; ?>>
                                     <span class="input-group-append">
                                         <button type="button" id="min_bid_id_<?php echo $value['id']; ?>" class="btn btn-success btn-flat save_min_bid" <?php echo ($value['is_withdrawn'] == 1) ? 'disabled' : ''; ?>>
                                             <i class="fa fa-save" title="Bid<?php echo $value['id']; ?>"></i>
@@ -523,7 +523,7 @@
             var auction_item_id = parts[3];
             var auction_id = $('#auction_id_' + parts[3]).val();
             var buyer_id = $('input[name="buyer_id"]').val();
-            var min_amt = $('#min_bid_val_' + parts[3]).val();
+            var min_amt = $('#result_' + parts[3]).val();
             var url = '<?= @basePath ?>BUYER/addMinBid';
             var formmethod = 'post';
             var base_price = $("#basebid_" + parts[3]).val();
@@ -708,6 +708,9 @@
         var bidValue = parsedMessage.bid_value;
         var item_id = parsedMessage.auction_item_value;
         var updated_time = parsedMessage.updated_time;
+
+        var current_time = parsedMessage.current_time;
+        $(parent.document).find("#last_log_value").val(current_time);
 
         // Check if parts is defined before using it
         // if (!parts) {

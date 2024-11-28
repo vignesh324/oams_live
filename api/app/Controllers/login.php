@@ -85,7 +85,8 @@ class login extends ResourceController
                     $this->session->set('access_token', $userdata['token']);
                     $permissions = array();
                     $role_rights = new RoleRightsModel();
-                    $permissions = $role_rights->where('role_id', $userdata['role_id'])->findAll();
+                    $permissions = $role_rights->select('role_rights.*,modules.name as module_name')->join('modules', 'modules.id = role_rights.module_id', 'left')
+                        ->where('role_rights.role_id', $userdata['role_id'])->findAll();
 
                     $activityLogModel = new ActivityLog();
                     $description = "Logged in with data:" . json_encode($userdata);

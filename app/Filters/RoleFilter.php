@@ -15,7 +15,7 @@ class RoleFilter implements FilterInterface
         $tokenRole = $session->get('access_token_role');
         $roleId = $session->get('role_id');
         $permissions = $session->get('permissions');
-
+echo '<pre>';print_r($permissions);exit;
         // Validate token, role, and role_id
         if (empty($token) || empty($tokenRole) || empty($roleId) || $tokenRole != 'user' || $roleId != 2) {
             return redirect()->to('/user_login');
