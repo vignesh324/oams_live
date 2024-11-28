@@ -12,7 +12,7 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
     //Seller Controller
     $routes->group('Seller', function ($routes) {
     $routes->get('', 'Seller::index');
-    $routes->post('Add', 'Seller::create');
+    // $routes->post('Add', 'Seller::create');fghj
     $routes->post('Create', 'Seller::store');
     $routes->post('Show', 'Seller::show');
     $routes->post('Update', 'Seller::update');
