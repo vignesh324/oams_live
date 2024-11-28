@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'root',
-        'password'     => 'kLHg@$2654#',
+        'password'     => '',
         'database'     => 'oams_staging',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',

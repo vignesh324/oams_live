@@ -174,3 +174,48 @@ ERROR - 2024-11-28 09:12:42 --> bid calculation initiated auctionItemId:93, 0
 ERROR - 2024-11-28 09:12:42 --> bid calculation Ended auctionItemId:93, 2024-11-28 09:12:42
 ERROR - 2024-11-28 09:12:42 --> Error code L002. auctionItemId:93, 2024-11-28 09:12:42
 ERROR - 2024-11-28 09:12:42 --> Error code L003. auctionItemId:93, 2024-11-28 09:12:42
+ERROR - 2024-11-28 12:01:09 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\oams_live\api\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\oams_live\api\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'oams_staging', 3306, '', 0)
+#1 C:\xampp\htdocs\oams_live\api\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\oams_live\api\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\oams_live\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\oams_live\api\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\oams_live\api\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\oams_live\api\app\Controllers\login.php(58): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(941): App\Controllers\login->loginAuth()
+#8 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#9 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\oams_live\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\oams_live\api\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\oams_live\api\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\oams_live\api\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\oams_live\api\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\oams_live\api\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\oams_live\api\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\oams_live\api\app\Controllers\login.php(58): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(941): App\Controllers\login->loginAuth()
+#7 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#8 C:\xampp\htdocs\oams_live\api\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\oams_live\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-28 12:01:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `role_id` = :role_id:
+AND `status` = :status:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(58): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
