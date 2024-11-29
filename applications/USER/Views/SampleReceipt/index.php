@@ -42,10 +42,9 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <a href="#" class="btn btn-app float-sm-right" onclick="addSampleReceipt()" data-toggle="modal" data-target="#modal-sm">
-                <span class="badge bg-purple">New</span>
-                <i class="fas fa-users"></i> ADD
-              </a>
+
+              <?php echo render_add_button(20, 'addSampleReceipt()'); ?>
+
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -101,21 +100,12 @@
                               <?php endif; ?>
                             </td>
                             <td>
-                              <?php //if ($state_permission[0]['update_permission'] == 1) : 
+
+                              <?php
+                              echo render_edit_button(20, "editSampleReceipt({$value['id']})");
+                              echo render_delete_button(20, "deleteSampleReceipt({$value['id']})");
                               ?>
-                              <a href="#" onclick="editSampleReceipt(<?php echo $value['id']; ?>)" class="btn btn-dark-cyne edit_button" id="editButton" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-sm">
-                                <i class="fa fa-edit" title="Edit"></i>
-                              </a>
-                              |
-                              <?php //endif; 
-                              ?>
-                              <?php //if ($state_permission[0]['delete_permission'] == 1) : 
-                              ?>
-                              <a href="#" title="Delete" onclick="deleteSampleReceipt(<?php echo $value['id']; ?>)" id="ids" class="btn btn-dark-cyne delete_button">
-                                <i class="fa fa-trash-alt"></i>
-                              </a>
-                              <?php //endif; 
-                              ?>
+
                             </td>
                           </tr>
                       <?php
@@ -365,10 +355,13 @@
 
       $(document).on("change", "#sale_no", function(event) {
         var auction_id = $(this).val();
-        // console.log(auction_id);
+        var settingsResponseData = <?php echo json_encode($settings_response_data[0], JSON_HEX_TAG | JSON_HEX_QUOT); ?>
+
+        console.log(settingsResponseData);
 
         // alert('hiii');
-        if (sale_no == "") {
+        if (auction_id == "") {
+          $("#quantity").val('');
           $("#lot_no").empty();
           $("#lot_no").append('<option value="">Select LOT No</option>');
         } else {
@@ -380,17 +373,24 @@
             },
             dataType: "json",
             success: function(response) {
+              $("#quantity").val('');
               $("#lot_no").empty();
               $("#lot_no").append('<option value="">Select LOT No</option>');
 
               if (response.status == 200) {
-                // console.log(response.data)
+                console.log(response.data)
+                if (response.data.is_leaf == 1) {
+                  $("#quantity").val(settingsResponseData.leaf_sq);
+                } else {
+                  $("#quantity").val(settingsResponseData.dust_sq);
+                }
                 $.each(response.data.lot_no, function(key, value) {
                   $("#lot_no").append(
                     '<option value="' + value.lot_no + '" data-auction-item-id="' + value.id + '">' + value.lot_no + "</option>"
                   );
                 });
               } else if (response.status == 404) {
+                $("#quantity").val('');
                 $("#lot_no").append('<option value="">No data found</option>');
               }
             },

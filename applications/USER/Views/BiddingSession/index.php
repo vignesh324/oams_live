@@ -63,10 +63,7 @@
               </ol>
             </div>
             <div class="col-sm-6">
-              <button class="btn btn-app float-sm-right" onclick="addBiddingSession()" data-toggle="modal" data-target="#modal-sm">
-                <span class="badge bg-purple">New</span>
-                <i class="fas fa-users"></i> ADD
-                </a>
+              <?php echo render_add_button(19, 'addBiddingSession()'); ?>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -183,9 +180,10 @@
                               <?php
                               if ($val['is_publish'] == 1 && $hoursDifference > (1 / 2)) {
                               ?>
-                                <a class="btn btn-dark-cyne edit_button" onclick="editBiddingSession(<?php echo $val['id']; ?>)" href="#">
-                                  <span><i class="fa fa-clock"></i></span>
-                                </a>
+
+                                <?php
+                                echo render_biddingsession_edit_button(19, "editBiddingSession({$val['id']})");
+                                ?>
 
                                 <!-- <a class="btn btn-dark-cyne edit_button" href="#" onclick="deleteBiddingSession(<?php echo $val['id']; ?>)">
                                 <span><i class="fa fa-trash-alt"></i></span>
@@ -203,9 +201,11 @@
                               <?php
                               if ($val['is_publish'] == 1 && $val['status'] == 1 && $now >= $endDateTime) { // Show edit and delete buttons if more than 24 hours before start time
                               ?>
-                                <button title="Close Auction" onclick="closeCurrentAuctionManually(<?php echo $val['id']; ?>)" class="btn btn-dark-cyne">
-                                  <span><i class="fas fa-times"></i></span>
-                                </button>
+                              
+                                <?php
+                                echo render_biddingsession_edit_button(19, "closeCurrentAuctionManually({$val['id']})");
+                                ?>
+
                               <?php } ?>
 
                               <?php

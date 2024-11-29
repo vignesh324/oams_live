@@ -77,9 +77,20 @@ class SampleReceipt extends Controller
 
 		// print_r($data['footer']);exit;
 
+		$settings_url = @apiURL . "user/settings";
+
+		$settings_response = make_curl_request($settings_url, $headers, 'GET');
+
+		if (isset($settings_response['error'])) {
+			echo "cURL Error: " . $settings_response['error'];
+		} else {
+			$settings_response_data = json_decode($settings_response, true);
+		}
+
 		return view('Applications\USER\Views\SampleReceipt\index', [
 			'data' => $data,
-			'response_data' => $response_data
+			'response_data' => $response_data,
+			"settings_response_data" => $settings_response_data['settings'],
 		]);
 	}
 
@@ -123,6 +134,16 @@ class SampleReceipt extends Controller
 		} else {
 			$sample_response_data = json_decode($sample_response, true);
 		}
+		
+		$settings_url = @apiURL . "user/settings";
+
+		$settings_response = make_curl_request($settings_url, $headers, 'GET');
+
+		if (isset($settings_response['error'])) {
+			echo "cURL Error: " . $settings_response['error'];
+		} else {
+			$settings_response_data = json_decode($settings_response, true);
+		}
 
 		// echo "<pre>";
 		// print_r($lot_response_data);
@@ -130,7 +151,8 @@ class SampleReceipt extends Controller
 		return view('Applications\USER\Views\SampleReceipt\create', [
 			"buyer_data" => $buyer_data['buyer'],
 			"lot_response_data" => $lot_response_data['auction'],
-			"sample_response_data" => $sample_response_data['sampleQuantity']
+			"sample_response_data" => $sample_response_data['sampleQuantity'],
+			"settings_response_data" => $settings_response_data['settings'],
 		]);
 	}
 	public function show()

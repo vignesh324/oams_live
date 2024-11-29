@@ -35,12 +35,13 @@
             </div>
             <div class="form-group">
                 <label for="name">Quantity</label>
-                <select class="form-control" name="quantity" id="quantity">
+                <input type="text" class="form-control" name="quantity" id="quantity">
+                <!-- <select class="form-control" name="quantity" id="quantity">
                     <option value="">Select Quantity</option>
                     <?php foreach ($sample_response_data as $data) : ?>
                         <option value="<?php echo $data['quantity'] ?>"><?php echo $data['quantity'] ?></option>
                     <?php endforeach; ?>
-                </select>
+                </select> -->
             </div>
             <div class="form-group">
                 <label for="name">Status</label>

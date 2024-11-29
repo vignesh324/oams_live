@@ -113,13 +113,24 @@
                           <?php for ($i = 0; $i < 4; $i++) : ?>
                             <td>
                               <div class="form-check">
-                                <input type="checkbox" value="1" name="module_view[<?php echo $value['id']; ?>][<?php echo $i; ?>]" class="form-check-input" id="exampleCheck<?php echo $key + 1; ?>_<?php echo $i; ?>" <?php echo ($key == 0 && $i == 0) ? 'checked' : ''; ?> <?php echo ($value['id'] == 17 && $i == 2) ? 'disabled' : ''; ?> <?php echo (in_array($value['id'], [22, 23, 24]) && in_array($i, [1, 2, 3])) ? 'disabled' : ''; ?> <?php echo (in_array($value['id'], [18, 16]) && $i == 3) ? 'disabled' : ''; ?>>
+                                <input
+                                  type="checkbox"
+                                  value="1"
+                                  name="module_view[<?php echo $value['id']; ?>][<?php echo $i; ?>]"
+                                  class="form-check-input"
+                                  id="exampleCheck<?php echo $key + 1; ?>_<?php echo $i; ?>"
+                                  <?php echo ($key == 0 && $i == 0) ? 'checked' : ''; ?>
+                                  <?php echo ($value['id'] == 17 && $i == 2) ? 'disabled' : ''; ?>
+                                  <?php echo (in_array($value['id'], [22, 23, 24, 26, 27, 28, 29]) && in_array($i, [1, 2, 3])) ? 'disabled' : ''; ?>
+                                  <?php echo (in_array($value['id'], [18]) && $i == 3) ? 'disabled' : ''; ?>
+                                  <?php echo (in_array($value['id'], [16]) && in_array($i, [1, 3])) ? 'disabled' : ''; ?>>
                                 <label class="form-check-label" for="exampleCheck<?php echo $key + 1; ?>_<?php echo $i; ?>">
                                   <?php
                                   echo ($i == 0) ? 'View' : (($i == 1) ? 'Create' : (($i == 2) ? 'Edit' : 'Delete'));
                                   ?>
                                 </label>
                               </div>
+
                             </td>
                           <?php endfor; ?>
                         </tr>

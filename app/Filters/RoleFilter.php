@@ -18,11 +18,15 @@ class RoleFilter implements FilterInterface
         // echo '<pre>';print_r($permissions);exit;
         // Validate token, role, and role_id
         if (empty($token) || empty($tokenRole) || empty($roleId) || $tokenRole != 'user' || $roleId != 2) {
-            return redirect()->to('/user_login');
+            return redirect()->to('USER');
         }
 
         // Ensure both module_id and permission_type are provided
         if (empty($arguments)) {
+            // echo '<pre>';
+            // print_r('kkk');
+            // exit;
+
             return redirect()->to('USER/Access-Denied');
         }
 
@@ -34,7 +38,7 @@ class RoleFilter implements FilterInterface
         });
         $filteredPermissions = array_values($filteredPermissions);
 
-        // echo '<pre>';print_r($filteredPermissions);exit;
+        // echo '<pre>';print_r($permissionType);exit;
         if (empty($filteredPermissions) || empty($filteredPermissions[0]["{$permissionType}_permission"])) {
             return redirect()->to('USER/Access-Denied');
         }

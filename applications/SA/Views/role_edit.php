@@ -37,7 +37,7 @@
           if ($value['id'] == 17) {
             $edit_checked = 'disabled';
           }
-          if (in_array($value['id'], [22, 23, 24, 26])) {
+          if (in_array($value['id'], [22, 23, 24, 26, 27, 28, 29])) {
             $create_checked = 'disabled';
             $edit_checked = 'disabled';
             $delete_checked = 'disabled';

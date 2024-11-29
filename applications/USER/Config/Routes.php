@@ -13,7 +13,7 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
 
     //Seller Controller
     $routes->group('Seller', function ($routes) {
-        $routes->get('', 'Seller::index', ['filter' => 'roleFilter:4,index']);
+        $routes->get('', 'Seller::index', ['filter' => 'roleFilter:4,list']);
         $routes->post('Add', 'Seller::create', ['filter' => 'roleFilter:4,create']);
         $routes->post('Create', 'Seller::store', ['filter' => 'roleFilter:4,create']);
         $routes->post('Show', 'Seller::show', ['filter' => 'roleFilter:4,update']);
@@ -27,7 +27,7 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
 
     //Garden Controller
     $routes->group('Garden', function ($routes) {
-        $routes->get('', 'Garden::index',['filter' => 'roleFilter:5,index']);
+        $routes->get('', 'Garden::index',['filter' => 'roleFilter:5,list']);
         $routes->post('Add', 'Garden::create',['filter' => 'roleFilter:5,create']);
         $routes->post('Create', 'Garden::store',['filter' => 'roleFilter:5,create']);
         $routes->post('Show', 'Garden::show',['filter' => 'roleFilter:5,update']);
@@ -242,7 +242,7 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
     $routes->get('AuctionStock', 'AuctionStock::index', ['filter' => 'roleFilter:19,list']);
 
     //SoldStock Controller
-    $routes->get('SoldStock', 'SoldStock::index', ['filter' => 'roleFilter:19,list']);
+    $routes->get('SoldStock', 'SoldStock::index', ['filter' => 'roleFilter:27,list']);
 
     // Settings Controller
     $routes->get('Settings', 'Settings::index', ['filter' => 'roleFilter:16,list']);
@@ -274,8 +274,8 @@ $routes->group('USER', ['namespace' => 'Applications\USER\Controllers'], static 
     $routes->post('BiddingSession/saveGardenOrder', 'BiddingSession::saveGardenOrder', ['filter' => 'roleFilter:5,create']);
     $routes->get('BiddingSession/GetLiveBiddingPrice/(:any)', 'BiddingSession::getLiveBidding/$1', ['filter' => 'roleFilter:19,list']);
 
-    $routes->get('ProductLog', 'Log::productLog');
-    $routes->get('ActivityLog', 'Log::activityLog');
+    $routes->get('ProductLog', 'Log::productLog', ['filter' => 'roleFilter:29,list']);
+    $routes->get('ActivityLog', 'Log::activityLog', ['filter' => 'roleFilter:28,list']);
     $routes->post('ActivityLogByDate', 'Log::activityLogByDate');
     $routes->post('ProductLogByDate', 'Log::productLogByDate');
 

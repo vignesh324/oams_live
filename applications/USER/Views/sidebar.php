@@ -293,12 +293,12 @@
                 <p>Auction Stock</p>
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="<?= @basePath ?>USER/SampleReceipt" class="nav-link <?= @($activemenu == 'SampleReceipt') ? 'active' : '' ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Samples Receipt Management</p>
               </a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a href="<?= @basePath ?>USER/AuctionManagement" class="nav-link <?= @($activemenu == 'AuctionManagement') ? 'active' : '' ?>">
                 <i class="far fa-circle nav-icon"></i>

@@ -30,7 +30,7 @@ class Samplereceipt extends ResourceController
             ->join('buyer', 'buyer.id = sample_receipt.buyer_id')
             ->join('auction', 'auction.id = sample_receipt.auction_id')
             ->orderBy('sample_receipt.id')
-            ->where('sample_receipt.status !=',0)
+            ->where('sample_receipt.status !=', 0)
             ->findAll();
         return $this->respond($data);
     }
@@ -113,11 +113,11 @@ class Samplereceipt extends ResourceController
     public function show($id = null)
     {
         $model = new SampleReceiptModel();
-        
+
         $data = $model->select('sample_receipt.*,buyer.name as buyer_name')
             ->join('buyer', 'buyer.id = sample_receipt.buyer_id')
             ->where('sample_receipt.id', $id)
-            ->where('sample_receipt.status !=',0)
+            ->where('sample_receipt.status !=', 0)
             ->orderBy('sample_receipt.id')->first();
         if ($data) {
             return $this->respond($data);
@@ -196,7 +196,7 @@ class Samplereceipt extends ResourceController
     {
         // return 'hii';
         $model = new AuctionModel();
-        $auctions = $model->select('auction.id,auction.sale_no')
+        $auctions = $model->select('auction.id,auction.sale_no,auction.type')
             ->where('auction.status', 1)
             ->findAll();
 
@@ -207,10 +207,17 @@ class Samplereceipt extends ResourceController
     public function salenoWiseLot()
     {
         $model = new AuctionItemModel();
+        $auctionModel = new AuctionModel();
+        $isLeaf = 0;
         $data1 = [
             'auction_id' => $this->request->getVar('auction_id'),
         ];
-
+        $aucData = $auctionModel->where('id', $data1['auction_id'])->first();
+        if ($aucData) {
+            if ($aucData['type'] == 1) {
+                $isLeaf = 1;
+            }
+        }
         // print_r($data1['auction_id']);exit;
         $data['lot_no'] = $model->select('auction_items.id, auction_items.lot_no')
             ->where('auction_items.auction_id', $data1['auction_id'])
@@ -223,7 +230,8 @@ class Samplereceipt extends ResourceController
                 'status' => 200,
                 'error' => false,
                 'message' => 'Success',
-                'data' => $data
+                'data' => $data,
+                'is_leaf' => $isLeaf,
             ];
 
             return $this->respond($response);
@@ -232,7 +240,8 @@ class Samplereceipt extends ResourceController
                 'status' => 404,
                 'error' => false,
                 'message' => 'Success',
-                'data' => ['lot_no' => []]
+                'data' => ['lot_no' => []],
+                'is_leaf' => $isLeaf,
             ];
             return $this->respond($response);
         }
@@ -254,7 +263,6 @@ class Samplereceipt extends ResourceController
                 ->where('status', 1)
                 ->where('auction_id', $auction['id'])
                 ->findAll();
-
         }
 
         // echo '<pre>';print_r($data);exit;

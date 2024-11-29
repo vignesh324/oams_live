@@ -94,4 +94,42 @@ if (!function_exists('render_permission_button')) {
             return '';
         }
     }
+
+
+    if (!function_exists('render_biddingsession_edit_button')) {
+        /**
+         * Render an "Edit" button if the user has the required permission for a module.
+         *
+         * @param int $moduleId The module ID to check permissions for.
+         * @param string $onclick The JavaScript function to call on click.
+         * @return string Rendered HTML for the "Edit" button if permission exists.
+         */
+        function render_biddingsession_edit_button(int $moduleId, string $onclick): string
+        {
+            if (has_module_permission($moduleId, 'update_permission')) {
+                return '<a href="#" class="btn btn-dark-cyne edit_button" onclick="' . htmlspecialchars($onclick) . '" style="margin-right: 5px;" title="Edit">
+                            <i class="fa fa-clock"></i>
+                        </a>';
+            }
+            return '';
+        }
+    }
+    if (!function_exists('render_biddingsession_close_button')) {
+        /**
+         * Render an "Edit" button if the user has the required permission for a module.
+         *
+         * @param int $moduleId The module ID to check permissions for.
+         * @param string $onclick The JavaScript function to call on click.
+         * @return string Rendered HTML for the "Edit" button if permission exists.
+         */
+        function render_biddingsession_close_button(int $moduleId, string $onclick): string
+        {
+            if (has_module_permission($moduleId, 'update_permission')) {
+                return '<button title="Close Auction" onclick="' . htmlspecialchars($onclick) . '" class="btn btn-dark-cyne">
+                                  <span><i class="fas fa-times"></i></span>
+                        </button>';
+            }
+            return '';
+        }
+    }
 }
