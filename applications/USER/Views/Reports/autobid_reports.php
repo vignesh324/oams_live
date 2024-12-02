@@ -67,9 +67,10 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-between ">
                   <h3 class="card-title">Auto Bid Reports</h3>
-
+                  <button type="button" id="export" class="btn btn-primary ">Export</button>
+                  <input type="hidden" value="autobid-report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -116,7 +117,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered manualbid_report">
+                    <table class="table table-bordered manualbid_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th>Buyername</th>

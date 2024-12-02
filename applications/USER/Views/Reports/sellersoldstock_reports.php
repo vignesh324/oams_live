@@ -67,8 +67,12 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Seller wise Sold qty Reports</h3>
 
+                </div>
+                <div class="card-header d-flex justify-content-between ">
+                  <h3 class="card-title">Seller wise Sold qty Reports</h3>
+                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
+                  <input type="hidden" value="seller_sold_stock" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -106,7 +110,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered sellerwise_report">
+                    <table class="table table-bordered sellerwise_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th class="text-center">Seller Name</th>

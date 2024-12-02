@@ -23,48 +23,49 @@ $saleNos = [];
     // print_r($response_data);
     // exit;
 
-    foreach ($response_data['invoiceItems'] as $val) :
+    if ($response_data['invoiceItems']) {
+        foreach ($response_data['invoiceItems'] as $val) :
     ?>
-        <?php
-        $leafQuantity = $val['leaf_total_quantity'];
+            <?php
+            $leafQuantity = $val['leaf_total_quantity'];
 
-        $dustQuantity = $val['dust_total_quantity'];
+            $dustQuantity = $val['dust_total_quantity'];
 
-        $leaf_avg_price = $val['leaf_total_value'] > 0 && $leafQuantity ? $val['leaf_total_value'] / $leafQuantity : 0;
-        $dust_avg_price = $val['dust_total_value'] > 0 && $dustQuantity > 0 ? $val['dust_total_value'] / $dustQuantity : 0;
+            $leaf_avg_price = $val['leaf_total_value'] > 0 && $leafQuantity ? $val['leaf_total_value'] / $leafQuantity : 0;
+            $dust_avg_price = $val['dust_total_value'] > 0 && $dustQuantity > 0 ? $val['dust_total_value'] / $dustQuantity : 0;
 
-        $grandTotalQuantity = $leafQuantity + $dustQuantity;
+            $grandTotalQuantity = $leafQuantity + $dustQuantity;
 
-        $grandTotalBidPrice = $val['leaf_total_value'] + $val['dust_total_value'];
+            $grandTotalBidPrice = $val['leaf_total_value'] + $val['dust_total_value'];
 
-        $grandTotalAvgPrice = (isset($grandTotalQuantity) && $grandTotalQuantity > 0) ? $grandTotalBidPrice / $grandTotalQuantity : 0;
+            $grandTotalAvgPrice = (isset($grandTotalQuantity) && $grandTotalQuantity > 0) ? $grandTotalBidPrice / $grandTotalQuantity : 0;
 
-        // Update grand totals
-        $grandLeafQuantity += $leafQuantity;
-        $grandDustQuantity += $dustQuantity;
-        $totalGrandQuantity += $grandTotalQuantity;
+            // Update grand totals
+            $grandLeafQuantity += $leafQuantity;
+            $grandDustQuantity += $dustQuantity;
+            $totalGrandQuantity += $grandTotalQuantity;
 
-        // Check for sale number row
-        if (!in_array($val['sale_no'], $saleNos)) {
-            // Add sale number row
-        ?>
+            // Check for sale number row
+            if (!in_array($val['sale_no'], $saleNos)) {
+                // Add sale number row
+            ?>
+                <tr>
+                    <td colspan="7" class="text-center bg-gray"><?php echo htmlspecialchars($val['sale_no']); ?></td>
+                </tr>
+            <?php
+                $saleNos[] = $val['sale_no'];
+            }
+            ?>
             <tr>
-                <td colspan="7" class="text-center bg-gray"><?php echo htmlspecialchars($val['sale_no']); ?></td>
+                <td><?php echo htmlspecialchars($val['buyer_name']); ?></td>
+                <td class="text-center"><?php echo number_format($leafQuantity, 2); ?></td>
+                <td class="text-center"><?php echo number_format($leaf_avg_price, 2); ?></td>
+                <td class="text-center"><?php echo number_format($dustQuantity, 2); ?></td>
+                <td class="text-center"><?php echo number_format($dust_avg_price, 2); ?></td>
+                <td class="text-center"><?php echo number_format($grandTotalQuantity, 2); ?></td>
+                <td class="text-center"><?php echo number_format($grandTotalAvgPrice, 2); ?></td>
             </tr>
-        <?php
-            $saleNos[] = $val['sale_no'];
-        }
-        ?>
-        <tr>
-            <td><?php echo htmlspecialchars($val['buyer_name']); ?></td>
-            <td class="text-center"><?php echo number_format($leafQuantity, 2); ?></td>
-            <td class="text-center"><?php echo number_format($leaf_avg_price, 2); ?></td>
-            <td class="text-center"><?php echo number_format($dustQuantity, 2); ?></td>
-            <td class="text-center"><?php echo number_format($dust_avg_price, 2); ?></td>
-            <td class="text-center"><?php echo number_format($grandTotalQuantity, 2); ?></td>
-            <td class="text-center"><?php echo number_format($grandTotalAvgPrice, 2); ?></td>
-        </tr>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
 </tbody>
 <tfoot>
     <tr>
@@ -77,3 +78,13 @@ $saleNos = [];
         <td class="text-center"><b></b></td>
     </tr>
 </tfoot>
+<?php } else { ?>
+
+    <tr>
+        <td colspan="6" style="text-align: center;"><b>No Data Found</b></td>
+    </tr>
+<?php
+
+    }
+
+?>

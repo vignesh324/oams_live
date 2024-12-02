@@ -69,7 +69,10 @@
             <td><b><?php echo number_format($response_data['grand_avg_sold_price'] ?? 0, 2); ?></b></td>
             <td></td>
         </tr>
-
+        <?php else: ?>
+        <tr>
+            <td colspan="6" style="text-align: center;"><b>Data Not Found</b></td>
+        </tr>
     <?php endif; ?>
 
 

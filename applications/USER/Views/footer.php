@@ -42,6 +42,8 @@
 <script src="<?= @basePath ?>admin_assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="<?= @basePath ?>admin_assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
+<!-- custom excel export -->
+<script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.full.min.js"></script>
 
 <script src="<?= @basePath ?>admin_assets/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <script src="<?= @basePath ?>admin_assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
@@ -50,6 +52,8 @@
 <script src="<?= @basePath ?>admin_assets/dist/js/pages/dashboard3.js"></script>
 <script src="<?= @basePath ?>admin_assets/dist/js/jquery-ui.js"></script>
 <script src="<?= @basePath ?>admin_assets/dist/js/common.js"></script>
+
+<script src="<?= @basePath ?>admin_assets/dist/js/custom-xls-export.js"></script>
 
 <!-- AdminLTE App -->
 <script src="<?= @basePath ?>admin_assets/dist/js/adminlte.min.js"></script>

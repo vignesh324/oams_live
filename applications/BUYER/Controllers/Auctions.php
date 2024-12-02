@@ -3,6 +3,7 @@
 namespace Applications\BUYER\Controllers;
 
 use CodeIgniter\Controller;
+use Symfony\Component\Routing\Annotation\Route;
 
 class Auctions extends Controller
 {
@@ -97,15 +98,27 @@ class Auctions extends Controller
 		$id = base64_decode($id);
 		$session_user_id = session()->get('user_id');
 
-		$url = @apiURL . "buyer/getAuctionItemDetails/" . $id . "/" . $session_user_id;
 		$token = session()->get('access_token');
 		$headers = [
 			'Content-Type: application/json',
 			'Authorization: Bearer ' . $token,
 		];
 
+
+		$auct_url = @apiURL . "user/auction/" . $id;
+		$auct_response = make_curl_request($auct_url, $headers, 'GET');
+		if (isset($response['error'])) {
+			echo "cURL Error: " . $auct_response['error'];
+		} else {
+			$auct_response_data = json_decode($auct_response, true);
+		}
+		// echo '<pre>';print_r($auct_response_data['auction']);exit;
+
+
+		$url = @apiURL . "buyer/getAuctionItemDetails/" . $id . "/" . $session_user_id;
+
 		$response = make_curl_request($url, $headers, 'GET');
-		//echo '<pre>';print_r($response);exit;
+		// echo '<pre>';print_r($response);exit;
 
 		if (isset($response['error'])) {
 			echo "cURL Error: " . $response['error'];
@@ -126,26 +139,42 @@ class Auctions extends Controller
 		$data['sidebar'] = view('Applications\BUYER\Views\sidebar', $data_sidebar);
 		$data['footer'] = view('Applications\BUYER\Views\footer', $data);
 
-		return view('Applications\BUYER\Views\auction_details', [
-			"data" => $data,
-			"response_data" => $response_data['auction'],
-			'flag' => 0
-		]);
+		if ($auct_response_data['auction']['min_hour_over'] == 1) {
+			return redirect()->route('BUYER/Dashboard');
+		} else {
+			return view('Applications\BUYER\Views\auction_details', [
+				"data" => $data,
+				"response_data" => $response_data['auction'],
+				"flag" => 0
+			]);
+		}		
 	}
 
 	public function completedDetail($id)
 	{
 		$id = base64_decode($id);
 		$session_user_id = session()->get('user_id');
-
-		$url = @apiURL . "buyer/getAuctionItemDetails/" . $id . "/" . $session_user_id;
-
-		//$url = @apiURL . "buyer/getAuctionItemDetails/" . $id;
 		$token = session()->get('access_token');
 		$headers = [
 			'Content-Type: application/json',
 			'Authorization: Bearer ' . $token,
 		];
+
+
+		$auct_url = @apiURL . "user/auction/" . $id;
+		$auct_response = make_curl_request($auct_url, $headers, 'GET');
+		if (isset($response['error'])) {
+			echo "cURL Error: " . $auct_response['error'];
+		} else {
+			$auct_response_data = json_decode($auct_response, true);
+		}
+		// echo '<pre>';print_r($auct_response_data);exit;
+
+
+		$url = @apiURL . "buyer/getAuctionItemDetails/" . $id . "/" . $session_user_id;
+
+		//$url = @apiURL . "buyer/getAuctionItemDetails/" . $id;
+
 
 		$response = make_curl_request($url, $headers, 'GET');
 		//echo '<pre>';print_r($response);exit;
@@ -155,7 +184,6 @@ class Auctions extends Controller
 		} else {
 			$response_data = json_decode($response, true);
 		}
-		//  echo '<pre>';print_r($response_data['auction']);exit;
 
 		//Index
 		//Get Active Menu

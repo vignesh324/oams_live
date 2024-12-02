@@ -66,9 +66,11 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header">
+               
+                <div class="card-header d-flex justify-content-between ">
                   <h3 class="card-title">Seller/Garden/Grade Wise Avg Price Reports</h3>
-
+                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
+                  <input type="hidden" value="seller_garden_wise_report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -124,7 +126,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered sellerwise_report">
+                    <table class="table table-bordered sellerwise_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th>Garden Name</th>

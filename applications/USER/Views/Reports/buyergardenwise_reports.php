@@ -66,9 +66,10 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-between ">
                   <h3 class="card-title">Buyer wise / Garden wise sold qty Reports</h3>
-
+                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
+                  <input type="hidden" value="buyer_garden_sold_qty_report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -124,7 +125,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered sellerwise_report">
+                    <table class="table table-bordered sellerwise_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th>Garden Name</th>
@@ -158,6 +159,47 @@
     </div>
     <!-- /.content-wrapper -->
     <?= @$data['footer']; ?>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> -->
+    <!-- <script>
+      document.getElementById('export').addEventListener('click', function() {
+        // Get the table element
+        var table = document.querySelector('.sellerwise_report');
+
+        // Convert table to worksheet
+        var wb = XLSX.utils.book_new();
+        var ws = XLSX.utils.table_to_sheet(table, {
+          raw: true
+        });
+
+        // Adjust cell merges for rowspan and colspan
+        if (!ws['!merges']) ws['!merges'] = [];
+        var rows = table.rows;
+        for (var r = 0; r < rows.length; r++) {
+          for (var c = 0; c < rows[r].cells.length; c++) {
+            var cell = rows[r].cells[c];
+            if (cell.rowSpan > 1 || cell.colSpan > 1) {
+              ws['!merges'].push({
+                s: {
+                  r: r,
+                  c: c
+                }, // start row and column
+                e: {
+                  r: r + cell.rowSpan - 1,
+                  c: c + cell.colSpan - 1
+                } // end row and column
+              });
+            }
+          }
+        }
+
+        // Append worksheet to workbook
+        XLSX.utils.book_append_sheet(wb, ws, 'Report');
+
+        // Export the workbook
+        XLSX.writeFile(wb, 'report.xlsx');
+      });
+    </script> -->
 
     <script>
       $(document).ready(function() {

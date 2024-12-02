@@ -51,7 +51,9 @@ $totals = [
     </tr>
 </thead>
 <tbody>
-    <?php foreach ($price_ranges as $range => [$min, $max]) : ?>
+    <?php 
+    
+    foreach ($price_ranges as $range => [$min, $max]) : ?>
         <?php
         $dust_qty = $quantities['dust'][$range];
         $leaf_qty = $quantities['leaf'][$range];

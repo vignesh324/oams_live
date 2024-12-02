@@ -66,10 +66,13 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">State/City Wise Buyer Purchase Qty Reports</h3>
 
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <h3 class="card-title mb-0">State/City Wise Buyer Purchase Qty Reports</h3>
+                  <button type="button" id="export" class="btn btn-primary">Export</button>
+                  <input type="hidden" value="State_City_buyer_qty_report" class="excel-file-name">
                 </div>
+
                 <!-- /.card-header -->
                 <div class="card-body">
                   <div class="row">
@@ -127,7 +130,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered sellerwise_report">
+                    <table class="table table-bordered sellerwise_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th class="text-center">Buyer Name</th>

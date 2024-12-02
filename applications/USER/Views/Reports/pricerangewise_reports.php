@@ -66,9 +66,10 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-between ">
                   <h3 class="card-title">Price Range Wise Reports</h3>
-
+                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
+                  <input type="hidden" value="price_range_wise_report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -106,7 +107,7 @@
                   </div>
 
                   <div class="row">
-                    <table class="table table-bordered sellerwise_report">
+                    <table class="table table-bordered sellerwise_report" id="excel-export-table">
                       <thead>
                         <tr>
                           <th>Price Range</th>
