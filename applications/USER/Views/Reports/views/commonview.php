@@ -81,7 +81,7 @@ $saleNos = [];
 <?php } else { ?>
 
     <tr>
-        <td colspan="6" style="text-align: center;"><b>No Data Found</b></td>
+        <td colspan="7" style="text-align: center;"><b>No Data Found</b></td>
     </tr>
 <?php
 

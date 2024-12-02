@@ -44,6 +44,9 @@
 
 <!-- custom excel export -->
 <script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.full.min.js"></script>
+<!-- <script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.core.min.js"></script>
+<script src="<?= @basePath ?>admin_assets/plugins/excel-export/filesaver.js"></script>
+<script src="<?= @basePath ?>admin_assets/plugins/excel-export/blob.js"></script> -->
 
 <script src="<?= @basePath ?>admin_assets/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <script src="<?= @basePath ?>admin_assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>

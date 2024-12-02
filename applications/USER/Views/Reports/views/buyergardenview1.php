@@ -17,9 +17,9 @@
     </tr>
 </thead>
 <tbody>
-    <?php 
+    <?php
     // print_r($response_data);exit;
-    if (isset($response_data) && is_array($response_data) && count($response_data) > 0) : ?>
+    if (isset($response_data[0])) : ?>
 
         <?php foreach ($response_data as $value) : ?>
             <?php if (is_array($value)) : ?>
@@ -69,9 +69,9 @@
             <td><b><?php echo number_format($response_data['grand_avg_sold_price'] ?? 0, 2); ?></b></td>
             <td></td>
         </tr>
-        <?php else: ?>
+    <?php else: ?>
         <tr>
-            <td colspan="6" style="text-align: center;"><b>Data Not Found</b></td>
+            <td colspan="10" style="text-align: center;"><b>No Data Found</b></td>
         </tr>
     <?php endif; ?>
 

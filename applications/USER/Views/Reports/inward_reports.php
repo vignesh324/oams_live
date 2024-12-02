@@ -66,9 +66,8 @@
               <div class="card">
                 <div class="card-header">
                 </div>
-                <div class="card-header d-flex justify-content-between ">
+                <div class="card-header">
                   <h3 class="card-title">Inward Reports</h3>
-                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
                   <input type="hidden" value="inward_report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->

@@ -21,6 +21,7 @@ $quantities = [
 ];
 
 // Calculate quantities
+// echo '<pre>';print_r($response_data);exit;
 foreach ($response_data as $item) {
     $grade = $item['grade_type'] == 1 ? 'leaf' : 'dust';
     foreach ($price_ranges as $range => [$min, $max]) {

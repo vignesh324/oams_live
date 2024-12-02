@@ -132,4 +132,18 @@ if (!function_exists('render_permission_button')) {
             return '';
         }
     }
+    
+    if (!function_exists('render_go_and_export_button')) {
+        
+        function render_go_and_export_button(): string
+        {
+            return '<label>&nbsp;</label>
+                        <div>
+                          <button type="button" id="search-filter" class="btn btn-primary">Go</button>
+                          <button type="button" title="export" id="export" class="btn btn-success">
+                            <i class="fas fa-file-export"></i>
+                          </button>
+                        </div>';
+        }
+    }
 }

@@ -66,9 +66,8 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-header d-flex justify-content-between ">
+                <div class="card-header">
                   <h3 class="card-title">Seller wise / Garden wise Buyer purchase qty Reports</h3>
-                  <button type="button" id="export" class="btn btn-primary ms-auto  text-end">Export</button>
                   <input type="hidden" value="sellrwise_report" class="excel-file-name">
                 </div>
                 <!-- /.card-header -->
@@ -116,10 +115,7 @@
 
                     <div class="col col-2">
                       <div class="form-group">
-                        <label>&nbsp;</label>
-                        <div>
-                          <button type="button" id="search-filter" class="btn btn-primary">Go</button>
-                        </div>
+                        <?php echo render_go_and_export_button() ?>
                       </div>
                     </div>
                   </div>

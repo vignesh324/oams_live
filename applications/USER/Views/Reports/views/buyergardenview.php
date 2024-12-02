@@ -11,9 +11,9 @@
 <tbody>
     <?php
     // echo '<pre>';
-    // print_r($response_data);
+    // print_r($response_data[0]);
     // exit;
-    if (isset($response_data) && is_array($response_data) && count($response_data) > 0): ?>
+    if (isset($response_data[0])): ?>
 
         <?php foreach ($response_data as $value): ?>
             <?php if (is_array($value)): ?>

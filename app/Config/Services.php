@@ -29,4 +29,19 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+    public static function redis($getShared = true)
+    {
+        if ($getShared) {
+            return static::getSharedInstance('redis');
+        }
+    
+        $redis = new \Redis();
+        $redis->connect('127.0.0.1', 6379);
+    
+        // If you set a password in Redis config:
+        // $redis->auth('yourpassword');
+    
+        return $redis;
+    }
+    
 }
