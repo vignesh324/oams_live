@@ -43,7 +43,8 @@
 <script src="<?= @basePath ?>admin_assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
 <!-- custom excel export -->
-<script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.full.min.js"></script>
+<script src="<?= @basePath ?>admin_assets/plugins/excel-export/exceljs.min.js"></script>
+<!-- <script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.full.min.js"></script> -->
 <!-- <script src="<?= @basePath ?>admin_assets/plugins/excel-export/xlsx.core.min.js"></script>
 <script src="<?= @basePath ?>admin_assets/plugins/excel-export/filesaver.js"></script>
 <script src="<?= @basePath ?>admin_assets/plugins/excel-export/blob.js"></script> -->

@@ -118,7 +118,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td colspan="8" class="text-center">No data found</td>
+                          <td colspan="7" class="text-center">No data found</td>
                         </tr>
                       </tbody>
                     </table>
